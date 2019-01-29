@@ -89,6 +89,14 @@ class Theme: NSObject {
         
         UISwitch.appearance().tintColor = .zomDarkerGray
         UISwitch.appearance().onTintColor = mainThemeColor
+
+        // Style segmented controls in title (active/archive)
+        //
+        UIView.appearance(whenContainedInInstancesOf: [UISegmentedControl.self]).tintColor = UIColor.white
+        UISegmentedControl.appearance(whenContainedInInstancesOf: [UINavigationBar.self]).backgroundColor = UIColor.clear
+        UISegmentedControl.appearance(whenContainedInInstancesOf: [UINavigationBar.self]).tintColor = UIColor.green
+        UISegmentedControl.appearance(whenContainedInInstancesOf: [UINavigationBar.self]).setTitleTextAttributes([.foregroundColor: UIColor.white], for: .normal)
+        UISegmentedControl.appearance(whenContainedInInstancesOf: [UINavigationBar.self]).setTitleTextAttributes([.foregroundColor: mainThemeColor], for: .selected)
         
         //UILabel.appearance(whenContainedInInstancesOf: [ZomTableViewSectionHeader.self]).textColor = mainThemeColor
         
