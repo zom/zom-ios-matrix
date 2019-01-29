@@ -1,0 +1,230 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - BarcodeScanner (4.1.3)
+  - cmark (0.24.1)
+  - CrossroadRegex (1.1.0)
+  - DTCoreText (1.6.21):
+    - DTCoreText/Core (= 1.6.21)
+    - DTFoundation/Core (~> 1.7.5)
+    - DTFoundation/DTAnimatedGIF (~> 1.7.5)
+    - DTFoundation/DTHTMLParser (~> 1.7.5)
+    - DTFoundation/UIKit (~> 1.7.5)
+  - DTCoreText/Core (1.6.21):
+    - DTFoundation/Core (~> 1.7.5)
+    - DTFoundation/DTAnimatedGIF (~> 1.7.5)
+    - DTFoundation/DTHTMLParser (~> 1.7.5)
+    - DTFoundation/UIKit (~> 1.7.5)
+  - DTFoundation/Core (1.7.13)
+  - DTFoundation/DTAnimatedGIF (1.7.13)
+  - DTFoundation/DTHTMLParser (1.7.13):
+    - DTFoundation/Core
+  - DTFoundation/UIKit (1.7.13):
+    - DTFoundation/Core
+  - Eureka (4.3.1)
+  - FLAnimatedImage (1.0.12)
+  - FontBlaster (4.1.0)
+  - GZIP (1.2.2)
+  - HPGrowingTextView (1.1)
+  - INSPhotoGallery (1.2.7)
+  - Keanu (0.1.0):
+    - BarcodeScanner (~> 4.1.3)
+    - CrossroadRegex (~> 1.1.0)
+    - Eureka (~> 4.3.0)
+    - FLAnimatedImage (~> 1.0)
+    - FontBlaster (~> 4.1.0)
+    - INSPhotoGallery (~> 1.2.7)
+    - KeychainSwift (~> 13.0)
+    - Localize (~> 2.1.0)
+    - MaterialComponents/Snackbar (~> 72)
+    - MatrixKit (~> 0.9.3)
+    - MatrixSDK/SwiftSupport
+    - PhoneNumberKit (~> 2.5.0)
+    - PureLayout (~> 3.1.4)
+    - QRCode (~> 2.0.0)
+    - SearchTextField (~> 1.2.2)
+  - KeychainSwift (13.0.0)
+  - libbase58 (0.1.4)
+  - libPhoneNumber-iOS (0.9.13)
+  - Localize (2.1.0)
+  - MaterialComponents/AnimationTiming (72.2.0)
+  - MaterialComponents/Buttons (72.2.0):
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Math
+    - MaterialComponents/private/Shapes
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Typography
+    - MDFInternationalization
+    - MDFTextAccessibility
+  - MaterialComponents/Ink (72.2.0):
+    - MaterialComponents/private/Math
+  - MaterialComponents/OverlayWindow (72.2.0):
+    - MaterialComponents/private/Application
+  - MaterialComponents/private/Application (72.2.0)
+  - MaterialComponents/private/KeyboardWatcher (72.2.0):
+    - MaterialComponents/private/Application
+  - MaterialComponents/private/Math (72.2.0)
+  - MaterialComponents/private/Overlay (72.2.0)
+  - MaterialComponents/private/Shapes (72.2.0):
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowLayer
+  - MaterialComponents/ShadowElevations (72.2.0)
+  - MaterialComponents/ShadowLayer (72.2.0):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/Snackbar (72.2.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Buttons
+    - MaterialComponents/OverlayWindow
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/KeyboardWatcher
+    - MaterialComponents/private/Overlay
+    - MaterialComponents/Typography
+  - MaterialComponents/Typography (72.2.0):
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/Math
+  - MatrixKit (0.9.3):
+    - cmark (~> 0.24.1)
+    - DTCoreText (~> 1.6.21)
+    - HPGrowingTextView (~> 1.1)
+    - libPhoneNumber-iOS (~> 0.9.13)
+    - MatrixKit/Core (= 0.9.3)
+    - MatrixSDK (= 0.12.1)
+  - MatrixKit/Core (0.9.3):
+    - cmark (~> 0.24.1)
+    - DTCoreText (~> 1.6.21)
+    - HPGrowingTextView (~> 1.1)
+    - libPhoneNumber-iOS (~> 0.9.13)
+    - MatrixSDK (= 0.12.1)
+  - MatrixSDK (0.12.1):
+    - MatrixSDK/Core (= 0.12.1)
+  - MatrixSDK/Core (0.12.1):
+    - AFNetworking (~> 3.2.0)
+    - GZIP (~> 1.2.2)
+    - libbase58 (~> 0.1.4)
+    - OLMKit (~> 3.0.0)
+    - Realm (~> 3.11.1)
+  - MatrixSDK/SwiftSupport (0.12.1):
+    - MatrixSDK/Core
+  - MDFInternationalization (2.0.0)
+  - MDFTextAccessibility (2.0.0)
+  - OLMKit (3.0.0):
+    - OLMKit/olmc (= 3.0.0)
+    - OLMKit/olmcpp (= 3.0.0)
+  - OLMKit/olmc (3.0.0)
+  - OLMKit/olmcpp (3.0.0)
+  - PhoneNumberKit (2.5.0):
+    - PhoneNumberKit/PhoneNumberKitCore (= 2.5.0)
+    - PhoneNumberKit/UIKit (= 2.5.0)
+  - PhoneNumberKit/PhoneNumberKitCore (2.5.0)
+  - PhoneNumberKit/UIKit (2.5.0):
+    - PhoneNumberKit/PhoneNumberKitCore
+  - PureLayout (3.1.4)
+  - QRCode (2.0)
+  - Realm (3.11.2):
+    - Realm/Headers (= 3.11.2)
+  - Realm/Headers (3.11.2)
+  - SearchTextField (1.2.2)
+
+DEPENDENCIES:
+  - BarcodeScanner (from `https://github.com/SteffanPB/BarcodeScanner.git`)
+  - Keanu (from `../../Keanu`)
+  - Localize (from `https://github.com/tladesignz/Localize.git`)
+  - MatrixKit (~> 0.9.3)
+  - MatrixSDK/SwiftSupport (from `https://github.com/N-Pex/matrix-ios-sdk.git`, branch `master_with_audio`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - cmark
+    - CrossroadRegex
+    - DTCoreText
+    - DTFoundation
+    - Eureka
+    - FLAnimatedImage
+    - FontBlaster
+    - GZIP
+    - HPGrowingTextView
+    - INSPhotoGallery
+    - KeychainSwift
+    - libbase58
+    - libPhoneNumber-iOS
+    - MaterialComponents
+    - MatrixKit
+    - MDFInternationalization
+    - MDFTextAccessibility
+    - OLMKit
+    - PhoneNumberKit
+    - PureLayout
+    - QRCode
+    - Realm
+    - SearchTextField
+
+EXTERNAL SOURCES:
+  BarcodeScanner:
+    :git: https://github.com/SteffanPB/BarcodeScanner.git
+  Keanu:
+    :path: "../../Keanu"
+  Localize:
+    :git: https://github.com/tladesignz/Localize.git
+  MatrixSDK:
+    :branch: master_with_audio
+    :git: https://github.com/N-Pex/matrix-ios-sdk.git
+
+CHECKOUT OPTIONS:
+  BarcodeScanner:
+    :commit: 97c70d9cd1cc2fc2762e3af64fea77922bcec103
+    :git: https://github.com/SteffanPB/BarcodeScanner.git
+  Localize:
+    :commit: c91f1ced29d830bf1bf6953acc325fa40f63b3d7
+    :git: https://github.com/tladesignz/Localize.git
+  MatrixSDK:
+    :commit: 3bcf00d2b9fe59edf91336eadda5aab20ff803d3
+    :git: https://github.com/N-Pex/matrix-ios-sdk.git
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  BarcodeScanner: fce1ad2b3f28286b1ab5091fe0979789618bee27
+  cmark: ec0275215b504780287b6fca360224e384368af8
+  CrossroadRegex: 5eaadb3f7b4014728f1cbd1014756b126c1dbd9a
+  DTCoreText: e5d688cffc9f6a61eddd1a4f94e2046851230de3
+  DTFoundation: f03be9fd786f11e505bb8fc44e2a3732bf0917df
+  Eureka: 28ea296f06710f6745266b71f17862048941a32d
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  FontBlaster: 127aa66419478d1c62926c7fdb39841633344a45
+  GZIP: 12374d285e3b5d46cfcd480700fcfc7e16caf4f1
+  HPGrowingTextView: 88a716d97fb853bcb08a4a08e4727da17efc9b19
+  INSPhotoGallery: a4e698e3d6338d9016328d6747488a2a111d94e2
+  Keanu: df85cb4cf20ceae971e1159c38e2669442ad4dbe
+  KeychainSwift: 23d6c16cbc33f20fafa30c3d783241b4b87d998c
+  libbase58: 7c040313537b8c44b6e2d15586af8e21f7354efd
+  libPhoneNumber-iOS: e444379ac18bbfbdefad571da735b2cd7e096caa
+  Localize: f360a343abfac047be5b375c45be1059f5f625f3
+  MaterialComponents: d1637df9976683348de8eabd10de0723ec81db3d
+  MatrixKit: af9f94f36644bc21b63b114413f7bb510506b7d1
+  MatrixSDK: f1f510d467d127a5f7afafaafa1554ac5d602132
+  MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
+  MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
+  OLMKit: 88eda69110489f817d59bcb4353b7c247570aa4f
+  PhoneNumberKit: 32a1cd1e0aa9e950feb01886a22fd7386b8cf903
+  PureLayout: f08c01b8dec00bb14a1fefa3de4c7d9c265df85e
+  QRCode: f98a1886c8f37523704a7512a4c0cd45b34c18a4
+  Realm: 864477d028db77f7c5a0cba64a4892ad53db128a
+  SearchTextField: a0992739d4b05dcbb40fb3a5cc6526bd991bdd23
+
+PODFILE CHECKSUM: b9950cd7aa02db29eaacc834eea11fefd477c4a7
+
+COCOAPODS: 1.5.3
