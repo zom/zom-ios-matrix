@@ -1,0 +1,38 @@
+{
+  "images" : [
+    {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "tile",
+          "width" : 3,
+          "height" : 2
+        },
+        "cap-insets" : {
+          "bottom" : 0,
+          "top" : 3,
+          "right" : 0,
+          "left" : 0
+        }
+      },
+      "idiom" : "universal",
+      "filename" : "tab_background.png",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "properties" : {
+    "auto-scaling" : "auto"
+  }
+}

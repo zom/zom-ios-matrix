@@ -10,6 +10,9 @@
 		924E7117220046BF00B398DD /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 924E7116220046BF00B398DD /* Config.xcconfig */; };
 		924E711B220046C700B398DD /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 924E7118220046C700B398DD /* Constants.m */; };
 		924E711C220046C700B398DD /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924E7119220046C700B398DD /* Config.swift */; };
+		924E712022004CB600B398DD /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924E711F22004CB600B398DD /* Theme.swift */; };
+		924E712322004D8600B398DD /* UIColor+Zom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924E712222004D8600B398DD /* UIColor+Zom.swift */; };
+		924E7126220054CE00B398DD /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 924E7125220054CE00B398DD /* Onboarding.storyboard */; };
 		92C8BCC421FF62A5003D4EE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C8BCC321FF62A5003D4EE3 /* AppDelegate.swift */; };
 		92C8BCCB21FF62A9003D4EE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C8BCCA21FF62A9003D4EE3 /* Assets.xcassets */; };
 		92C8BCCE21FF62A9003D4EE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C8BCCC21FF62A9003D4EE3 /* LaunchScreen.storyboard */; };
@@ -24,6 +27,9 @@
 		924E7118220046C700B398DD /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constants.m; path = Config/Constants.m; sourceTree = "<group>"; };
 		924E7119220046C700B398DD /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Config.swift; path = Config/Config.swift; sourceTree = "<group>"; };
 		924E711A220046C700B398DD /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Config/Constants.h; sourceTree = "<group>"; };
+		924E711F22004CB600B398DD /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		924E712222004D8600B398DD /* UIColor+Zom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIColor+Zom.swift"; path = "Extensions/UIColor+Zom.swift"; sourceTree = "<group>"; };
+		924E7125220054CE00B398DD /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		92C8BCC021FF62A5003D4EE3 /* Zom 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zom 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C8BCC321FF62A5003D4EE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92C8BCCA21FF62A9003D4EE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,6 +71,22 @@
 			name = Config;
 			sourceTree = "<group>";
 		};
+		924E712122004D4C00B398DD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				924E712222004D8600B398DD /* UIColor+Zom.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		924E7124220054CE00B398DD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				924E7125220054CE00B398DD /* Onboarding.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		92C8BCB721FF62A5003D4EE3 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +115,9 @@
 				92C8BCCC21FF62A9003D4EE3 /* LaunchScreen.storyboard */,
 				92C8BCCF21FF62A9003D4EE3 /* Info.plist */,
 				924E7115220046AF00B398DD /* Config */,
+				924E711F22004CB600B398DD /* Theme.swift */,
+				924E7124220054CE00B398DD /* UI */,
+				924E712122004D4C00B398DD /* Extensions */,
 			);
 			path = "Zom 2";
 			sourceTree = "<group>";
@@ -173,6 +198,7 @@
 				92C8BCCE21FF62A9003D4EE3 /* LaunchScreen.storyboard in Resources */,
 				924E7117220046BF00B398DD /* Config.xcconfig in Resources */,
 				92C8BCCB21FF62A9003D4EE3 /* Assets.xcassets in Resources */,
+				924E7126220054CE00B398DD /* Onboarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +302,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				924E712322004D8600B398DD /* UIColor+Zom.swift in Sources */,
 				92C8BCC421FF62A5003D4EE3 /* AppDelegate.swift in Sources */,
+				924E712022004CB600B398DD /* Theme.swift in Sources */,
 				924E711B220046C700B398DD /* Constants.m in Sources */,
 				924E711C220046C700B398DD /* Config.swift in Sources */,
 			);
@@ -421,8 +449,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Zom 2/Zom 2.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9SV9LPRC42;
 				INFOPLIST_FILE = "Zom 2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -444,8 +472,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Zom 2/Zom 2.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9SV9LPRC42;
 				INFOPLIST_FILE = "Zom 2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

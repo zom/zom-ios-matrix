@@ -15,6 +15,9 @@ class AppDelegate: BaseAppDelegate {
     
     override func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        // Initialize theme
+        let _ = Theme.shared
+        
         // Overridden to provide config data
         Keanu.setUp(with: Config.self)
         return super.application(application, didFinishLaunchingWithOptions: launchOptions)
@@ -22,7 +25,10 @@ class AppDelegate: BaseAppDelegate {
     
     override func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
         print("[\(String(describing: type(of: self)))] Background fetch initiated")
-        
+
+        // Initialize theme
+        let _ = Theme.shared
+
         // Overridden to provide config data
         Keanu.setUp(with: Config.self)
         
