@@ -35,4 +35,25 @@ class AppDelegate: BaseAppDelegate {
         // App entry point. Setup needs to be done.
         super.application(application, performFetchWithCompletionHandler: completionHandler)
     }
+    
+    /**
+     Listen to events when storyboard view controllers are instantiated. This allows us to override specific styles, set delegates etc.
+     */
+    override func storyboard(_ storyboard: UIStoryboard, instantiatedInitialViewController viewController: UIViewController?) {
+        if let viewController = viewController as? UINavigationController,
+            let roomViewController = viewController.viewControllers[0] as? RoomViewController {
+
+            // Set the delegate for the attachment picker, please see the RoomViewController extension.
+            roomViewController.attachmentPickerDelegate = roomViewController
+
+        } else if let tabViewController = viewController as? UITabBarController {
+            for tabVC in tabViewController.viewControllers ?? [] {
+                if let tabVC = tabVC as? UINavigationController,
+                    let discoverVC = tabVC.viewControllers[0] as? UITableViewController {
+                    //discoverVC.tableView.dataSource = nil
+                    //discoverVC.tableView.delegate = nil
+                }
+            }
+        }
+    }
 }

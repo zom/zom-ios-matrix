@@ -13,6 +13,7 @@
 		924E712022004CB600B398DD /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924E711F22004CB600B398DD /* Theme.swift */; };
 		924E712322004D8600B398DD /* UIColor+Zom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924E712222004D8600B398DD /* UIColor+Zom.swift */; };
 		924E7126220054CE00B398DD /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 924E7125220054CE00B398DD /* Onboarding.storyboard */; };
+		924E71332201E3EE00B398DD /* RoomViewController+Zom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924E71322201E3EE00B398DD /* RoomViewController+Zom.swift */; };
 		92C8BCC421FF62A5003D4EE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C8BCC321FF62A5003D4EE3 /* AppDelegate.swift */; };
 		92C8BCCB21FF62A9003D4EE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C8BCCA21FF62A9003D4EE3 /* Assets.xcassets */; };
 		92C8BCCE21FF62A9003D4EE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C8BCCC21FF62A9003D4EE3 /* LaunchScreen.storyboard */; };
@@ -30,6 +31,7 @@
 		924E711F22004CB600B398DD /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		924E712222004D8600B398DD /* UIColor+Zom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIColor+Zom.swift"; path = "Extensions/UIColor+Zom.swift"; sourceTree = "<group>"; };
 		924E7125220054CE00B398DD /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		924E71322201E3EE00B398DD /* RoomViewController+Zom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoomViewController+Zom.swift"; sourceTree = "<group>"; };
 		92C8BCC021FF62A5003D4EE3 /* Zom 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zom 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C8BCC321FF62A5003D4EE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92C8BCCA21FF62A9003D4EE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				924E711F22004CB600B398DD /* Theme.swift */,
 				924E7124220054CE00B398DD /* UI */,
 				924E712122004D4C00B398DD /* Extensions */,
+				924E71322201E3EE00B398DD /* RoomViewController+Zom.swift */,
 			);
 			path = "Zom 2";
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				924E712322004D8600B398DD /* UIColor+Zom.swift in Sources */,
 				92C8BCC421FF62A5003D4EE3 /* AppDelegate.swift in Sources */,
 				924E712022004CB600B398DD /* Theme.swift in Sources */,
+				924E71332201E3EE00B398DD /* RoomViewController+Zom.swift in Sources */,
 				924E711B220046C700B398DD /* Constants.m in Sources */,
 				924E711C220046C700B398DD /* Config.swift in Sources */,
 			);
