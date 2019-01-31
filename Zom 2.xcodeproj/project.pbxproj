@@ -14,6 +14,11 @@
 		924E712322004D8600B398DD /* UIColor+Zom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924E712222004D8600B398DD /* UIColor+Zom.swift */; };
 		924E7126220054CE00B398DD /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 924E7125220054CE00B398DD /* Onboarding.storyboard */; };
 		924E71332201E3EE00B398DD /* RoomViewController+Zom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924E71322201E3EE00B398DD /* RoomViewController+Zom.swift */; };
+		924E71352201F54D00B398DD /* Stickers in Resources */ = {isa = PBXBuildFile; fileRef = 924E71342201F54D00B398DD /* Stickers */; };
+		924E71372201F5A300B398DD /* StickerShare.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 924E71362201F5A300B398DD /* StickerShare.storyboard */; };
+		924E713A2201F5AE00B398DD /* ZomStickerPackTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924E71382201F5AD00B398DD /* ZomStickerPackTableViewController.swift */; };
+		924E713B2201F5AE00B398DD /* ZomPickStickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924E71392201F5AE00B398DD /* ZomPickStickerViewController.swift */; };
+		924E713D2201F68300B398DD /* ZomPickStickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924E713C2201F68300B398DD /* ZomPickStickerCell.swift */; };
 		92C8BCC421FF62A5003D4EE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C8BCC321FF62A5003D4EE3 /* AppDelegate.swift */; };
 		92C8BCCB21FF62A9003D4EE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C8BCCA21FF62A9003D4EE3 /* Assets.xcassets */; };
 		92C8BCCE21FF62A9003D4EE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C8BCCC21FF62A9003D4EE3 /* LaunchScreen.storyboard */; };
@@ -32,6 +37,11 @@
 		924E712222004D8600B398DD /* UIColor+Zom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIColor+Zom.swift"; path = "Extensions/UIColor+Zom.swift"; sourceTree = "<group>"; };
 		924E7125220054CE00B398DD /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		924E71322201E3EE00B398DD /* RoomViewController+Zom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoomViewController+Zom.swift"; sourceTree = "<group>"; };
+		924E71342201F54D00B398DD /* Stickers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Stickers; sourceTree = "<group>"; };
+		924E71362201F5A300B398DD /* StickerShare.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StickerShare.storyboard; sourceTree = "<group>"; };
+		924E71382201F5AD00B398DD /* ZomStickerPackTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZomStickerPackTableViewController.swift; sourceTree = "<group>"; };
+		924E71392201F5AE00B398DD /* ZomPickStickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZomPickStickerViewController.swift; sourceTree = "<group>"; };
+		924E713C2201F68300B398DD /* ZomPickStickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZomPickStickerCell.swift; sourceTree = "<group>"; };
 		92C8BCC021FF62A5003D4EE3 /* Zom 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zom 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C8BCC321FF62A5003D4EE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92C8BCCA21FF62A9003D4EE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -84,6 +94,7 @@
 		924E7124220054CE00B398DD /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				924E71362201F5A300B398DD /* StickerShare.storyboard */,
 				924E7125220054CE00B398DD /* Onboarding.storyboard */,
 			);
 			path = UI;
@@ -121,6 +132,10 @@
 				924E7124220054CE00B398DD /* UI */,
 				924E712122004D4C00B398DD /* Extensions */,
 				924E71322201E3EE00B398DD /* RoomViewController+Zom.swift */,
+				924E71392201F5AE00B398DD /* ZomPickStickerViewController.swift */,
+				924E71382201F5AD00B398DD /* ZomStickerPackTableViewController.swift */,
+				924E713C2201F68300B398DD /* ZomPickStickerCell.swift */,
+				924E71342201F54D00B398DD /* Stickers */,
 			);
 			path = "Zom 2";
 			sourceTree = "<group>";
@@ -198,9 +213,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				924E71352201F54D00B398DD /* Stickers in Resources */,
 				92C8BCCE21FF62A9003D4EE3 /* LaunchScreen.storyboard in Resources */,
 				924E7117220046BF00B398DD /* Config.xcconfig in Resources */,
 				92C8BCCB21FF62A9003D4EE3 /* Assets.xcassets in Resources */,
+				924E71372201F5A300B398DD /* StickerShare.storyboard in Resources */,
 				924E7126220054CE00B398DD /* Onboarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,11 +322,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				924E713A2201F5AE00B398DD /* ZomStickerPackTableViewController.swift in Sources */,
 				924E712322004D8600B398DD /* UIColor+Zom.swift in Sources */,
 				92C8BCC421FF62A5003D4EE3 /* AppDelegate.swift in Sources */,
 				924E712022004CB600B398DD /* Theme.swift in Sources */,
 				924E71332201E3EE00B398DD /* RoomViewController+Zom.swift in Sources */,
 				924E711B220046C700B398DD /* Constants.m in Sources */,
+				924E713D2201F68300B398DD /* ZomPickStickerCell.swift in Sources */,
+				924E713B2201F5AE00B398DD /* ZomPickStickerViewController.swift in Sources */,
 				924E711C220046C700B398DD /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
