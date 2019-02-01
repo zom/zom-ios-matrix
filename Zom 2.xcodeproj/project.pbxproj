@@ -19,6 +19,7 @@
 		924E713A2201F5AE00B398DD /* ZomStickerPackTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924E71382201F5AD00B398DD /* ZomStickerPackTableViewController.swift */; };
 		924E713B2201F5AE00B398DD /* ZomPickStickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924E71392201F5AE00B398DD /* ZomPickStickerViewController.swift */; };
 		924E713D2201F68300B398DD /* ZomPickStickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924E713C2201F68300B398DD /* ZomPickStickerCell.swift */; };
+		924E7140220469D600B398DD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 924E7142220469D600B398DD /* Localizable.strings */; };
 		92C8BCC421FF62A5003D4EE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C8BCC321FF62A5003D4EE3 /* AppDelegate.swift */; };
 		92C8BCCB21FF62A9003D4EE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C8BCCA21FF62A9003D4EE3 /* Assets.xcassets */; };
 		92C8BCCE21FF62A9003D4EE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C8BCCC21FF62A9003D4EE3 /* LaunchScreen.storyboard */; };
@@ -42,6 +43,7 @@
 		924E71382201F5AD00B398DD /* ZomStickerPackTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZomStickerPackTableViewController.swift; sourceTree = "<group>"; };
 		924E71392201F5AE00B398DD /* ZomPickStickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZomPickStickerViewController.swift; sourceTree = "<group>"; };
 		924E713C2201F68300B398DD /* ZomPickStickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZomPickStickerCell.swift; sourceTree = "<group>"; };
+		924E7141220469D600B398DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		92C8BCC021FF62A5003D4EE3 /* Zom 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zom 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C8BCC321FF62A5003D4EE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92C8BCCA21FF62A9003D4EE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				924E71382201F5AD00B398DD /* ZomStickerPackTableViewController.swift */,
 				924E713C2201F68300B398DD /* ZomPickStickerCell.swift */,
 				924E71342201F54D00B398DD /* Stickers */,
+				924E7142220469D600B398DD /* Localizable.strings */,
 			);
 			path = "Zom 2";
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				924E71352201F54D00B398DD /* Stickers in Resources */,
 				92C8BCCE21FF62A9003D4EE3 /* LaunchScreen.storyboard in Resources */,
 				924E7117220046BF00B398DD /* Config.xcconfig in Resources */,
+				924E7140220469D600B398DD /* Localizable.strings in Resources */,
 				92C8BCCB21FF62A9003D4EE3 /* Assets.xcassets in Resources */,
 				924E71372201F5A300B398DD /* StickerShare.storyboard in Resources */,
 				924E7126220054CE00B398DD /* Onboarding.storyboard in Resources */,
@@ -337,6 +341,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		924E7142220469D600B398DD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				924E7141220469D600B398DD /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		92C8BCCC21FF62A9003D4EE3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
