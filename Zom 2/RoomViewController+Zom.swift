@@ -11,48 +11,63 @@ import MatrixSDK
 
 extension RoomViewController {
     func initializeForZom() {
-
+        
         // Create a custom renderer for Zom stickers
         //
         let renderer = { (cell:UITableViewCell, roomBubbleData:RoomBubbleData, delegate: RoomBubbleDataRendererDelegate?) in
             if let cell = cell as? MessageCell,
                 let event = roomBubbleData.events.first,
-                let stickerPack = event.content["zom_sticker_pack"] as? String,
-                let sticker = event.content["zom_sticker"] as? String,
-                let filePath = RoomViewController.getFilenameForSticker(sticker, inPack: stickerPack)
-                {
-                    cell.render(roomBubbleData: roomBubbleData, delegate: delegate)
-                    let incoming = roomBubbleData.isIncoming
-                    
-                    let container = UIView()
-                    container.autoSetDimension(.height, toSize: 200)
-                    container.translatesAutoresizingMaskIntoConstraints = false
-                    
-                    let stickerView = UIImageView(image: UIImage(contentsOfFile: filePath))
-                    stickerView.contentMode = .scaleAspectFit
-                    stickerView.translatesAutoresizingMaskIntoConstraints = false
-                    container.addSubview(stickerView)
-                    stickerView.autoPinEdgesToSuperviewEdges()
-                    
-                    cell.messageContentContainer.addArrangedSubview(container)
-                    container.autoPinEdge(toSuperviewEdge: (incoming ? .leading : .trailing))
-
-                    container.setNeedsLayout()
-                    container.layoutIfNeeded()
-                    container.layer.frame = container.bounds
-                    container.setBubbleView(incoming ? BubbleViewType.incoming : BubbleViewType.outgoing)
+                event.eventType == __MXEventTypeRoomMessage,
+                let msgType = event.content["msgtype"] as? String,
+                msgType == kMXMessageTypeText,
+                let body = event.content["body"] as? String,
+                RoomViewController.isValidStickerShortCode(body),
+                let filePath = RoomViewController.getStickerFilenameFromMessage(body)
+            {
+                cell.render(roomBubbleData: roomBubbleData, delegate: delegate)
+                
+                // Remove any content views generated
+                for view in cell.messageContentContainer?.arrangedSubviews ?? [] {
+                    cell.messageContentContainer?.removeArrangedSubview(view)
+                    view.removeFromSuperview()
+                }
+                
+                let incoming = roomBubbleData.isIncoming
+                
+                let container = UIView()
+                container.autoSetDimension(.height, toSize: 150)
+                container.translatesAutoresizingMaskIntoConstraints = false
+                
+                let stickerView = UIImageView(image: UIImage(contentsOfFile: filePath))
+                stickerView.contentMode = .scaleAspectFit
+                stickerView.translatesAutoresizingMaskIntoConstraints = false
+                container.addSubview(stickerView)
+                stickerView.autoPinEdgesToSuperviewEdges()
+                
+                cell.messageContentContainer.addArrangedSubview(container)
+                container.autoPinEdge(toSuperviewEdge: (incoming ? .leading : .trailing))
+                
+                container.setNeedsLayout()
+                container.layoutIfNeeded()
+                container.layer.frame = container.bounds
+                container.setBubbleView(incoming ? BubbleViewType.incoming : BubbleViewType.outgoing)
             }
         }
         
         RoomDataSource.bubbleProcessor = { (_ roomDataSource: RoomDataSource, _ event: MXEvent, _ roomBubbleData: RoomBubbleData?, _ roomState: MXRoomState) in
             
             // Zom sticker?!?
-            if roomBubbleData == nil,
-                event.eventType == __MXEventTypeSticker, event.content.keys.contains("zom_sticker") {
+            if event.eventType == __MXEventTypeRoomMessage,
+                let msgType = event.content["msgtype"] as? String,
+                msgType == kMXMessageTypeText,
+                let body = event.content["body"] as? String,
+                RoomViewController.isValidStickerShortCode(body) {
+                
+                // Replace this bubble with a custom sticker one
                 let bubble = RoomBubbleData(roomDataSource,
-                                      state: roomState,
-                                      events: [event],
-                                      type: RoomBubbleDataType.unknown)
+                                            state: roomState,
+                                            events: [event],
+                                            type: RoomBubbleDataType.unknown)
                 if let bubble = bubble {
                     bubble.bubbleType = bubble.isIncoming ? .custom(IncomingMessageCell.defaultReuseId, renderer) : .custom(OutgoingMessageCell.defaultReuseId, renderer)
                 }
@@ -66,7 +81,31 @@ extension RoomViewController {
         attachmentPickerDelegate = self
     }
     
-    static func getFilenameForSticker(_ sticker:String, inPack pack:String) -> String? {
+    fileprivate static func isValidStickerShortCode(_ message:String) -> Bool {
+        if message.hasPrefix(":"), message.hasSuffix(":") {
+            if let fileName = getStickerFilenameFromMessage(message) {
+                if (FileManager.default.fileExists(atPath: fileName)) {
+                    return true
+                }
+            }
+        }
+        return false
+    }
+    
+    fileprivate static func getStickerFilenameFromMessage(_ message:String) -> String? {
+        let stickerDescription = message.trimmingCharacters(in: CharacterSet(charactersIn: ":"))
+        if let firstDash = stickerDescription.index(of: "-") {
+            let packPart = String(stickerDescription[..<firstDash])
+            let stickerPart = String(stickerDescription[stickerDescription.index(firstDash, offsetBy: 1)...])
+            let regex = try! NSRegularExpression(pattern: "[^a-zA-Z0-9_& -]+", options: [])
+            let messagePack = regex.stringByReplacingMatches(in: packPart, options: [], range: NSMakeRange(0, packPart.count), withTemplate: "")
+            let messageSticker = regex.stringByReplacingMatches(in: stickerPart, options: [], range: NSMakeRange(0, stickerPart.count), withTemplate: "")
+            return getFilenameForSticker(messageSticker, inPack: messagePack)
+        }
+        return nil
+    }
+    
+    fileprivate static func getFilenameForSticker(_ sticker:String, inPack pack:String) -> String? {
         var foundPack:String?
         var foundSticker:String?
         
@@ -133,21 +172,15 @@ extension RoomViewController: ZomPickStickerViewControllerDelegate {
     
     @IBAction func unwindPickSticker(_ unwindSegue: UIStoryboardSegue) {
     }
-
+    
     public func didPickSticker(_ sticker: String, inPack pack: String) {
         closeAttachmentPicker()
         
         if let room = self.room {
-            
-            // Create a custom message of type "m.sticker"
-            let content:[String:Any] = [
-                "msgtype" : "m.zom_sticker",
-                "zom_sticker_pack" : pack,
-                "zom_sticker" : sticker
-            ]
+            let stickerMessage = ":" + pack + "-" + sticker + ":"
             var localEcho:MXEvent?
-            room.sendEvent(MXEventType(identifier: kMXEventTypeStringSticker), content: content, localEcho: &localEcho) { (response) in
-                    //TODO - handle response
+            room.sendTextMessage(stickerMessage, localEcho: &localEcho) { (response) in
+                //TODO - handle response
             }
             self.dataSource?.insertLocalEcho(event: localEcho, roomState: room.dangerousSyncState)
         }
