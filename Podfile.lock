@@ -126,11 +126,11 @@ PODS:
     - OLMKit/olmcpp (= 3.0.0)
   - OLMKit/olmc (3.0.0)
   - OLMKit/olmcpp (3.0.0)
-  - PhoneNumberKit (2.5.0):
-    - PhoneNumberKit/PhoneNumberKitCore (= 2.5.0)
-    - PhoneNumberKit/UIKit (= 2.5.0)
-  - PhoneNumberKit/PhoneNumberKitCore (2.5.0)
-  - PhoneNumberKit/UIKit (2.5.0):
+  - PhoneNumberKit (2.5.1):
+    - PhoneNumberKit/PhoneNumberKitCore (= 2.5.1)
+    - PhoneNumberKit/UIKit (= 2.5.1)
+  - PhoneNumberKit/PhoneNumberKitCore (2.5.1)
+  - PhoneNumberKit/UIKit (2.5.1):
     - PhoneNumberKit/PhoneNumberKitCore
   - PureLayout (3.1.4)
   - QRCode (2.0)
@@ -192,7 +192,7 @@ CHECKOUT OPTIONS:
     :commit: c91f1ced29d830bf1bf6953acc325fa40f63b3d7
     :git: https://github.com/tladesignz/Localize.git
   MatrixSDK:
-    :commit: 3bcf00d2b9fe59edf91336eadda5aab20ff803d3
+    :commit: beb61c51fda2dd5f76250fefdaee79cbae618e0c
     :git: https://github.com/N-Pex/matrix-ios-sdk.git
 
 SPEC CHECKSUMS:
@@ -219,7 +219,7 @@ SPEC CHECKSUMS:
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
   OLMKit: 88eda69110489f817d59bcb4353b7c247570aa4f
-  PhoneNumberKit: 32a1cd1e0aa9e950feb01886a22fd7386b8cf903
+  PhoneNumberKit: 87f03605453ca0f8b8e76083228ab729395f9004
   PureLayout: f08c01b8dec00bb14a1fefa3de4c7d9c265df85e
   QRCode: f98a1886c8f37523704a7512a4c0cd45b34c18a4
   Realm: 864477d028db77f7c5a0cba64a4892ad53db128a
