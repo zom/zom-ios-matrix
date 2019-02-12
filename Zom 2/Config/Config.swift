@@ -39,4 +39,6 @@ struct Config: KeanuConfig {
     static var pushAppIdRelease = "\(Bundle.main.bundleIdentifier!).ios.release"
 
     static var pushServer = Constants.pushServer as String
+    
+    static var stringsBundle = Bundle.main
 }
