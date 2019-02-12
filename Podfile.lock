@@ -47,7 +47,6 @@ PODS:
     - FLAnimatedImage (~> 1.0)
     - FontBlaster (~> 4.1.0)
     - INSPhotoGallery (~> 1.2.7)
-    - KeychainSwift (~> 13.0)
     - Localize (~> 2.1.0)
     - MaterialComponents/Snackbar (~> 72)
     - MatrixKit (~> 0.9.3)
@@ -56,7 +55,6 @@ PODS:
     - PureLayout (~> 3.1.4)
     - QRCode (~> 2.0.0)
     - SearchTextField (~> 1.2.2)
-  - KeychainSwift (13.0.0)
   - libbase58 (0.1.4)
   - libPhoneNumber-iOS (0.9.13)
   - Localize (2.1.0)
@@ -159,7 +157,6 @@ SPEC REPOS:
     - GZIP
     - HPGrowingTextView
     - INSPhotoGallery
-    - KeychainSwift
     - libbase58
     - libPhoneNumber-iOS
     - MaterialComponents
@@ -208,8 +205,7 @@ SPEC CHECKSUMS:
   GZIP: 12374d285e3b5d46cfcd480700fcfc7e16caf4f1
   HPGrowingTextView: 88a716d97fb853bcb08a4a08e4727da17efc9b19
   INSPhotoGallery: a4e698e3d6338d9016328d6747488a2a111d94e2
-  Keanu: df85cb4cf20ceae971e1159c38e2669442ad4dbe
-  KeychainSwift: 23d6c16cbc33f20fafa30c3d783241b4b87d998c
+  Keanu: a839d3c991ab5d185eb4c87f63825d0ac68ebdf5
   libbase58: 7c040313537b8c44b6e2d15586af8e21f7354efd
   libPhoneNumber-iOS: e444379ac18bbfbdefad571da735b2cd7e096caa
   Localize: f360a343abfac047be5b375c45be1059f5f625f3
