@@ -97,12 +97,12 @@ function parseiOSStringsFile {
 	IFS="$oldIFS"
 
 	comment="${components[0]}*/"
-	>&2 echo "Comment is $comment"
+	#>&2 echo "Comment is $comment"
 	key="${components[1]:2}"
-	>&2 echo "Key is $key"
+	#>&2 echo "Key is $key"
 	value="${components[2]}"
 	value=$(echo "$value" | sed 's/";//g')
-	>&2 echo "Value is $value"
+	#>&2 echo "Value is $value"
 	if [ "$key" != "" ]; then
 	    #>&2 echo "Adding mapping $key --> $value (comment $comment)"
 	    eval "$2[\${#$2[@]}]=\$comment"

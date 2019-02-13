@@ -6,25 +6,18 @@
 #
 # The process is the following:
 #
-# - Export an XLIFF for the base language
 # - Find out what languages we have (by enumerating all *.lproj directories)
-# - Export an XLIFF for each language found
-# - Parse iOS base file to get iOS id <-> English string mapping
+# - Parse all iOS base file(s) (.strings and .storyboard) to get iOS id <-> English string mapping
 # - Parse Android base file(s) to get Android id <-> English string mapping
 # - For each language:
 #     parse iOS file
 #     parse corresponding Android file(s)
-#     use above mapping to update strings in the language xliff file
-#     import the updated xliff back into the ios project
+#     use above mapping to update strings in the language .strings files
 #
-#
-#
-# This script requires xidel, found at http://videlibri.sourceforge.net/xidel.html
 #
 project_dir=""
 project_file=""
 android_input_files=()
-xidel=""
 
 function addAndroidInputFile {
     local count=0
@@ -36,11 +29,10 @@ function addAndroidInputFile {
 }
 
 function showUsageAndExit {
-    echo "Usage: $0 -x <path_to_xidel_binary> -d <project_dir> -p <project_file> -i <android_strings_file> [-i <android_strings_file>...]";
+    echo "Usage: $0 -d <project_dir> -p <project_file> -i <android_strings_file> [-i <android_strings_file>...]";
     echo
-    echo "example: $0 -x ~/Downloads/xidel -d ../Zom -p ../Zom.xcodeproj -i ../../../Zom-Android/app/src/main/res/values/zomstrings.xml -i ../../../Zom-Android/app/src/main/res/values/strings.xml"
+    echo "example: $0 -d ../Zom -p ../Zom.xcodeproj -i ../../../Zom-Android/app/src/main/res/values/zomstrings.xml -i ../../../Zom-Android/app/src/main/res/values/strings.xml"
     echo
-    echo "Xidel can be found here: http://videlibri.sourceforge.net/xidel.html"
     exit
 }
 
@@ -53,10 +45,6 @@ do
     case $key in
 	-h|--help)
 	    showUsageAndExit
-	    ;;
-	-x|--xidel)
-	    xidel="$2"
-	    shift
 	    ;;
 	-d|--dir)
 	    project_dir="$2"
@@ -77,14 +65,6 @@ done
 echo
 echo "Checking indata..."
 echo
-
-# Check that the xidel tool exists
-if [ ! -f "$xidel" ]; then
-    echo "xidel tool not found!"
-    echo
-    showUsageAndExit
-fi
-echo "Using xidel from $xidel"
 
 # Check that project dir exists
 if [ ! -d "$project_dir" ]; then
@@ -145,15 +125,6 @@ function getAndroidLanguageCodeFromiOSLanguageCode {
     echo "-$id"
 }
 
-# Export XLIFF files for Base
-#
-#
-echo "Export base XLIFF file"
-if [ -d "/tmp/ZomTranslations" ]; then
-    rm -rf "/tmp/ZomTranslations"
-fi
-xcodebuild -exportLocalizations -localizationPath /tmp/ZomTranslations -exportLanguage Base -project "$project_file"
-
 # Get languages
 #
 #
@@ -162,18 +133,17 @@ ios_files=()
 languages_index=0
 base_dir_ios="$project_dir/"
 echo "Base dir is $base_dir_ios"
-for languageDir in $(find $base_dir_ios -depth 1 -name "*.lproj" -print)
-do
+
+while read languageDir; do
     language="${languageDir%%.lproj}" # strip .lproj
     language="${language##*/}" # strip everything to the last path character.lproj
     if [[ "$language" == "Base" ]]
     then
 	continue
     fi
-    languages[languages_index]="$language"
+    languages[languages_index]="${language}"
     ((languages_index++))
-done
-
+done <<<"$(find "$project_dir" -depth 1 -name "*.lproj" -print)"
 
 # Make sure corresponding Android strings file exists
 #
@@ -190,7 +160,8 @@ do
     fi
 done
 
-# Extract ids and English translations from Base.xliff
+
+# Extract ids and English translations from Base.lproj files
 #
 #
 base_keys=()
@@ -302,62 +273,28 @@ function findBaseTranslation {
     done
 }
 
-sep="####"
-$xidel --xpath "//file[contains(@original,'.storyboard') or contains(@original,'.xib') or contains(@original,'.strings')]//trans-unit/(concat(@id,'$sep',source/text(),'$sep',target/text()))" "/tmp/ZomTranslations/Base.xliff" > /tmp/base.xml
 
-while read -r line || [[ -n $line ]]; do
-    case $line in
-	(*"$sep"*)
-	id=${line%%"$sep"*}
-	keyval=${line#*"$sep"}
-	key=${keyval%%"$sep"*}
-	value=${keyval#*"$sep"}
-	value=${key}
-	key=${id}
-	;;
-	(*)
-	key=
-	value=
-	;;
-    esac
-    if [ "$key" != "" ]; then
-	    # Cleanup key and value by removing quotes
-	if [ ${#value} -gt 0 ]; then
-	    #echo "Adding base mapping $key --> $value"
-	    addBaseMapping "$key" "$value"
-	#else
-	#    echo "Ignore empty value for key $key"
-	fi
-    fi
-done < "/tmp/base.xml"
+# Find all base .strings and .storyboard
+while read baseFile; do
+    echo "<> Base File: $baseFile"
+    infile="$baseFile"
+    if [[ $infile == *"storyboard" ]]; then
+        ibtool --export-strings-file "/tmp/base.strings" "$infile"
+	infile="/tmp/base.strings"
+    fi	
+    parseiOSStringsFile "${infile}" base_comments base_keys base_translations
+done <<<"$(find "${project_dir}/Base.lproj" -depth 1 \( -name "*.strings" -or -name "*.storyboard" \) -print)"
 
-# XCode does a bad job of exporting, pick up strings from Localizable.strings
-#
-unset base_string_comments
-unset base_string_keys
-unset base_string_values
-declare -a base_string_comments
-declare -a base_string_keys
-declare -a base_string_values
-parseiOSStringsFile "${base_dir_ios}Base.lproj/Localizable.strings" base_string_comments base_string_keys base_string_values
-base_string_count=0
-while [ "x${base_string_keys[base_string_count]}" != "x" ]
-do
-    base_string_key="${base_string_keys[base_string_count]}"
-    base_string_value="${base_string_values[base_string_count]}"
-    #echo "Adding extra base mapping $base_string_key --> $base_string_value"
-    addBaseMapping "$base_string_key" "$base_string_value"
-    ((base_string_count++))
-done
+# Uncomment for debugging the base translations
+# >&2 echo "Base translations: ${base_translations[@]}"
+# iq_translation=0
+# while [ "x${base_translations[iq_translation]}" != "x" ]
+# do
+#     term="${base_translations[iq_translation]}"
+#     >&2 echo "${base_keys[iq_translation]} ----> $term"
+#     ((iq_translation++))
+# done
 
-#echo "Base translations: ${base_translations[@]}"
-iq_translation=0
-while [ "x${base_translations[iq_translation]}" != "x" ]
-do
-    term="${base_translations[iq_translation]}"
-    #echo "${base_keys[iq_translation]} ----> $term"
-    ((iq_translation++))
-done
 
 # Extract strings from base android strings file, split into key-value pairs.
 #
@@ -409,8 +346,7 @@ languages_index=0
 while [ "x${languages[languages_index]}" != "x" ]
 do
     language="${languages[languages_index]}"
-    ios_file="/tmp/ZomTranslations/${language}.xliff"
-    echo "Processing language: $language ios_file $ios_file"
+    echo "Processing language: $language"
     ((languages_index++))
     language_suffix=$(getAndroidLanguageCodeFromiOSLanguageCode "$language")
     
@@ -429,8 +365,14 @@ do
 
     # Find all .strings file for this language (in either Zom or OTRResources folder, we don't want stuff in pods)
     #
-    for stringFile in $(find .. -name *.strings | fgrep ${language}.lproj | grep -E "\.\./Zom/|\.\./OTRResources/")
-    do
+
+    while read stringFile; do
+
+        if [ ! -f "$stringFile" ]; then
+          echo "Ignoring $stringFile"
+          continue
+        fi
+
 	echo "iOS File: $stringFile -----------------------------"
 	infile="$stringFile"
 	base_stringFile=${stringFile/${language}.lproj/Base.lproj}
@@ -465,7 +407,9 @@ do
 	while [ "x${ios_keys[count]}" != "x" ]
 	do
 	    key="${ios_keys[count]}"
+	    #>&2 echo "Key is $key"
 	    key=$(findBaseTranslation "$key")
+	    #>&2 echo "Base translation is $key"
 	    
             # Get android id of key
 	    android_key=$(findAndroidId "$key")
@@ -473,7 +417,7 @@ do
 	    if [ "$android_key" != "" ]; then
 		translation=$(findAndroidTranslation "$android_key")
 		if [ ! "$translation" == "" ]; then
-		    #echo "Translation for $android_key is $translation"
+		    #>&2 echo "Translation for $android_key is $translation"
 		    ios_values[count]="$translation"
 		#else
 		#    >&2 echo "Language $language: missing translation for id $android_key."
@@ -519,6 +463,6 @@ do
             #Charset converting to UTF-16"
 	    iconv -f utf-8 -t utf-16 /tmp/processed.strings >  "$stringFile"
 	fi
-    done
+    done <<<"$(find "${project_dir}/${language}.lproj" -depth 1 -name "*.strings" -print)"
 done
 
