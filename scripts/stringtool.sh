@@ -77,39 +77,33 @@ function parseiOSStringsFile {
 	iconv -f utf-16 -t utf-8 "$filePath" > /tmp/temp.strings
     fi
 
-    filecontents=$(cat /tmp/temp.strings)
-
-    # Cant set IFS to multichar string, so replace /* with single char \r to act as separator
-    changed=$(echo "$filecontents" | sed "s/\/\*/$(printf '\r')/g")
-
-    # Then read into array
-    oldIFS="$IFS"
-    IFS=$'\r' read -a lines -d '' <<< "$changed"
-    IFS="$oldIFS"
     sep=$(printf '\r')
-    for linein in "${lines[@]}"
-    do
-	line=$(echo "/*${linein}" | sed "s/\n/${sep}/g")
-	line=$(echo "$line" | sed "s/\*\//${sep}/g")
-	line=$(echo "$line" | sed "s/\" = \"/${sep}/g")
-	oldIFS="$IFS"
-	IFS=$'\r' read -a components -d '' <<< "$line"
-	IFS="$oldIFS"
+    a=""
+    while read line; do
+	a="${a}${line}"
+	if [ "${line: -1}" == ";" ]; then
+	    line=$(echo "$a" | sed "s/\*\//${sep}/g")
+	    line=$(echo "$line" | sed "s/\" = \"/${sep}/g")
+	    oldIFS="$IFS"
+	    IFS=$'\r' read -a components -d '' <<< "$line"
+	    IFS="$oldIFS"
 
-	comment="${components[0]}*/"
-	#>&2 echo "Comment is $comment"
-	key="${components[1]:2}"
-	#>&2 echo "Key is $key"
-	value="${components[2]}"
-	value=$(echo "$value" | sed 's/";//g')
-	#>&2 echo "Value is $value"
-	if [ "$key" != "" ]; then
+	    comment="${components[0]}*/"
+	    #>&2 echo "Comment is $comment"
+	    key="${components[1]:1}"
+	    #>&2 echo "Key is $key"
+	    value="${components[2]}"
+	    value=$(echo "$value" | sed 's/";//g')
+	    #>&2 echo "Value is ${value}xxx"
+	    if [ "$key" != "" ]; then
 	    #>&2 echo "Adding mapping $key --> $value (comment $comment)"
-	    eval "$2[\${#$2[@]}]=\$comment"
-	    eval "$3[\${#$3[@]}]=\$key"
-	    eval "$4[\${#$4[@]}]=\$value"
+		eval "$2[\${#$2[@]}]=\$comment"
+		eval "$3[\${#$3[@]}]=\$key"
+		eval "$4[\${#$4[@]}]=\$value"
+	    fi
+	    a=""
 	fi
-    done
+    done < "/tmp/temp.strings"
 }
 
 nFiles=0

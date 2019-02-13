@@ -13,7 +13,7 @@ class GenStrings {
     let excludedFileNames = ["genstrings.swift"]
     var regularExpresions = [String:NSRegularExpression]()
 
-    let localizedRegex = "(?<=\")([^\"]*)(?=\"(\\s*).localize)|(?<=(Localized|NSLocalizedString)\\(\")([^\"]*?)(?=\")"
+    let localizedRegex = "(?<=\")([^\"]*)(?=\"\\s*.localize)|(?<=(Localized|NSLocalizedString)\\(\")([^\"]*?)(?=\")"
 
     enum GenstringsError: Error {
         case Error
