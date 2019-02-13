@@ -373,14 +373,22 @@ do
           continue
         fi
 
+        langfile="$stringFile"
+        if [[ $stringFile == *"storyboard" ]]; then
+            ibtool --export-strings-file "/tmp/sb.strings" "$langfile"
+	    iconv -f utf-16 -t utf-8 /tmp/sb.strings >  /tmp/sb.strings.utf8
+	    langfile="/tmp/sb.strings.utf8"
+        fi
+
 	echo "iOS File: $stringFile -----------------------------"
+
 	infile="$stringFile"
 	base_stringFile=${stringFile/${language}.lproj/Base.lproj}
 	echo "Base file: $base_stringFile"
 	if [ -f "$base_stringFile" ];then
 	    echo "exists"
 	    infile="/tmp/merged.strings"
-	    ./stringtool.sh "$stringFile" "$base_stringFile" -union > "$infile"
+	    ./stringtool.sh "$langfile" "$base_stringFile" -union > "$infile"
 	else
 	    echo "does not exist"
 	    storyboard_file=${base_stringFile/.strings/.storyboard}
@@ -388,7 +396,7 @@ do
 		echo "There is a storyboard file, trying that..."
 		ibtool --export-strings-file "/tmp/base.strings" "$storyboard_file"
 		infile="/tmp/merged.strings"
-		./stringtool.sh "$stringFile" "/tmp/base.strings" -union > "$infile"
+		./stringtool.sh "$langfile" "/tmp/base.strings" -union > "$infile"
 	    fi
 	fi
 
@@ -456,13 +464,19 @@ do
 	outputStringFile ios_comments_out[@] ios_keys_out[@] ios_values_out[@] > /tmp/processed.strings
 
 	charset=$(file -I "$stringFile" | fgrep -l "charset=utf-16")
-	if [ "$charset" == "" ];then
+	if [ ! "$langfile" == "$stringFile" ]; then
+            # This is a SB file, convert back
+            echo "Convert it back!"
+	    iconv -f utf-8 -t utf-16 /tmp/processed.strings > /tmp/processed.strings.utf16
+            ibtool --import-strings-file "/tmp/processed.strings.utf16" "$stringFile"
+	elif [ "$charset" == "" ];then
 	    #Charset already UTF-8
 	    cp /tmp/processed.strings "$stringFile"
 	else
             #Charset converting to UTF-16"
 	    iconv -f utf-8 -t utf-16 /tmp/processed.strings >  "$stringFile"
 	fi
-    done <<<"$(find "${project_dir}/${language}.lproj" -depth 1 -name "*.strings" -print)"
+
+    done <<<"$(find "${project_dir}/${language}.lproj" -depth 1 \( -name "*.strings" -or -name "*.storyboard" \) -print)"
 done
 
