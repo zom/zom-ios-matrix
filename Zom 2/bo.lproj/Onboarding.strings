@@ -10,3 +10,6 @@
 /* Class = "UIButton"; normalTitle = "WELCOME TO ZOM"; ObjectID = "wm4-oX-soO"; */
 "wm4-oX-soO.normalTitle" = "འཛོམས་ནང་སླེབས་པར་དགའ་བསུ་ཞུ།";
 
+/* Class = "UIBarButtonItem"; title = "Cancel"; ObjectID = "U9e-l3-RWQ"; */
+"U9e-l3-RWQ.title" = "ཕྱིར་འཐེན།";
+

@@ -143,7 +143,7 @@
                         <viewLayoutGuide key="safeArea" id="XYt-sT-kBv"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add Account" id="Vpw-4f-Vbp">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="U9e-l3-RWQ">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="U9e-l3-RWQ">
                             <connections>
                                 <action selector="cancel" destination="awu-JF-dR6" id="i2O-qk-7o1"/>
                             </connections>
