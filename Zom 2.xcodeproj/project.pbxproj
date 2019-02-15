@@ -41,7 +41,6 @@
 		924E71382201F5AD00B398DD /* ZomStickerPackTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZomStickerPackTableViewController.swift; sourceTree = "<group>"; };
 		924E71392201F5AE00B398DD /* ZomPickStickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZomPickStickerViewController.swift; sourceTree = "<group>"; };
 		924E713C2201F68300B398DD /* ZomPickStickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZomPickStickerCell.swift; sourceTree = "<group>"; };
-		9286AC502212DCCF00002536 /* bo */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = bo; path = bo.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9286AC522212DCDA00002536 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9286AC542212DCF100002536 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9286AC562212DCFB00002536 /* bo */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = bo; path = bo.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -374,7 +373,6 @@
 		92C8BCCC21FF62A9003D4EE3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9286AC502212DCCF00002536 /* bo */,
 				9286AC522212DCDA00002536 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
