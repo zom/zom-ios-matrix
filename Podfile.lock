@@ -28,6 +28,11 @@ PODS:
     - DTFoundation/DTAnimatedGIF (~> 1.7.5)
     - DTFoundation/DTHTMLParser (~> 1.7.5)
     - DTFoundation/UIKit (~> 1.7.5)
+  - DTCoreText/Extension (1.6.21):
+    - DTFoundation/Core (~> 1.7.5)
+    - DTFoundation/DTAnimatedGIF (~> 1.7.5)
+    - DTFoundation/DTHTMLParser (~> 1.7.5)
+    - DTFoundation/UIKit (~> 1.7.5)
   - DTFoundation/Core (1.7.13)
   - DTFoundation/DTAnimatedGIF (1.7.13)
   - DTFoundation/DTHTMLParser (1.7.13):
@@ -41,20 +46,29 @@ PODS:
   - HPGrowingTextView (1.1)
   - INSPhotoGallery (1.2.7)
   - Keanu (0.1.0):
-    - BarcodeScanner (~> 4.1.3)
+    - Keanu/Core (= 0.1.0)
+    - Keanu/Main (= 0.1.0)
+    - Keanu/ShareExtension (= 0.1.0)
+  - Keanu/Core (0.1.0):
     - CrossroadRegex (~> 1.1.0)
+    - FontBlaster (~> 4.1.0)
+    - Localize (~> 2.1.0)
+    - MatrixSDK/SwiftSupport
+  - Keanu/Main (0.1.0):
+    - BarcodeScanner (~> 4.1.3)
     - Eureka (~> 4.3.0)
     - FLAnimatedImage (~> 1.0)
-    - FontBlaster (~> 4.1.0)
     - INSPhotoGallery (~> 1.2.7)
-    - Localize (~> 2.1.0)
+    - Keanu/Core
     - MaterialComponents/Snackbar (~> 72)
     - MatrixKit (~> 0.9.3)
-    - MatrixSDK/SwiftSupport
     - PhoneNumberKit (~> 2.5.0)
     - PureLayout (~> 3.1.4)
     - QRCode (~> 2.0.0)
     - SearchTextField (~> 1.2.2)
+  - Keanu/ShareExtension (0.1.0):
+    - Keanu/Core
+    - MatrixKit/AppExtension (~> 0.9.3)
   - libbase58 (0.1.4)
   - libPhoneNumber-iOS (0.9.13)
   - Localize (2.1.0)
@@ -100,6 +114,13 @@ PODS:
     - HPGrowingTextView (~> 1.1)
     - libPhoneNumber-iOS (~> 0.9.13)
     - MatrixKit/Core (= 0.9.3)
+    - MatrixSDK (= 0.12.1)
+  - MatrixKit/AppExtension (0.9.3):
+    - cmark (~> 0.24.1)
+    - DTCoreText (~> 1.6.21)
+    - DTCoreText/Extension
+    - HPGrowingTextView (~> 1.1)
+    - libPhoneNumber-iOS (~> 0.9.13)
     - MatrixSDK (= 0.12.1)
   - MatrixKit/Core (0.9.3):
     - cmark (~> 0.24.1)
@@ -205,7 +226,7 @@ SPEC CHECKSUMS:
   GZIP: 12374d285e3b5d46cfcd480700fcfc7e16caf4f1
   HPGrowingTextView: 88a716d97fb853bcb08a4a08e4727da17efc9b19
   INSPhotoGallery: a4e698e3d6338d9016328d6747488a2a111d94e2
-  Keanu: a839d3c991ab5d185eb4c87f63825d0ac68ebdf5
+  Keanu: ef658ed8d928aa6e64193be64f00f1387dc81871
   libbase58: 7c040313537b8c44b6e2d15586af8e21f7354efd
   libPhoneNumber-iOS: e444379ac18bbfbdefad571da735b2cd7e096caa
   Localize: f360a343abfac047be5b375c45be1059f5f625f3
