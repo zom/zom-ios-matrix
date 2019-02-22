@@ -19,7 +19,7 @@ class AppDelegate: BaseAppDelegate {
         let _ = Theme.shared
         
         // Overridden to provide config data
-        Keanu.setUp(with: Config.self)
+        setUp()
         return super.application(application, didFinishLaunchingWithOptions: launchOptions)
     }
     
@@ -30,10 +30,15 @@ class AppDelegate: BaseAppDelegate {
         let _ = Theme.shared
 
         // Overridden to provide config data
-        Keanu.setUp(with: Config.self)
+        setUp()
         
         // App entry point. Setup needs to be done.
         super.application(application, performFetchWithCompletionHandler: completionHandler)
+    }
+    
+    override func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        setUp()
+        super.application(application, didReceiveRemoteNotification: userInfo, fetchCompletionHandler: completionHandler)
     }
     
     /**
@@ -52,5 +57,13 @@ class AppDelegate: BaseAppDelegate {
                 }
             }
         }
+    }
+    
+    /**
+     Inject configuration and set up localization.
+     */
+    private func setUp() {
+        Keanu.setUp(with: Config.self)
+        Keanu.setUpLocalization(fileName: "Localizable", bundle: Bundle.main)
     }
 }
