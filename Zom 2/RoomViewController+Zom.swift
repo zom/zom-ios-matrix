@@ -50,7 +50,7 @@ extension RoomViewController {
                 container.setNeedsLayout()
                 container.layoutIfNeeded()
                 container.layer.frame = container.bounds
-                container.setBubbleView(incoming ? BubbleViewType.incoming : BubbleViewType.outgoing)
+                //container.setBubbleView(incoming ? BubbleViewType.incoming : BubbleViewType.outgoing)
             }
         }
         
