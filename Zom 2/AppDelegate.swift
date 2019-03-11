@@ -66,5 +66,8 @@ class AppDelegate: BaseAppDelegate {
     private func setUp() {
         KeanuCore.setUp(with: Config.self)
         KeanuCore.setUpLocalization(fileName: "Localizable", bundle: Bundle.main)
+        
+        MessageCell.iconSecure = ""
+        MessageCell.iconUnsecure = ""
     }
 }
