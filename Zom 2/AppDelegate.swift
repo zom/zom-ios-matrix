@@ -8,6 +8,7 @@
 
 import UIKit
 import UserNotifications
+import KeanuCore
 import Keanu
 
 @UIApplicationMain
@@ -63,7 +64,7 @@ class AppDelegate: BaseAppDelegate {
      Inject configuration and set up localization.
      */
     private func setUp() {
-        Keanu.setUp(with: Config.self)
-        Keanu.setUpLocalization(fileName: "Localizable", bundle: Bundle.main)
+        KeanuCore.setUp(with: Config.self)
+        KeanuCore.setUpLocalization(fileName: "Localizable", bundle: Bundle.main)
     }
 }

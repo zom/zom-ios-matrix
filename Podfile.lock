@@ -46,29 +46,22 @@ PODS:
   - HPGrowingTextView (1.1)
   - INSPhotoGallery (1.2.7)
   - Keanu (0.1.0):
-    - Keanu/Core (= 0.1.0)
-    - Keanu/Main (= 0.1.0)
-    - Keanu/ShareExtension (= 0.1.0)
-  - Keanu/Core (0.1.0):
-    - CrossroadRegex (~> 1.1.0)
-    - FontBlaster (~> 4.1.0)
-    - Localize (~> 2.1.0)
-    - MatrixSDK/SwiftSupport
-  - Keanu/Main (0.1.0):
     - BarcodeScanner (~> 4.1.3)
     - Eureka (~> 4.3.0)
     - FLAnimatedImage (~> 1.0)
     - INSPhotoGallery (~> 1.2.7)
-    - Keanu/Core
+    - KeanuCore
     - MaterialComponents/Snackbar (~> 72)
-    - MatrixKit (~> 0.9.3)
     - PhoneNumberKit (~> 2.5.0)
     - PureLayout (~> 3.1.4)
     - QRCode (~> 2.0.0)
     - SearchTextField (~> 1.2.2)
-  - Keanu/ShareExtension (0.1.0):
-    - Keanu/Core
-    - MatrixKit/AppExtension (~> 0.9.3)
+  - KeanuCore (0.1.0):
+    - CrossroadRegex (~> 1.1.0)
+    - FontBlaster (~> 4.1.0)
+    - Localize (~> 2.1.0)
+    - MatrixKit/AppExtension (~> 0.9.5)
+    - MatrixSDK/SwiftSupport
   - libbase58 (0.1.4)
   - libPhoneNumber-iOS (0.9.13)
   - Localize (2.1.0)
@@ -108,35 +101,22 @@ PODS:
   - MaterialComponents/Typography (72.2.0):
     - MaterialComponents/private/Application
     - MaterialComponents/private/Math
-  - MatrixKit (0.9.3):
-    - cmark (~> 0.24.1)
-    - DTCoreText (~> 1.6.21)
-    - HPGrowingTextView (~> 1.1)
-    - libPhoneNumber-iOS (~> 0.9.13)
-    - MatrixKit/Core (= 0.9.3)
-    - MatrixSDK (= 0.12.1)
-  - MatrixKit/AppExtension (0.9.3):
+  - MatrixKit/AppExtension (0.9.5):
     - cmark (~> 0.24.1)
     - DTCoreText (~> 1.6.21)
     - DTCoreText/Extension
     - HPGrowingTextView (~> 1.1)
     - libPhoneNumber-iOS (~> 0.9.13)
-    - MatrixSDK (= 0.12.1)
-  - MatrixKit/Core (0.9.3):
-    - cmark (~> 0.24.1)
-    - DTCoreText (~> 1.6.21)
-    - HPGrowingTextView (~> 1.1)
-    - libPhoneNumber-iOS (~> 0.9.13)
-    - MatrixSDK (= 0.12.1)
-  - MatrixSDK (0.12.1):
-    - MatrixSDK/Core (= 0.12.1)
-  - MatrixSDK/Core (0.12.1):
+    - MatrixSDK (= 0.12.2)
+  - MatrixSDK (0.12.2):
+    - MatrixSDK/Core (= 0.12.2)
+  - MatrixSDK/Core (0.12.2):
     - AFNetworking (~> 3.2.0)
     - GZIP (~> 1.2.2)
     - libbase58 (~> 0.1.4)
     - OLMKit (~> 3.0.0)
     - Realm (~> 3.11.1)
-  - MatrixSDK/SwiftSupport (0.12.1):
+  - MatrixSDK/SwiftSupport (0.12.2):
     - MatrixSDK/Core
   - MDFInternationalization (2.0.0)
   - MDFTextAccessibility (2.0.0)
@@ -161,9 +141,8 @@ PODS:
 DEPENDENCIES:
   - BarcodeScanner (from `https://github.com/SteffanPB/BarcodeScanner.git`)
   - Keanu (from `../../Keanu`)
+  - KeanuCore (from `../../Keanu`)
   - Localize (from `https://github.com/tladesignz/Localize.git`)
-  - MatrixKit (~> 0.9.3)
-  - MatrixSDK/SwiftSupport (from `https://github.com/N-Pex/matrix-ios-sdk.git`, branch `master_with_audio`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -182,6 +161,7 @@ SPEC REPOS:
     - libPhoneNumber-iOS
     - MaterialComponents
     - MatrixKit
+    - MatrixSDK
     - MDFInternationalization
     - MDFTextAccessibility
     - OLMKit
@@ -196,11 +176,10 @@ EXTERNAL SOURCES:
     :git: https://github.com/SteffanPB/BarcodeScanner.git
   Keanu:
     :path: "../../Keanu"
+  KeanuCore:
+    :path: "../../Keanu"
   Localize:
     :git: https://github.com/tladesignz/Localize.git
-  MatrixSDK:
-    :branch: master_with_audio
-    :git: https://github.com/N-Pex/matrix-ios-sdk.git
 
 CHECKOUT OPTIONS:
   BarcodeScanner:
@@ -209,9 +188,6 @@ CHECKOUT OPTIONS:
   Localize:
     :commit: c91f1ced29d830bf1bf6953acc325fa40f63b3d7
     :git: https://github.com/tladesignz/Localize.git
-  MatrixSDK:
-    :commit: beb61c51fda2dd5f76250fefdaee79cbae618e0c
-    :git: https://github.com/N-Pex/matrix-ios-sdk.git
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
@@ -226,13 +202,14 @@ SPEC CHECKSUMS:
   GZIP: 12374d285e3b5d46cfcd480700fcfc7e16caf4f1
   HPGrowingTextView: 88a716d97fb853bcb08a4a08e4727da17efc9b19
   INSPhotoGallery: a4e698e3d6338d9016328d6747488a2a111d94e2
-  Keanu: ef658ed8d928aa6e64193be64f00f1387dc81871
+  Keanu: 8d64752260b79dba37183f6e1bdf35dc12a16a97
+  KeanuCore: ffbd8c4f796e877d63cf076fb1f30239ae9d9cb8
   libbase58: 7c040313537b8c44b6e2d15586af8e21f7354efd
   libPhoneNumber-iOS: e444379ac18bbfbdefad571da735b2cd7e096caa
   Localize: f360a343abfac047be5b375c45be1059f5f625f3
   MaterialComponents: d1637df9976683348de8eabd10de0723ec81db3d
-  MatrixKit: af9f94f36644bc21b63b114413f7bb510506b7d1
-  MatrixSDK: f1f510d467d127a5f7afafaafa1554ac5d602132
+  MatrixKit: 97bfda595111fe052ea8dbe74f5f65e2eca104a6
+  MatrixSDK: 60a9472eacdf51e5110b8bc7beba844debf992ef
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
   OLMKit: 88eda69110489f817d59bcb4353b7c247570aa4f
@@ -242,6 +219,6 @@ SPEC CHECKSUMS:
   Realm: 864477d028db77f7c5a0cba64a4892ad53db128a
   SearchTextField: a0992739d4b05dcbb40fb3a5cc6526bd991bdd23
 
-PODFILE CHECKSUM: b9950cd7aa02db29eaacc834eea11fefd477c4a7
+PODFILE CHECKSUM: 6afcda3cb3faee32dc0b43ce9e45e328f7ebeca9
 
 COCOAPODS: 1.5.3

@@ -6,18 +6,18 @@
 //  Copyright © 2019 Guardian Project. All rights reserved.
 //
 
-import Keanu
+import KeanuCore
 
 /**
  Keanu-compatible configuration object filled with data from `Config.xcconfig`
  via Objective-C `Constants` object.
  */
 struct Config: KeanuConfig {
-
+    
     static var defaultHomeServer = Constants.defaultHomeServer as String
-
+    
     static var defaultIdServer = Constants.defaultIdServer as String
-
+    
     static var appUrlScheme: String {
         get {
             if let path = Bundle.main.path(forResource: "Info", ofType: "plist"),
@@ -29,14 +29,17 @@ struct Config: KeanuConfig {
             {
                 return scheme as String
             }
-
+            
             return ""
         }
     }
-
+    
     static var pushAppIdDev = "\(Bundle.main.bundleIdentifier!).ios.dev"
-
+    
     static var pushAppIdRelease = "\(Bundle.main.bundleIdentifier!).ios.release"
-
+    
     static var pushServer = Constants.pushServer as String
+    
+    static var appGroupId = Constants.appGroup as String?
 }
+

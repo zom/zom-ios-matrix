@@ -20,4 +20,6 @@
 
 @property (class, nonatomic, assign, readonly) NSString *pushServer;
 
+@property (class, nonatomic, assign, readonly) NSString *appGroupId;
+
 @end
