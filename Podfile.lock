@@ -60,7 +60,7 @@ PODS:
     - CrossroadRegex (~> 1.1.0)
     - FontBlaster (~> 4.1.0)
     - Localize (~> 2.1.0)
-    - MatrixKit/AppExtension (~> 0.9.5)
+    - MatrixKit/AppExtension (~> 0.9.6)
     - MatrixSDK/SwiftSupport
   - libbase58 (0.1.4)
   - libPhoneNumber-iOS (0.9.13)
@@ -101,22 +101,22 @@ PODS:
   - MaterialComponents/Typography (72.2.0):
     - MaterialComponents/private/Application
     - MaterialComponents/private/Math
-  - MatrixKit/AppExtension (0.9.5):
+  - MatrixKit/AppExtension (0.9.7):
     - cmark (~> 0.24.1)
     - DTCoreText (~> 1.6.21)
     - DTCoreText/Extension
     - HPGrowingTextView (~> 1.1)
     - libPhoneNumber-iOS (~> 0.9.13)
-    - MatrixSDK (= 0.12.2)
-  - MatrixSDK (0.12.2):
-    - MatrixSDK/Core (= 0.12.2)
-  - MatrixSDK/Core (0.12.2):
+    - MatrixSDK (= 0.12.3)
+  - MatrixSDK (0.12.3):
+    - MatrixSDK/Core (= 0.12.3)
+  - MatrixSDK/Core (0.12.3):
     - AFNetworking (~> 3.2.0)
     - GZIP (~> 1.2.2)
     - libbase58 (~> 0.1.4)
     - OLMKit (~> 3.0.0)
-    - Realm (~> 3.11.1)
-  - MatrixSDK/SwiftSupport (0.12.2):
+    - Realm (~> 3.13.1)
+  - MatrixSDK/SwiftSupport (0.12.3):
     - MatrixSDK/Core
   - MDFInternationalization (2.0.0)
   - MDFTextAccessibility (2.0.0)
@@ -133,9 +133,9 @@ PODS:
     - PhoneNumberKit/PhoneNumberKitCore
   - PureLayout (3.1.4)
   - QRCode (2.0)
-  - Realm (3.11.2):
-    - Realm/Headers (= 3.11.2)
-  - Realm/Headers (3.11.2)
+  - Realm (3.13.1):
+    - Realm/Headers (= 3.13.1)
+  - Realm/Headers (3.13.1)
   - SearchTextField (1.2.2)
 
 DEPENDENCIES:
@@ -203,20 +203,20 @@ SPEC CHECKSUMS:
   HPGrowingTextView: 88a716d97fb853bcb08a4a08e4727da17efc9b19
   INSPhotoGallery: a4e698e3d6338d9016328d6747488a2a111d94e2
   Keanu: 8d64752260b79dba37183f6e1bdf35dc12a16a97
-  KeanuCore: ffbd8c4f796e877d63cf076fb1f30239ae9d9cb8
+  KeanuCore: 75faa9bf86e84caaa423dadfe9a8e77109742717
   libbase58: 7c040313537b8c44b6e2d15586af8e21f7354efd
   libPhoneNumber-iOS: e444379ac18bbfbdefad571da735b2cd7e096caa
   Localize: f360a343abfac047be5b375c45be1059f5f625f3
   MaterialComponents: d1637df9976683348de8eabd10de0723ec81db3d
-  MatrixKit: 97bfda595111fe052ea8dbe74f5f65e2eca104a6
-  MatrixSDK: 60a9472eacdf51e5110b8bc7beba844debf992ef
+  MatrixKit: da43b16842298fe0987ca8a98267bee775c10a35
+  MatrixSDK: 36c1a0da01a2745d4ffcca73e080610f05d47009
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
   OLMKit: 88eda69110489f817d59bcb4353b7c247570aa4f
   PhoneNumberKit: 87f03605453ca0f8b8e76083228ab729395f9004
   PureLayout: f08c01b8dec00bb14a1fefa3de4c7d9c265df85e
   QRCode: f98a1886c8f37523704a7512a4c0cd45b34c18a4
-  Realm: 864477d028db77f7c5a0cba64a4892ad53db128a
+  Realm: 50071da38fe079e0735e47c9f2eae738c68c5996
   SearchTextField: a0992739d4b05dcbb40fb3a5cc6526bd991bdd23
 
 PODFILE CHECKSUM: 6afcda3cb3faee32dc0b43ce9e45e328f7ebeca9
