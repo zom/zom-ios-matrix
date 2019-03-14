@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		401114D4223B0F7800D2CC02 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401114D3223B0F7800D2CC02 /* MainViewController.swift */; };
+		401114DB223B0F7900D2CC02 /* ShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 401114D1223B0F7800D2CC02 /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		401114E1223B18E000D2CC02 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924E7119220046C700B398DD /* Config.swift */; };
+		401114E2223B18E300D2CC02 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 924E7118220046C700B398DD /* Constants.m */; };
+		401114E3223B18E700D2CC02 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 924E7116220046BF00B398DD /* Config.xcconfig */; };
+		604A9D0C53A47043FCD37CFA /* Pods_ShareExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5622C1933B28057F65987C81 /* Pods_ShareExtension.framework */; };
 		924E7117220046BF00B398DD /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 924E7116220046BF00B398DD /* Config.xcconfig */; };
 		924E711B220046C700B398DD /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 924E7118220046C700B398DD /* Constants.m */; };
 		924E711C220046C700B398DD /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924E7119220046C700B398DD /* Config.swift */; };
@@ -26,8 +32,38 @@
 		C0226BD7BA5E30097BBCC8B6 /* Pods_Zom_2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7043637FD388A876828CDF45 /* Pods_Zom_2.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		401114D9223B0F7900D2CC02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92C8BCB821FF62A5003D4EE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 401114D0223B0F7800D2CC02;
+			remoteInfo = ShareExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		401114DF223B0F7900D2CC02 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				401114DB223B0F7900D2CC02 /* ShareExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		401114D1223B0F7800D2CC02 /* ShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		401114D3223B0F7800D2CC02 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		401114D8223B0F7900D2CC02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		401114E0223B0FF300D2CC02 /* ShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShareExtension.entitlements; sourceTree = "<group>"; };
+		5622C1933B28057F65987C81 /* Pods_ShareExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AC836065B73D12EEE89CC26 /* Pods-Zom 2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zom 2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zom 2/Pods-Zom 2.debug.xcconfig"; sourceTree = "<group>"; };
+		615D7A03B9337839B1C578E4 /* Pods-ShareExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShareExtension/Pods-ShareExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		6DE7F91A6F9B83E63B8E827A /* Pods-Zom 2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zom 2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zom 2/Pods-Zom 2.release.xcconfig"; sourceTree = "<group>"; };
 		7043637FD388A876828CDF45 /* Pods_Zom_2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zom_2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		924E7116220046BF00B398DD /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -54,9 +90,18 @@
 		92C8BCCF21FF62A9003D4EE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92C8BCDD21FF6FC9003D4EE3 /* Zom2-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Zom2-Bridging-Header.h"; sourceTree = "<group>"; };
 		92C8BCDE21FF8CDA003D4EE3 /* Zom 2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Zom 2.entitlements"; sourceTree = "<group>"; };
+		BE0B501F5A3C23A8E95BDE43 /* Pods-ShareExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShareExtension/Pods-ShareExtension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		401114CE223B0F7800D2CC02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				604A9D0C53A47043FCD37CFA /* Pods_ShareExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		92C8BCBD21FF62A5003D4EE3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -68,11 +113,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		401114D2223B0F7800D2CC02 /* ShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				401114E0223B0FF300D2CC02 /* ShareExtension.entitlements */,
+				401114D3223B0F7800D2CC02 /* MainViewController.swift */,
+				401114D8223B0F7900D2CC02 /* Info.plist */,
+			);
+			path = ShareExtension;
+			sourceTree = "<group>";
+		};
+		401114E4223B18F500D2CC02 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				924E7115220046AF00B398DD /* Config */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
 		770B6F744737CC53A5ECF999 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				5AC836065B73D12EEE89CC26 /* Pods-Zom 2.debug.xcconfig */,
 				6DE7F91A6F9B83E63B8E827A /* Pods-Zom 2.release.xcconfig */,
+				615D7A03B9337839B1C578E4 /* Pods-ShareExtension.debug.xcconfig */,
+				BE0B501F5A3C23A8E95BDE43 /* Pods-ShareExtension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -80,12 +145,14 @@
 		924E7115220046AF00B398DD /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				92C8BCDD21FF6FC9003D4EE3 /* Zom2-Bridging-Header.h */,
 				924E7119220046C700B398DD /* Config.swift */,
 				924E711A220046C700B398DD /* Constants.h */,
 				924E7118220046C700B398DD /* Constants.m */,
 				924E7116220046BF00B398DD /* Config.xcconfig */,
 			);
 			name = Config;
+			path = "Zom 2";
 			sourceTree = "<group>";
 		};
 		924E712122004D4C00B398DD /* Extensions */ = {
@@ -108,7 +175,9 @@
 		92C8BCB721FF62A5003D4EE3 = {
 			isa = PBXGroup;
 			children = (
+				401114E4223B18F500D2CC02 /* Shared */,
 				92C8BCC221FF62A5003D4EE3 /* Zom 2 */,
+				401114D2223B0F7800D2CC02 /* ShareExtension */,
 				92C8BCC121FF62A5003D4EE3 /* Products */,
 				770B6F744737CC53A5ECF999 /* Pods */,
 				E348AC5B6FDFD88B2C0C9521 /* Frameworks */,
@@ -119,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				92C8BCC021FF62A5003D4EE3 /* Zom 2.app */,
+				401114D1223B0F7800D2CC02 /* ShareExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,14 +197,12 @@
 			isa = PBXGroup;
 			children = (
 				92C8BCDE21FF8CDA003D4EE3 /* Zom 2.entitlements */,
-				92C8BCDD21FF6FC9003D4EE3 /* Zom2-Bridging-Header.h */,
 				92C8BCC321FF62A5003D4EE3 /* AppDelegate.swift */,
 				92C8BCCA21FF62A9003D4EE3 /* Assets.xcassets */,
 				92C8BCCC21FF62A9003D4EE3 /* LaunchScreen.storyboard */,
 				92C8BCCF21FF62A9003D4EE3 /* Info.plist */,
 				9286AC532212DCF100002536 /* Localizable.strings */,
 				9286AC6922135EC800002536 /* UI */,
-				924E7115220046AF00B398DD /* Config */,
 				924E711F22004CB600B398DD /* Theme.swift */,
 				924E712122004D4C00B398DD /* Extensions */,
 				924E71322201E3EE00B398DD /* RoomViewController+Zom.swift */,
@@ -150,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				7043637FD388A876828CDF45 /* Pods_Zom_2.framework */,
+				5622C1933B28057F65987C81 /* Pods_ShareExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -157,6 +226,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		401114D0223B0F7800D2CC02 /* ShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 401114DC223B0F7900D2CC02 /* Build configuration list for PBXNativeTarget "ShareExtension" */;
+			buildPhases = (
+				4F908183EED05FBD065F3ADA /* [CP] Check Pods Manifest.lock */,
+				401114CD223B0F7800D2CC02 /* Sources */,
+				401114CE223B0F7800D2CC02 /* Frameworks */,
+				401114CF223B0F7800D2CC02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareExtension;
+			productName = ShareExtension;
+			productReference = 401114D1223B0F7800D2CC02 /* ShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		92C8BCBF21FF62A5003D4EE3 /* Zom 2 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92C8BCD221FF62A9003D4EE3 /* Build configuration list for PBXNativeTarget "Zom 2" */;
@@ -166,10 +253,12 @@
 				92C8BCBD21FF62A5003D4EE3 /* Frameworks */,
 				92C8BCBE21FF62A5003D4EE3 /* Resources */,
 				6ED1B2B66A1800498CA8EC14 /* [CP] Embed Pods Frameworks */,
+				401114DF223B0F7900D2CC02 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				401114DA223B0F7900D2CC02 /* PBXTargetDependency */,
 			);
 			name = "Zom 2";
 			productName = "Zom 2";
@@ -182,10 +271,19 @@
 		92C8BCB821FF62A5003D4EE3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				DefaultBuildSystemTypeForWorkspace = Original;
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Zom;
 				TargetAttributes = {
+					401114D0223B0F7800D2CC02 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					92C8BCBF21FF62A5003D4EE3 = {
 						CreatedOnToolsVersion = 10.1;
 						SystemCapabilities = {
@@ -193,6 +291,9 @@
 								enabled = 1;
 							};
 							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.SafariKeychain = {
 								enabled = 1;
 							};
 						};
@@ -214,11 +315,20 @@
 			projectRoot = "";
 			targets = (
 				92C8BCBF21FF62A5003D4EE3 /* Zom 2 */,
+				401114D0223B0F7800D2CC02 /* ShareExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		401114CF223B0F7800D2CC02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				401114E3223B18E700D2CC02 /* Config.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		92C8BCBE21FF62A5003D4EE3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -236,13 +346,35 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4F908183EED05FBD065F3ADA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShareExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6ED1B2B66A1800498CA8EC14 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Zom 2/Pods-Zom 2-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Zom 2/Pods-Zom 2-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/BarcodeScanner/BarcodeScanner.framework",
 				"${BUILT_PRODUCTS_DIR}/CrossroadRegex/Regex.framework",
@@ -271,6 +403,8 @@
 				"${BUILT_PRODUCTS_DIR}/cmark/cmark.framework",
 				"${BUILT_PRODUCTS_DIR}/libPhoneNumber-iOS/libPhoneNumber_iOS.framework",
 				"${BUILT_PRODUCTS_DIR}/libbase58/libbase58.framework",
+				"${BUILT_PRODUCTS_DIR}/KeanuExtension/KeanuExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -302,10 +436,12 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/cmark.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libPhoneNumber_iOS.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libbase58.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeanuExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zom 2/Pods-Zom 2-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Zom 2/Pods-Zom 2-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DDF471C4B5A8169AEAE6BF1A /* [CP] Check Pods Manifest.lock */ = {
@@ -329,6 +465,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		401114CD223B0F7800D2CC02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				401114D4223B0F7800D2CC02 /* MainViewController.swift in Sources */,
+				401114E1223B18E000D2CC02 /* Config.swift in Sources */,
+				401114E2223B18E300D2CC02 /* Constants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		92C8BCBC21FF62A5003D4EE3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -346,6 +492,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		401114DA223B0F7900D2CC02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 401114D0223B0F7800D2CC02 /* ShareExtension */;
+			targetProxy = 401114D9223B0F7900D2CC02 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9286AC532212DCF100002536 /* Localizable.strings */ = {
@@ -386,6 +540,54 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		401114DD223B0F7900D2CC02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 615D7A03B9337839B1C578E4 /* Pods-ShareExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9SV9LPRC42;
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = im.zom.messenger.ShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Zom 2/Zom2-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		401114DE223B0F7900D2CC02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE0B501F5A3C23A8E95BDE43 /* Pods-ShareExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9SV9LPRC42;
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = im.zom.messenger.ShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Zom 2/Zom2-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		92C8BCD021FF62A9003D4EE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 924E7116220046BF00B398DD /* Config.xcconfig */;
@@ -510,6 +712,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5AC836065B73D12EEE89CC26 /* Pods-Zom 2.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Zom 2/Zom 2.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -533,6 +736,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6DE7F91A6F9B83E63B8E827A /* Pods-Zom 2.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Zom 2/Zom 2.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -555,6 +759,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		401114DC223B0F7900D2CC02 /* Build configuration list for PBXNativeTarget "ShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				401114DD223B0F7900D2CC02 /* Debug */,
+				401114DE223B0F7900D2CC02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		92C8BCBB21FF62A5003D4EE3 /* Build configuration list for PBXProject "Zom 2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

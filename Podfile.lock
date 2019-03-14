@@ -62,6 +62,9 @@ PODS:
     - Localize (~> 2.1.0)
     - MatrixKit/AppExtension (~> 0.9.6)
     - MatrixSDK/SwiftSupport
+  - KeanuExtension (0.1.0):
+    - KeanuCore
+    - MBProgressHUD (~> 1.1)
   - libbase58 (0.1.4)
   - libPhoneNumber-iOS (0.9.13)
   - Localize (2.1.0)
@@ -118,6 +121,7 @@ PODS:
     - Realm (~> 3.13.1)
   - MatrixSDK/SwiftSupport (0.12.3):
     - MatrixSDK/Core
+  - MBProgressHUD (1.1.0)
   - MDFInternationalization (2.0.0)
   - MDFTextAccessibility (2.0.0)
   - OLMKit (3.0.0):
@@ -142,7 +146,8 @@ DEPENDENCIES:
   - BarcodeScanner (from `https://github.com/SteffanPB/BarcodeScanner.git`)
   - Keanu (from `../../Keanu`)
   - KeanuCore (from `../../Keanu`)
-  - Localize (from `https://github.com/tladesignz/Localize.git`)
+  - KeanuExtension (from `../../Keanu`)
+  - Localize (from `https://github.com/andresilvagomez/Localize.git`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -162,6 +167,7 @@ SPEC REPOS:
     - MaterialComponents
     - MatrixKit
     - MatrixSDK
+    - MBProgressHUD
     - MDFInternationalization
     - MDFTextAccessibility
     - OLMKit
@@ -178,16 +184,18 @@ EXTERNAL SOURCES:
     :path: "../../Keanu"
   KeanuCore:
     :path: "../../Keanu"
+  KeanuExtension:
+    :path: "../../Keanu"
   Localize:
-    :git: https://github.com/tladesignz/Localize.git
+    :git: https://github.com/andresilvagomez/Localize.git
 
 CHECKOUT OPTIONS:
   BarcodeScanner:
     :commit: 97c70d9cd1cc2fc2762e3af64fea77922bcec103
     :git: https://github.com/SteffanPB/BarcodeScanner.git
   Localize:
-    :commit: c91f1ced29d830bf1bf6953acc325fa40f63b3d7
-    :git: https://github.com/tladesignz/Localize.git
+    :commit: 3b7b5a6ee1e12faf7a39ffa11b8cca03d69b3704
+    :git: https://github.com/andresilvagomez/Localize.git
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
@@ -202,14 +210,16 @@ SPEC CHECKSUMS:
   GZIP: 12374d285e3b5d46cfcd480700fcfc7e16caf4f1
   HPGrowingTextView: 88a716d97fb853bcb08a4a08e4727da17efc9b19
   INSPhotoGallery: a4e698e3d6338d9016328d6747488a2a111d94e2
-  Keanu: 8d64752260b79dba37183f6e1bdf35dc12a16a97
-  KeanuCore: 75faa9bf86e84caaa423dadfe9a8e77109742717
+  Keanu: 1752f613f4eb466fd80b8b3f53dd30cc44a5463f
+  KeanuCore: f855cdd171951737ff2688174388b48f9b704727
+  KeanuExtension: 87a687b3b20e0917bb332ba7d50a5615ad673cae
   libbase58: 7c040313537b8c44b6e2d15586af8e21f7354efd
   libPhoneNumber-iOS: e444379ac18bbfbdefad571da735b2cd7e096caa
   Localize: f360a343abfac047be5b375c45be1059f5f625f3
   MaterialComponents: d1637df9976683348de8eabd10de0723ec81db3d
   MatrixKit: da43b16842298fe0987ca8a98267bee775c10a35
   MatrixSDK: 36c1a0da01a2745d4ffcca73e080610f05d47009
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
   OLMKit: 88eda69110489f817d59bcb4353b7c247570aa4f
@@ -219,6 +229,6 @@ SPEC CHECKSUMS:
   Realm: 50071da38fe079e0735e47c9f2eae738c68c5996
   SearchTextField: a0992739d4b05dcbb40fb3a5cc6526bd991bdd23
 
-PODFILE CHECKSUM: 6afcda3cb3faee32dc0b43ce9e45e328f7ebeca9
+PODFILE CHECKSUM: 06e930c63e4e0dc69a7011a7173150b40032651a
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1

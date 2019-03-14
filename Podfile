@@ -1,11 +1,22 @@
 platform :ios, '9.1'
 use_frameworks!
 
+def shared_pods
+    pod 'Localize', :git => 'https://github.com/andresilvagomez/Localize.git'
+    pod 'KeanuCore', :path => '../../Keanu'
+end
+
 target 'Zom 2' do
-# pod 'MatrixKit', '~> 0.9.5'
-#  pod 'MatrixSDK/SwiftSupport', :git => 'https://github.com/N-Pex/matrix-ios-sdk.git', :branch => 'master_with_audio'
+  shared_pods
+
   pod 'BarcodeScanner', :git => 'https://github.com/SteffanPB/BarcodeScanner.git'
-  pod 'Localize', :git => 'https://github.com/tladesignz/Localize.git'
+
   pod 'Keanu', :path => '../../Keanu'
-  pod 'KeanuCore', :path => '../../Keanu'
+
+end
+
+target 'ShareExtension' do
+  shared_pods
+
+  pod 'KeanuExtension', :path => '../../Keanu'
 end
