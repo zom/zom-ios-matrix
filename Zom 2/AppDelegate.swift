@@ -69,7 +69,7 @@ class AppDelegate: BaseAppDelegate {
         // If upgrading from "old" Zom, make sure to wipe all old data before proceeding
         //
         if let buildVersion = Int(Bundle.main.object(forInfoDictionaryKey: kCFBundleVersionKey as String) as! String),
-            buildVersion >= 1000,
+            buildVersion >= 200,
             !UserDefaults.standard.bool(forKey: AppDelegate.userDefaultsKeyMigratedZom1) {
             Scrubber.scrub()
             UserDefaults.standard.set(true, forKey: AppDelegate.userDefaultsKeyMigratedZom1)
