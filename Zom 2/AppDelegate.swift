@@ -14,6 +14,8 @@ import Keanu
 @UIApplicationMain
 class AppDelegate: BaseAppDelegate {
     
+    static let userDefaultsKeyMigratedZom1 = "migratedZom1"
+    
     override func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         // Initialize theme
@@ -64,6 +66,16 @@ class AppDelegate: BaseAppDelegate {
      Inject configuration and set up localization.
      */
     private func setUp() {
+        // If upgrading from "old" Zom, make sure to wipe all old data before proceeding
+        //
+        if let buildVersion = Int(Bundle.main.object(forInfoDictionaryKey: kCFBundleVersionKey as String) as! String),
+            buildVersion >= 1000,
+            !UserDefaults.standard.bool(forKey: AppDelegate.userDefaultsKeyMigratedZom1) {
+            Scrubber.scrub()
+            UserDefaults.standard.set(true, forKey: AppDelegate.userDefaultsKeyMigratedZom1)
+        }
+
+        
         KeanuCore.setUp(with: Config.self)
         KeanuCore.setUpLocalization(fileName: "Localizable", bundle: Bundle.main)
         
