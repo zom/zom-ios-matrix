@@ -66,20 +66,19 @@ class AppDelegate: BaseAppDelegate {
      Inject configuration and set up localization.
      */
     private func setUp() {
-        // If upgrading from "old" Zom, make sure to wipe all old data before proceeding
-        //
-        if let buildVersion = Int(Bundle.main.object(forInfoDictionaryKey: kCFBundleVersionKey as String) as! String),
-            buildVersion >= 200,
-            !UserDefaults.standard.bool(forKey: AppDelegate.userDefaultsKeyMigratedZom1) {
-            Scrubber.scrub()
-            UserDefaults.standard.set(true, forKey: AppDelegate.userDefaultsKeyMigratedZom1)
-        }
-
-        
         KeanuCore.setUp(with: Config.self)
         KeanuCore.setUpLocalization(fileName: "Localizable", bundle: Bundle.main)
         
         MessageCell.iconSecure = ""
         MessageCell.iconUnsecure = ""
+        
+        // If upgrading from "old" Zom, make sure to wipe all old data before proceeding
+        //
+        if let buildVersion = Int(Bundle.main.object(forInfoDictionaryKey: kCFBundleVersionKey as String) as! String),
+            buildVersion >= 201,
+            !UserDefaults.standard.bool(forKey: AppDelegate.userDefaultsKeyMigratedZom1) {
+            Scrubber.scrub()
+            UserDefaults.standard.set(true, forKey: AppDelegate.userDefaultsKeyMigratedZom1)
+        }
     }
 }
