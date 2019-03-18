@@ -22,4 +22,6 @@
 
 @property (class, nonatomic, assign, readonly) NSString *appGroupId;
 
+@property (class, nonatomic, assign, readonly) NSString *universalLinkHost;
+
 @end

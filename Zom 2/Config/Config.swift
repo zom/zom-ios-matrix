@@ -41,5 +41,9 @@ struct Config: KeanuConfig {
     static var pushServer = Constants.pushServer as String
     
     static var appGroupId = Constants.appGroup as String?
+    
+    static var universalLinkHost = Constants.universalLinkHost as String
+    
+    static var inviteLinkFormat = "https://\(Constants.universalLinkHost as String)/i/#%@"
 }
 

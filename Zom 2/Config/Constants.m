@@ -33,4 +33,8 @@
     return MACRO_STRING(KEANU_PUSH_SERVER);
 }
 
++ (NSString *) universalLinkHost {
+    return MACRO_STRING(KEANU_UNIVERSAL_LINK_HOST);
+}
+
 @end
