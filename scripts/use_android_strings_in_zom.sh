@@ -240,7 +240,9 @@ function parseAndroidStringsFile {
         # Replace slash ' with '	
 	replace=\'
         val="${val//\\\'/$replace}"
-	# echo "Add android mapping $key <--> $val"
+        # We need to handle different formats for ios and android. So translate %s to %
+        val="${val/\%s/%}"
+	echo "Add android mapping $key <--> $val"
 	addAndroidMapping "$key" "$val"
     done < <(awk -F'name="|">|</' '{ if (NF == 4) print $2,$3}' "$filePath")
 }
