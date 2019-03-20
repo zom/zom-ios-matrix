@@ -51,6 +51,8 @@ extension DiscoverViewController: DiscoverViewControllerDelegate {
                 // Select new color as theme color
                 Theme.shared.selectMainThemeColor(color)
             }){
+                // Ideally we would want a "push" here like above, but then selecting a color and getting back here would not update all of the UI without ugly hacks.
+                // See: https://stackoverflow.com/questions/21652957/uinavigationbar-appearance-refresh/21653004
                 present(vc, animated: true, completion: nil)
             }
             return true
