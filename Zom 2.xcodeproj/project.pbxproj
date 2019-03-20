@@ -29,6 +29,10 @@
 		92B0D71322423A6E0057154E /* DiscoverViewController+Zom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B0D71222423A6E0057154E /* DiscoverViewController+Zom.swift */; };
 		92B0D71522424A9C0057154E /* ZomPickColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B0D71422424A9B0057154E /* ZomPickColorViewController.swift */; };
 		92B0D71722424C6C0057154E /* ZomPickColorViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B0D71622424C6C0057154E /* ZomPickColorViewController.storyboard */; };
+		92B0D719224253400057154E /* ZomBotsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B0D718224253400057154E /* ZomBotsViewController.swift */; };
+		92B0D71B224253B60057154E /* ZomBotsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B0D71A224253B60057154E /* ZomBotsViewController.storyboard */; };
+		92B0D71D2242552B0057154E /* ZomBotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B0D71C2242552B0057154E /* ZomBotCell.swift */; };
+		92B0D72022427AE30057154E /* ZomBots.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92B0D71E22427AE20057154E /* ZomBots.plist */; };
 		92C8BCC421FF62A5003D4EE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C8BCC321FF62A5003D4EE3 /* AppDelegate.swift */; };
 		92C8BCCB21FF62A9003D4EE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C8BCCA21FF62A9003D4EE3 /* Assets.xcassets */; };
 		92C8BCCE21FF62A9003D4EE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C8BCCC21FF62A9003D4EE3 /* LaunchScreen.storyboard */; };
@@ -90,6 +94,11 @@
 		92B0D71222423A6E0057154E /* DiscoverViewController+Zom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DiscoverViewController+Zom.swift"; path = "Stickers/DiscoverViewController+Zom.swift"; sourceTree = "<group>"; };
 		92B0D71422424A9B0057154E /* ZomPickColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZomPickColorViewController.swift; sourceTree = "<group>"; };
 		92B0D71622424C6C0057154E /* ZomPickColorViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ZomPickColorViewController.storyboard; sourceTree = "<group>"; };
+		92B0D718224253400057154E /* ZomBotsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZomBotsViewController.swift; sourceTree = "<group>"; };
+		92B0D71A224253B60057154E /* ZomBotsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ZomBotsViewController.storyboard; sourceTree = "<group>"; };
+		92B0D71C2242552B0057154E /* ZomBotCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZomBotCell.swift; sourceTree = "<group>"; };
+		92B0D71F22427AE20057154E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/ZomBots.plist; sourceTree = "<group>"; };
+		92B0D72122427AF30057154E /* bo */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = bo; path = bo.lproj/ZomBots.plist; sourceTree = "<group>"; };
 		92C8BCC021FF62A5003D4EE3 /* Zom 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zom 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C8BCC321FF62A5003D4EE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92C8BCCA21FF62A9003D4EE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -218,7 +227,11 @@
 				924E713C2201F68300B398DD /* ZomPickStickerCell.swift */,
 				92B0D71422424A9B0057154E /* ZomPickColorViewController.swift */,
 				92B0D71622424C6C0057154E /* ZomPickColorViewController.storyboard */,
+				92B0D718224253400057154E /* ZomBotsViewController.swift */,
+				92B0D71A224253B60057154E /* ZomBotsViewController.storyboard */,
+				92B0D71C2242552B0057154E /* ZomBotCell.swift */,
 				924E71342201F54D00B398DD /* Stickers */,
+				92B0D71E22427AE20057154E /* ZomBots.plist */,
 			);
 			path = "Zom 2";
 			sourceTree = "<group>";
@@ -349,6 +362,8 @@
 				9286AC552212DCF100002536 /* Localizable.strings in Resources */,
 				9286AC6F22135EE200002536 /* StickerShare.storyboard in Resources */,
 				92C8BCCB21FF62A9003D4EE3 /* Assets.xcassets in Resources */,
+				92B0D72022427AE30057154E /* ZomBots.plist in Resources */,
+				92B0D71B224253B60057154E /* ZomBotsViewController.storyboard in Resources */,
 				92B0D71722424C6C0057154E /* ZomPickColorViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,8 +509,10 @@
 				924E712322004D8600B398DD /* UIColor+Zom.swift in Sources */,
 				92C8BCC421FF62A5003D4EE3 /* AppDelegate.swift in Sources */,
 				924E712022004CB600B398DD /* Theme.swift in Sources */,
+				92B0D71D2242552B0057154E /* ZomBotCell.swift in Sources */,
 				924E71332201E3EE00B398DD /* RoomViewController+Zom.swift in Sources */,
 				924E711B220046C700B398DD /* Constants.m in Sources */,
+				92B0D719224253400057154E /* ZomBotsViewController.swift in Sources */,
 				924E713D2201F68300B398DD /* ZomPickStickerCell.swift in Sources */,
 				924E713B2201F5AE00B398DD /* ZomPickStickerViewController.swift in Sources */,
 				92B0D71522424A9C0057154E /* ZomPickColorViewController.swift in Sources */,
@@ -539,6 +556,15 @@
 				9286AC7322135EF200002536 /* bo */,
 			);
 			name = StickerShare.storyboard;
+			sourceTree = "<group>";
+		};
+		92B0D71E22427AE20057154E /* ZomBots.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92B0D71F22427AE20057154E /* Base */,
+				92B0D72122427AF30057154E /* bo */,
+			);
+			name = ZomBots.plist;
 			sourceTree = "<group>";
 		};
 		92C8BCCC21FF62A9003D4EE3 /* LaunchScreen.storyboard */ = {

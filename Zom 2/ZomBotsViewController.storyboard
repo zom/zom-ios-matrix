@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jU3-qX-aOV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Zom Services-->
+        <scene sceneID="tsk-hE-3sT">
+            <objects>
+                <tableViewController hidesBottomBarWhenPushed="YES" id="jU3-qX-aOV" customClass="ZomBotsViewController" customModule="Zom_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6E1-CH-Pd3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellZomBot" rowHeight="270" id="BXy-Bd-mfa" customClass="ZomBotCell" customModule="Zom_2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="270"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BXy-Bd-mfa" id="50u-Lv-KkV">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="269.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" image="PitchInvite" translatesAutoresizingMaskIntoConstraints="NO" id="4FM-tL-urq">
+                                            <rect key="frame" x="40" y="10" width="295" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="jMY-nD-Ar2"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SqE-tm-gW5">
+                                            <rect key="frame" x="40" y="130" width="319" height="18"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="999" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOB-cb-an4">
+                                            <rect key="frame" x="40" y="152" width="319" height="107.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="right" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c85-ZI-x6I">
+                                            <rect key="frame" x="319" y="130" width="16" height="22"/>
+                                            <state key="normal" image="ic_chat_bubble"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="18"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="aOB-cb-an4" firstAttribute="top" secondItem="SqE-tm-gW5" secondAttribute="bottom" constant="4" id="13x-xQ-1xh"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="SqE-tm-gW5" secondAttribute="trailing" id="6tZ-Xm-nY8"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="c85-ZI-x6I" secondAttribute="trailing" constant="24" id="Evu-1b-NFE"/>
+                                        <constraint firstItem="4FM-tL-urq" firstAttribute="leading" secondItem="50u-Lv-KkV" secondAttribute="leadingMargin" constant="24" id="Y3G-FL-2M8"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="4FM-tL-urq" secondAttribute="trailing" constant="24" id="Y5M-XI-6en"/>
+                                        <constraint firstItem="SqE-tm-gW5" firstAttribute="leading" secondItem="50u-Lv-KkV" secondAttribute="leadingMargin" constant="24" id="YLW-II-E7f"/>
+                                        <constraint firstItem="c85-ZI-x6I" firstAttribute="top" secondItem="SqE-tm-gW5" secondAttribute="top" priority="901" id="e4C-WU-z8h"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="aOB-cb-an4" secondAttribute="trailing" id="g7U-zJ-LNT"/>
+                                        <constraint firstItem="4FM-tL-urq" firstAttribute="top" secondItem="50u-Lv-KkV" secondAttribute="top" constant="10" id="gTv-lS-ZVI"/>
+                                        <constraint firstAttribute="bottom" secondItem="aOB-cb-an4" secondAttribute="bottom" constant="10" id="iPr-lC-YB9"/>
+                                        <constraint firstItem="c85-ZI-x6I" firstAttribute="bottom" secondItem="aOB-cb-an4" secondAttribute="bottom" priority="900" id="jjd-PW-yXe"/>
+                                        <constraint firstItem="SqE-tm-gW5" firstAttribute="top" secondItem="4FM-tL-urq" secondAttribute="bottom" constant="20" id="kuw-U8-4dR"/>
+                                        <constraint firstItem="aOB-cb-an4" firstAttribute="leading" secondItem="SqE-tm-gW5" secondAttribute="leading" id="vrT-JP-bwH"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="botImageView" destination="4FM-tL-urq" id="q9d-b1-yHM"/>
+                                    <outlet property="descriptionLabel" destination="aOB-cb-an4" id="Q1h-JV-vCY"/>
+                                    <outlet property="startChatButton" destination="c85-ZI-x6I" id="llo-Yj-2KW"/>
+                                    <outlet property="titleLabel" destination="SqE-tm-gW5" id="i2S-UN-6Qr"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="jU3-qX-aOV" id="le6-n6-Zim"/>
+                            <outlet property="delegate" destination="jU3-qX-aOV" id="vYK-vf-M1w"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Zom Services" id="Ft0-yW-Nvy"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2oN-ud-xFQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47" y="157"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PitchInvite" width="16" height="16"/>
+        <image name="ic_chat_bubble" width="16" height="16"/>
+    </resources>
+</document>
