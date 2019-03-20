@@ -99,6 +99,17 @@
 		92B0D71C2242552B0057154E /* ZomBotCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZomBotCell.swift; sourceTree = "<group>"; };
 		92B0D71F22427AE20057154E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/ZomBots.plist; sourceTree = "<group>"; };
 		92B0D72122427AF30057154E /* bo */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = bo; path = bo.lproj/ZomBots.plist; sourceTree = "<group>"; };
+		92B0D72222427D050057154E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		92B0D72322427D050057154E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Onboarding.strings"; sourceTree = "<group>"; };
+		92B0D72422427D050057154E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/StickerShare.strings"; sourceTree = "<group>"; };
+		92B0D72522427D060057154E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		92B0D72622427D070057154E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "zh-Hans"; path = "zh-Hans.lproj/ZomBots.plist"; sourceTree = "<group>"; };
+		92B0D72722427D0F0057154E /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		92B0D72822427D0F0057154E /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Onboarding.strings"; sourceTree = "<group>"; };
+		92B0D72922427D100057154E /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/StickerShare.strings"; sourceTree = "<group>"; };
+		92B0D72A22427D100057154E /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		92B0D72B22427D100057154E /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "zh-Hant"; path = "zh-Hant.lproj/ZomBots.plist"; sourceTree = "<group>"; };
+		92B0D72D22427D350057154E /* bo */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = bo; path = bo.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		92C8BCC021FF62A5003D4EE3 /* Zom 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zom 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C8BCC321FF62A5003D4EE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92C8BCCA21FF62A9003D4EE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -330,6 +341,8 @@
 				en,
 				bo,
 				Base,
+				"zh-Hans",
+				"zh-Hant",
 			);
 			mainGroup = 92C8BCB721FF62A5003D4EE3;
 			productRefGroup = 92C8BCC121FF62A5003D4EE3 /* Products */;
@@ -536,6 +549,8 @@
 			children = (
 				9286AC542212DCF100002536 /* Base */,
 				9286AC562212DCFB00002536 /* bo */,
+				92B0D72522427D060057154E /* zh-Hans */,
+				92B0D72A22427D100057154E /* zh-Hant */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -545,6 +560,8 @@
 			children = (
 				9286AC6B22135EE100002536 /* Base */,
 				9286AC7122135EED00002536 /* bo */,
+				92B0D72322427D050057154E /* zh-Hans */,
+				92B0D72822427D0F0057154E /* zh-Hant */,
 			);
 			name = Onboarding.storyboard;
 			sourceTree = "<group>";
@@ -554,6 +571,8 @@
 			children = (
 				9286AC6D22135EE200002536 /* Base */,
 				9286AC7322135EF200002536 /* bo */,
+				92B0D72422427D050057154E /* zh-Hans */,
+				92B0D72922427D100057154E /* zh-Hant */,
 			);
 			name = StickerShare.storyboard;
 			sourceTree = "<group>";
@@ -563,6 +582,8 @@
 			children = (
 				92B0D71F22427AE20057154E /* Base */,
 				92B0D72122427AF30057154E /* bo */,
+				92B0D72622427D070057154E /* zh-Hans */,
+				92B0D72B22427D100057154E /* zh-Hant */,
 			);
 			name = ZomBots.plist;
 			sourceTree = "<group>";
@@ -571,6 +592,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				9286AC522212DCDA00002536 /* Base */,
+				92B0D72222427D050057154E /* zh-Hans */,
+				92B0D72722427D0F0057154E /* zh-Hant */,
+				92B0D72D22427D350057154E /* bo */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
