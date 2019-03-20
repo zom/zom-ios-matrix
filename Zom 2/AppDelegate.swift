@@ -54,9 +54,8 @@ class AppDelegate: BaseAppDelegate {
         } else if let tabViewController = viewController as? UITabBarController {
             for tabVC in tabViewController.viewControllers ?? [] {
                 if let tabVC = tabVC as? UINavigationController,
-                    let discoverVC = tabVC.viewControllers[0] as? UITableViewController {
-                    //discoverVC.tableView.dataSource = nil
-                    //discoverVC.tableView.delegate = nil
+                    let discoverVC = tabVC.viewControllers[0] as? DiscoverViewController {
+                    discoverVC.initializeForZom()
                 }
             }
         }
