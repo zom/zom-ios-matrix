@@ -96,6 +96,12 @@
 		92C8BCCF21FF62A9003D4EE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92C8BCDD21FF6FC9003D4EE3 /* Zom2-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Zom2-Bridging-Header.h"; sourceTree = "<group>"; };
 		92C8BCDE21FF8CDA003D4EE3 /* Zom 2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Zom 2.entitlements"; sourceTree = "<group>"; };
+		A08CB6942243AB570003876C /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A08CB6962243AB570003876C /* use_android_strings_in_zom.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = use_android_strings_in_zom.sh; sourceTree = "<group>"; };
+		A08CB6972243AB570003876C /* stringtool.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = stringtool.sh; sourceTree = "<group>"; };
+		A08CB6982243AB570003876C /* genstrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = genstrings.swift; sourceTree = "<group>"; };
+		A08CB6992243AB570003876C /* genstrings.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = genstrings.sh; sourceTree = "<group>"; };
+		A08CB69A2243AB570003876C /* Podfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
 		BE0B501F5A3C23A8E95BDE43 /* Pods-ShareExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShareExtension/Pods-ShareExtension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -181,6 +187,7 @@
 		92C8BCB721FF62A5003D4EE3 = {
 			isa = PBXGroup;
 			children = (
+				A08CB6932243AB2D0003876C /* Build */,
 				401114E4223B18F500D2CC02 /* Shared */,
 				92C8BCC221FF62A5003D4EE3 /* Zom 2 */,
 				401114D2223B0F7800D2CC02 /* ShareExtension */,
@@ -221,6 +228,27 @@
 				924E71342201F54D00B398DD /* Stickers */,
 			);
 			path = "Zom 2";
+			sourceTree = "<group>";
+		};
+		A08CB6932243AB2D0003876C /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				A08CB6942243AB570003876C /* Podfile */,
+				A08CB69A2243AB570003876C /* Podfile.lock */,
+				A08CB6952243AB570003876C /* scripts */,
+			);
+			name = Build;
+			sourceTree = "<group>";
+		};
+		A08CB6952243AB570003876C /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				A08CB6962243AB570003876C /* use_android_strings_in_zom.sh */,
+				A08CB6972243AB570003876C /* stringtool.sh */,
+				A08CB6982243AB570003876C /* genstrings.swift */,
+				A08CB6992243AB570003876C /* genstrings.sh */,
+			);
+			path = scripts;
 			sourceTree = "<group>";
 		};
 		E348AC5B6FDFD88B2C0C9521 /* Frameworks */ = {
