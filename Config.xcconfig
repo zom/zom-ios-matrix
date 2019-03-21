@@ -7,8 +7,8 @@
 //
 
 // Avoid accidental checkins:
-// git update-index --skip-worktree Example/Shared/Config.xcconfig
-// git update-index --no-skip-worktree Example/Shared/Config.xcconfig
+// git update-index --skip-worktree Config.xcconfig
+// git update-index --no-skip-worktree Config.xcconfig
 
 
 KEANU_APP_BUNDLE_ID = im.zom.messenger
