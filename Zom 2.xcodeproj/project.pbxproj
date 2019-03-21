@@ -724,7 +724,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5AC836065B73D12EEE89CC26 /* Pods-Zom 2.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Zom 2/Zom 2.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -748,7 +747,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6DE7F91A6F9B83E63B8E827A /* Pods-Zom 2.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Zom 2/Zom 2.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
