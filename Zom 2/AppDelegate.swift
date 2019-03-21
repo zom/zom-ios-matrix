@@ -17,7 +17,19 @@ class AppDelegate: BaseAppDelegate {
     static let userDefaultsKeyMigratedZom1 = "migratedZom1"
     
     override func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
+
+// For debugging purposes: These are the folders, where all the stuff is stored.
+// You can have a look at it, while running in the simulator!
+//
+//        let fm = FileManager.default
+//
+//        if let appGroupId = Config.appGroupId,
+//            let container = fm.containerURL(forSecurityApplicationGroupIdentifier: appGroupId) {
+//            print(container)
+//        }
+//        print(fm.urls(for: .libraryDirectory, in: .userDomainMask))
+
+
         // Initialize theme
         let _ = Theme.shared
         

@@ -96,6 +96,12 @@
 		92C8BCCF21FF62A9003D4EE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92C8BCDD21FF6FC9003D4EE3 /* Zom2-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Zom2-Bridging-Header.h"; sourceTree = "<group>"; };
 		92C8BCDE21FF8CDA003D4EE3 /* Zom 2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Zom 2.entitlements"; sourceTree = "<group>"; };
+		A08CB6942243AB570003876C /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A08CB6962243AB570003876C /* use_android_strings_in_zom.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = use_android_strings_in_zom.sh; sourceTree = "<group>"; };
+		A08CB6972243AB570003876C /* stringtool.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = stringtool.sh; sourceTree = "<group>"; };
+		A08CB6982243AB570003876C /* genstrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = genstrings.swift; sourceTree = "<group>"; };
+		A08CB6992243AB570003876C /* genstrings.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = genstrings.sh; sourceTree = "<group>"; };
+		A08CB69A2243AB570003876C /* Podfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
 		BE0B501F5A3C23A8E95BDE43 /* Pods-ShareExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShareExtension/Pods-ShareExtension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -181,6 +187,7 @@
 		92C8BCB721FF62A5003D4EE3 = {
 			isa = PBXGroup;
 			children = (
+				A08CB6932243AB2D0003876C /* Build */,
 				401114E4223B18F500D2CC02 /* Shared */,
 				92C8BCC221FF62A5003D4EE3 /* Zom 2 */,
 				401114D2223B0F7800D2CC02 /* ShareExtension */,
@@ -221,6 +228,27 @@
 				924E71342201F54D00B398DD /* Stickers */,
 			);
 			path = "Zom 2";
+			sourceTree = "<group>";
+		};
+		A08CB6932243AB2D0003876C /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				A08CB6942243AB570003876C /* Podfile */,
+				A08CB69A2243AB570003876C /* Podfile.lock */,
+				A08CB6952243AB570003876C /* scripts */,
+			);
+			name = Build;
+			sourceTree = "<group>";
+		};
+		A08CB6952243AB570003876C /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				A08CB6962243AB570003876C /* use_android_strings_in_zom.sh */,
+				A08CB6972243AB570003876C /* stringtool.sh */,
+				A08CB6982243AB570003876C /* genstrings.swift */,
+				A08CB6992243AB570003876C /* genstrings.sh */,
+			);
+			path = scripts;
 			sourceTree = "<group>";
 		};
 		E348AC5B6FDFD88B2C0C9521 /* Frameworks */ = {
@@ -558,8 +586,8 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9SV9LPRC42;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "$(DEVELOPMENT_TEAM)";
 				INFOPLIST_FILE = ShareExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -567,8 +595,9 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = im.zom.messenger.ShareExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(KEANU_EXT_BUNDLE_ID)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "$(PROVISIONING_PROFILE_SPECIFIER_SHARE_EXTENSION_DEV)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Zom 2/Zom2-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
@@ -582,8 +611,8 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9SV9LPRC42;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "$(DEVELOPMENT_TEAM)";
 				INFOPLIST_FILE = ShareExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -591,8 +620,9 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = im.zom.messenger.ShareExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(KEANU_EXT_BUNDLE_ID)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "$(PROVISIONING_PROFILE_SPECIFIER_SHARE_EXTENSION_RELEASE)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Zom 2/Zom2-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
@@ -724,20 +754,19 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5AC836065B73D12EEE89CC26 /* Pods-Zom 2.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Zom 2/Zom 2.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9SV9LPRC42;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "$(DEVELOPMENT_TEAM)";
 				INFOPLIST_FILE = "Zom 2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = im.zom.messenger;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(KEANU_APP_BUNDLE_ID)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "$(PROVISIONING_PROFILE_SPECIFIER_MAIN_DEV)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Zom 2/Zom2-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -748,20 +777,19 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6DE7F91A6F9B83E63B8E827A /* Pods-Zom 2.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Zom 2/Zom 2.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9SV9LPRC42;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "$(DEVELOPMENT_TEAM)";
 				INFOPLIST_FILE = "Zom 2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = im.zom.messenger;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(KEANU_APP_BUNDLE_ID)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "$(PROVISIONING_PROFILE_SPECIFIER_MAIN_RELEASE)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Zom 2/Zom2-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
