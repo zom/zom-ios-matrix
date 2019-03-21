@@ -12,7 +12,7 @@
 
 
 KEANU_APP_BUNDLE_ID = im.zom.messenger
-KEANU_EXT_BUNDLE_ID =
+KEANU_EXT_BUNDLE_ID = im.zom.messenger.ShareExtension
 KEANU_APP_GROUP = group.im.zom.messenger
 
 DEVELOPMENT_TEAM = 9SV9LPRC42

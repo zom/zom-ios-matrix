@@ -77,7 +77,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="EWK-cY-Xas" firstAttribute="bottom" secondItem="q6f-dL-u79" secondAttribute="bottom" id="QZ4-Ut-g0E"/>
+                            <constraint firstAttribute="bottom" secondItem="EWK-cY-Xas" secondAttribute="bottom" id="Tx8-Rs-o9z"/>
                             <constraint firstItem="EWK-cY-Xas" firstAttribute="trailing" secondItem="q6f-dL-u79" secondAttribute="trailing" id="mjv-rK-HFB"/>
                             <constraint firstItem="EWK-cY-Xas" firstAttribute="top" secondItem="1Um-Tm-AyR" secondAttribute="top" id="sX6-aL-cH3"/>
                             <constraint firstItem="EWK-cY-Xas" firstAttribute="leading" secondItem="q6f-dL-u79" secondAttribute="leading" id="sdR-GT-cRT"/>
@@ -145,7 +145,7 @@
                     <navigationItem key="navigationItem" title="Add Account" id="Vpw-4f-Vbp">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="U9e-l3-RWQ">
                             <connections>
-                                <action selector="cancel" destination="awu-JF-dR6" id="i2O-qk-7o1"/>
+                                <action selector="done" destination="awu-JF-dR6" id="zIC-O1-tXS"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

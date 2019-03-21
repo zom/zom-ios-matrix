@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,21 +15,21 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z7e-fB-ltq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pJE-Vo-8Tf">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboarding_logo" translatesAutoresizingMaskIntoConstraints="NO" id="sjG-tz-yq1">
-                                        <rect key="frame" x="87.5" y="99.5" width="200" height="249"/>
+                                        <rect key="frame" x="87.666666666666686" y="172" width="200" height="249"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="KWg-zf-bks"/>
                                             <constraint firstAttribute="height" constant="249" id="Qe6-91-u4t"/>
                                         </constraints>
                                     </imageView>
                                     <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xw-Vt-SGn" userLabel="Skip Button">
-                                        <rect key="frame" x="172.5" y="408.5" width="30" height="30"/>
+                                        <rect key="frame" x="172.66666666666666" y="481" width="30" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="&gt;&gt;">
@@ -37,7 +37,7 @@
                                         </state>
                                     </button>
                                     <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xfg-p2-fcm">
-                                        <rect key="frame" x="119.5" y="368.5" width="136" height="30"/>
+                                        <rect key="frame" x="119.66666666666669" y="441" width="136" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="WELCOME TO ZOM">
@@ -61,7 +61,7 @@
                         <constraints>
                             <constraint firstItem="pJE-Vo-8Tf" firstAttribute="trailing" secondItem="spn-4N-cTZ" secondAttribute="trailing" id="RlR-0C-Noq"/>
                             <constraint firstItem="pJE-Vo-8Tf" firstAttribute="top" secondItem="z7e-fB-ltq" secondAttribute="top" id="YYf-Wi-4Hw"/>
-                            <constraint firstItem="pJE-Vo-8Tf" firstAttribute="bottom" secondItem="spn-4N-cTZ" secondAttribute="bottom" id="kTx-zY-oc3"/>
+                            <constraint firstAttribute="bottom" secondItem="pJE-Vo-8Tf" secondAttribute="bottom" id="iaX-ED-CAO"/>
                             <constraint firstItem="pJE-Vo-8Tf" firstAttribute="leading" secondItem="spn-4N-cTZ" secondAttribute="leading" id="ozd-Cs-b6n"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="spn-4N-cTZ"/>
@@ -69,7 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
     <resources>
