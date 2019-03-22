@@ -60,7 +60,7 @@ PODS:
     - CrossroadRegex (~> 1.1.0)
     - FontBlaster (~> 4.1.0)
     - Localize (~> 2.1.0)
-    - MatrixKit/AppExtension (~> 0.9.6)
+    - MatrixKit/AppExtension (~> 0.9.8)
     - MatrixSDK/SwiftSupport
   - KeanuExtension (0.1.0):
     - KeanuCore
@@ -104,22 +104,22 @@ PODS:
   - MaterialComponents/Typography (72.2.0):
     - MaterialComponents/private/Application
     - MaterialComponents/private/Math
-  - MatrixKit/AppExtension (0.9.7):
+  - MatrixKit/AppExtension (0.9.8):
     - cmark (~> 0.24.1)
     - DTCoreText (~> 1.6.21)
     - DTCoreText/Extension
     - HPGrowingTextView (~> 1.1)
     - libPhoneNumber-iOS (~> 0.9.13)
-    - MatrixSDK (= 0.12.3)
-  - MatrixSDK (0.12.3):
-    - MatrixSDK/Core (= 0.12.3)
-  - MatrixSDK/Core (0.12.3):
+    - MatrixSDK (= 0.12.4)
+  - MatrixSDK (0.12.4):
+    - MatrixSDK/Core (= 0.12.4)
+  - MatrixSDK/Core (0.12.4):
     - AFNetworking (~> 3.2.0)
     - GZIP (~> 1.2.2)
     - libbase58 (~> 0.1.4)
     - OLMKit (~> 3.0.0)
     - Realm (~> 3.13.1)
-  - MatrixSDK/SwiftSupport (0.12.3):
+  - MatrixSDK/SwiftSupport (0.12.4):
     - MatrixSDK/Core
   - MBProgressHUD (1.1.0)
   - MDFInternationalization (2.0.0)
@@ -211,14 +211,14 @@ SPEC CHECKSUMS:
   HPGrowingTextView: 88a716d97fb853bcb08a4a08e4727da17efc9b19
   INSPhotoGallery: a4e698e3d6338d9016328d6747488a2a111d94e2
   Keanu: 1752f613f4eb466fd80b8b3f53dd30cc44a5463f
-  KeanuCore: f855cdd171951737ff2688174388b48f9b704727
+  KeanuCore: c28f8f82a99d56e3a668cabe5a5308883f7b5507
   KeanuExtension: 87a687b3b20e0917bb332ba7d50a5615ad673cae
   libbase58: 7c040313537b8c44b6e2d15586af8e21f7354efd
   libPhoneNumber-iOS: e444379ac18bbfbdefad571da735b2cd7e096caa
   Localize: f360a343abfac047be5b375c45be1059f5f625f3
   MaterialComponents: d1637df9976683348de8eabd10de0723ec81db3d
-  MatrixKit: da43b16842298fe0987ca8a98267bee775c10a35
-  MatrixSDK: 36c1a0da01a2745d4ffcca73e080610f05d47009
+  MatrixKit: 098ddd270d1dec86a85ea93a85a00e37b2d80c11
+  MatrixSDK: 310efb69f70b4d7772f6f134b06fbb9ec238e6a7
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
