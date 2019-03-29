@@ -2,7 +2,6 @@ platform :ios, '9.1'
 use_frameworks!
 
 def shared_pods
-    pod 'Localize', :git => 'https://github.com/andresilvagomez/Localize.git'
     pod 'KeanuCore', :path => '../../Keanu'
 end
 
