@@ -104,10 +104,23 @@ PODS:
   - MaterialComponents/Typography (80.0.0):
     - MaterialComponents/private/Application
     - MaterialComponents/private/Math
+  - MatrixKit (0.9.8):
+    - cmark (~> 0.24.1)
+    - DTCoreText (~> 1.6.21)
+    - HPGrowingTextView (~> 1.1)
+    - libPhoneNumber-iOS (~> 0.9.13)
+    - MatrixKit/Core (= 0.9.8)
+    - MatrixSDK (= 0.12.4)
   - MatrixKit/AppExtension (0.9.8):
     - cmark (~> 0.24.1)
     - DTCoreText (~> 1.6.21)
     - DTCoreText/Extension
+    - HPGrowingTextView (~> 1.1)
+    - libPhoneNumber-iOS (~> 0.9.13)
+    - MatrixSDK (= 0.12.4)
+  - MatrixKit/Core (0.9.8):
+    - cmark (~> 0.24.1)
+    - DTCoreText (~> 1.6.21)
     - HPGrowingTextView (~> 1.1)
     - libPhoneNumber-iOS (~> 0.9.13)
     - MatrixSDK (= 0.12.4)
@@ -147,7 +160,7 @@ DEPENDENCIES:
   - Keanu (from `../../Keanu`)
   - KeanuCore (from `../../Keanu`)
   - KeanuExtension (from `../../Keanu`)
-  - Localize (from `https://github.com/andresilvagomez/Localize.git`)
+  - MatrixKit (from `https://github.com/matrix-org/matrix-ios-kit.git`)
   - QRCode (from `https://github.com/brackendev/QRCode.git`)
 
 SPEC REPOS:
@@ -165,8 +178,8 @@ SPEC REPOS:
     - INSPhotoGallery
     - libbase58
     - libPhoneNumber-iOS
+    - Localize
     - MaterialComponents
-    - MatrixKit
     - MatrixSDK
     - MBProgressHUD
     - MDFInternationalization
@@ -186,8 +199,8 @@ EXTERNAL SOURCES:
     :path: "../../Keanu"
   KeanuExtension:
     :path: "../../Keanu"
-  Localize:
-    :git: https://github.com/andresilvagomez/Localize.git
+  MatrixKit:
+    :git: https://github.com/matrix-org/matrix-ios-kit.git
   QRCode:
     :git: https://github.com/brackendev/QRCode.git
 
@@ -195,9 +208,9 @@ CHECKOUT OPTIONS:
   BarcodeScanner:
     :commit: fe7835d344be6190d66fa7994fa593fd4f66dd31
     :git: https://github.com/htothee/BarcodeScanner.git
-  Localize:
-    :commit: 4e164d9635ef1848219a25c5e775b4b596647e2b
-    :git: https://github.com/andresilvagomez/Localize.git
+  MatrixKit:
+    :commit: a369f46802af6963dcc14ae4c6eaa1c9262e2d92
+    :git: https://github.com/matrix-org/matrix-ios-kit.git
   QRCode:
     :commit: e267650e0a6db653d57b149530fcfa3fa660f632
     :git: https://github.com/brackendev/QRCode.git
@@ -220,7 +233,7 @@ SPEC CHECKSUMS:
   KeanuExtension: fe02728daef99853bc3417dc685032f75b515ab7
   libbase58: 7c040313537b8c44b6e2d15586af8e21f7354efd
   libPhoneNumber-iOS: e444379ac18bbfbdefad571da735b2cd7e096caa
-  Localize: af9b6823a745f40a0bf8f4e45271b60cc2f5a152
+  Localize: db1c46fb0f275cee2ec63bcdf194c567d8fda6c0
   MaterialComponents: fcd7ab0d6087bce852e2c60c2c712809f76c7f9e
   MatrixKit: 098ddd270d1dec86a85ea93a85a00e37b2d80c11
   MatrixSDK: 310efb69f70b4d7772f6f134b06fbb9ec238e6a7
@@ -234,6 +247,6 @@ SPEC CHECKSUMS:
   Realm: 50071da38fe079e0735e47c9f2eae738c68c5996
   SearchTextField: a0992739d4b05dcbb40fb3a5cc6526bd991bdd23
 
-PODFILE CHECKSUM: c8d4c45b2b8d713f55eb69158a3f4b3c6024e370
+PODFILE CHECKSUM: f85c8e574d8ac69f2126b16ba243f09a699d3708
 
 COCOAPODS: 1.6.1

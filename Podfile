@@ -2,7 +2,7 @@ platform :ios, '9.3'
 use_frameworks!
 
 def shared_pods
-    pod 'Localize', :git => 'https://github.com/andresilvagomez/Localize.git'
+    pod 'MatrixKit', :git => 'https://github.com/matrix-org/matrix-ios-kit.git'
     pod 'KeanuCore', :path => '../../Keanu'
 end
 
