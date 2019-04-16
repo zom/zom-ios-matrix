@@ -32,6 +32,14 @@ class AppDelegate: BaseAppDelegate {
 
         // Initialize theme
         let _ = Theme.shared
+
+        // Uncomment to take itunes snapshots!
+        // NOTE! Also return "false" som RoomDataSource.canPageBackwards, otherwise the
+        // mocking will show "Loading messages..." when it unsuccesfully tries to page back
+        // to fill the screen!
+        //if ProcessInfo.processInfo.arguments.contains("--mock") {
+        //    MockData.setup()
+        //}
         
         // Overridden to provide config data
         setUp()

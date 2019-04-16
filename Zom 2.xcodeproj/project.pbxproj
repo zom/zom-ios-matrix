@@ -27,6 +27,10 @@
 		9286AC552212DCF100002536 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9286AC532212DCF100002536 /* Localizable.strings */; };
 		9286AC6E22135EE200002536 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9286AC6A22135EE100002536 /* Onboarding.storyboard */; };
 		9286AC6F22135EE200002536 /* StickerShare.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9286AC6C22135EE200002536 /* StickerShare.storyboard */; };
+		92AF46B922645DE400DF9257 /* Screenshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AF46B822645DE400DF9257 /* Screenshots.swift */; };
+		92AF46C222645EBA00DF9257 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AF46C022645EBA00DF9257 /* SnapshotHelper.swift */; };
+		92AF46C522646E7E00DF9257 /* ScreenshotsChats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AF46C422646E7E00DF9257 /* ScreenshotsChats.swift */; };
+		92AF46C72264840700DF9257 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AF46C62264840700DF9257 /* MockData.swift */; };
 		92B0D71522424A9C0057154E /* ZomPickColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B0D71422424A9B0057154E /* ZomPickColorViewController.swift */; };
 		92B0D71722424C6C0057154E /* ZomPickColorViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B0D71622424C6C0057154E /* ZomPickColorViewController.storyboard */; };
 		92B0D719224253400057154E /* ZomBotsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B0D718224253400057154E /* ZomBotsViewController.swift */; };
@@ -46,6 +50,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 401114D0223B0F7800D2CC02;
 			remoteInfo = ShareExtension;
+		};
+		92AF46BB22645DE400DF9257 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92C8BCB821FF62A5003D4EE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92C8BCBF21FF62A5003D4EE3;
+			remoteInfo = "Zom 2";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -92,6 +103,12 @@
 		9286AC6D22135EE200002536 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StickerShare.storyboard; sourceTree = "<group>"; };
 		9286AC7122135EED00002536 /* bo */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = bo; path = bo.lproj/Onboarding.strings; sourceTree = "<group>"; };
 		9286AC7322135EF200002536 /* bo */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = bo; path = bo.lproj/StickerShare.strings; sourceTree = "<group>"; };
+		92AF46B622645DE400DF9257 /* Screenshots.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Screenshots.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92AF46B822645DE400DF9257 /* Screenshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screenshots.swift; sourceTree = "<group>"; };
+		92AF46BA22645DE400DF9257 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92AF46C022645EBA00DF9257 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		92AF46C422646E7E00DF9257 /* ScreenshotsChats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotsChats.swift; sourceTree = "<group>"; };
+		92AF46C62264840700DF9257 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		92B0D71422424A9B0057154E /* ZomPickColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZomPickColorViewController.swift; sourceTree = "<group>"; };
 		92B0D71622424C6C0057154E /* ZomPickColorViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ZomPickColorViewController.storyboard; sourceTree = "<group>"; };
 		92B0D718224253400057154E /* ZomBotsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZomBotsViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +148,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				604A9D0C53A47043FCD37CFA /* Pods_ShareExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92AF46B322645DE400DF9257 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +228,17 @@
 			name = UI;
 			sourceTree = "<group>";
 		};
+		92AF46B722645DE400DF9257 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				92AF46BA22645DE400DF9257 /* Info.plist */,
+				92AF46C022645EBA00DF9257 /* SnapshotHelper.swift */,
+				92AF46B822645DE400DF9257 /* Screenshots.swift */,
+				92AF46C422646E7E00DF9257 /* ScreenshotsChats.swift */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 		92C8BCB721FF62A5003D4EE3 = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +246,7 @@
 				401114E4223B18F500D2CC02 /* Shared */,
 				92C8BCC221FF62A5003D4EE3 /* Zom 2 */,
 				401114D2223B0F7800D2CC02 /* ShareExtension */,
+				92AF46B722645DE400DF9257 /* Screenshots */,
 				92C8BCC121FF62A5003D4EE3 /* Products */,
 				770B6F744737CC53A5ECF999 /* Pods */,
 				E348AC5B6FDFD88B2C0C9521 /* Frameworks */,
@@ -222,6 +258,7 @@
 			children = (
 				92C8BCC021FF62A5003D4EE3 /* Zom 2.app */,
 				401114D1223B0F7800D2CC02 /* ShareExtension.appex */,
+				92AF46B622645DE400DF9257 /* Screenshots.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -250,6 +287,7 @@
 				92B0D71C2242552B0057154E /* ZomBotCell.swift */,
 				924E71342201F54D00B398DD /* Stickers */,
 				92B0D71E22427AE20057154E /* ZomBots.plist */,
+				92AF46C62264840700DF9257 /* MockData.swift */,
 			);
 			path = "Zom 2";
 			sourceTree = "<group>";
@@ -305,6 +343,24 @@
 			productReference = 401114D1223B0F7800D2CC02 /* ShareExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		92AF46B522645DE400DF9257 /* Screenshots */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92AF46BF22645DE400DF9257 /* Build configuration list for PBXNativeTarget "Screenshots" */;
+			buildPhases = (
+				92AF46B222645DE400DF9257 /* Sources */,
+				92AF46B322645DE400DF9257 /* Frameworks */,
+				92AF46B422645DE400DF9257 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92AF46BC22645DE400DF9257 /* PBXTargetDependency */,
+			);
+			name = Screenshots;
+			productName = Screenshots;
+			productReference = 92AF46B622645DE400DF9257 /* Screenshots.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		92C8BCBF21FF62A5003D4EE3 /* Zom 2 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92C8BCD221FF62A9003D4EE3 /* Build configuration list for PBXNativeTarget "Zom 2" */;
@@ -333,7 +389,7 @@
 			isa = PBXProject;
 			attributes = {
 				DefaultBuildSystemTypeForWorkspace = Original;
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Zom;
 				TargetAttributes = {
@@ -344,6 +400,10 @@
 								enabled = 1;
 							};
 						};
+					};
+					92AF46B522645DE400DF9257 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 92C8BCBF21FF62A5003D4EE3;
 					};
 					92C8BCBF21FF62A5003D4EE3 = {
 						CreatedOnToolsVersion = 10.1;
@@ -379,6 +439,7 @@
 			targets = (
 				92C8BCBF21FF62A5003D4EE3 /* Zom 2 */,
 				401114D0223B0F7800D2CC02 /* ShareExtension */,
+				92AF46B522645DE400DF9257 /* Screenshots */,
 			);
 		};
 /* End PBXProject section */
@@ -389,6 +450,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				401114E3223B18E700D2CC02 /* Config.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92AF46B422645DE400DF9257 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,6 +609,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		92AF46B222645DE400DF9257 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92AF46B922645DE400DF9257 /* Screenshots.swift in Sources */,
+				92AF46C222645EBA00DF9257 /* SnapshotHelper.swift in Sources */,
+				92AF46C522646E7E00DF9257 /* ScreenshotsChats.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		92C8BCBC21FF62A5003D4EE3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -550,6 +628,7 @@
 				92C8BCC421FF62A5003D4EE3 /* AppDelegate.swift in Sources */,
 				924E712022004CB600B398DD /* Theme.swift in Sources */,
 				92B0D71D2242552B0057154E /* ZomBotCell.swift in Sources */,
+				92AF46C72264840700DF9257 /* MockData.swift in Sources */,
 				922D0CFD225B558C00EEDBC4 /* DiscoverViewController+Zom.swift in Sources */,
 				924E71332201E3EE00B398DD /* RoomViewController+Zom.swift in Sources */,
 				924E711B220046C700B398DD /* Constants.m in Sources */,
@@ -568,6 +647,11 @@
 			isa = PBXTargetDependency;
 			target = 401114D0223B0F7800D2CC02 /* ShareExtension */;
 			targetProxy = 401114D9223B0F7900D2CC02 /* PBXContainerItemProxy */;
+		};
+		92AF46BC22645DE400DF9257 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92C8BCBF21FF62A5003D4EE3 /* Zom 2 */;
+			targetProxy = 92AF46BB22645DE400DF9257 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -677,6 +761,46 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "Zom 2/Zom2-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		92AF46BD22645DE400DF9257 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9SV9LPRC42;
+				INFOPLIST_FILE = Screenshots/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = im.zom.Screenshots;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Zom 2";
+			};
+			name = Debug;
+		};
+		92AF46BE22645DE400DF9257 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9SV9LPRC42;
+				INFOPLIST_FILE = Screenshots/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = im.zom.Screenshots;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Zom 2";
 			};
 			name = Release;
 		};
@@ -854,6 +978,15 @@
 			buildConfigurations = (
 				401114DD223B0F7900D2CC02 /* Debug */,
 				401114DE223B0F7900D2CC02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92AF46BF22645DE400DF9257 /* Build configuration list for PBXNativeTarget "Screenshots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92AF46BD22645DE400DF9257 /* Debug */,
+				92AF46BE22645DE400DF9257 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
