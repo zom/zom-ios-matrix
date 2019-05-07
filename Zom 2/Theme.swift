@@ -130,6 +130,9 @@ class Theme: NSObject {
         pageControlAppearance.currentPageIndicatorTintColor = .black
         pageControlAppearance.backgroundColor = .white
         
+        JoinRoomView.appearance().tintColor = mainThemeColor
+        JoinRoomView.appearance().backgroundColor = mainThemeColor
+        
         return self
     }
 }
