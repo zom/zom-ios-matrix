@@ -85,6 +85,7 @@ class AppDelegate: BaseAppDelegate {
      Inject configuration and set up localization.
      */
     private func setUp() {
+        Bundle.swizzle()
         KeanuCore.setUp(with: Config.self)
         KeanuCore.setUpLocalization(fileName: "Localizable", bundle: Bundle.main)
         

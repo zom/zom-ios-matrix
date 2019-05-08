@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wd7-OD-XwU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wd7-OD-XwU">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="-145" y="141"/>
         </scene>
-        <!--View Controller-->
+        <!--Zom Welcome View Controller-->
         <scene sceneID="ZiA-BO-m9F">
             <objects>
-                <viewController id="XQz-fv-ZAp" sceneMemberID="viewController">
+                <viewController id="XQz-fv-ZAp" customClass="ZomWelcomeViewController" customModule="Zom_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Um-Tm-AyR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -59,15 +59,27 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Yw-1i-uRn">
+                                        <rect key="frame" x="128.5" y="597" width="118" height="30"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                        <state key="normal" title="Switch Language">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="switchLanguage" destination="XQz-fv-ZAp" eventType="touchUpInside" id="D8Y-Io-PIq"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.90588235289999997" green="0.1529411765" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="8Yw-1i-uRn" firstAttribute="centerX" secondItem="EWK-cY-Xas" secondAttribute="centerX" id="1hF-Kw-6T3"/>
                                     <constraint firstItem="wm4-oX-soO" firstAttribute="centerY" secondItem="EWK-cY-Xas" secondAttribute="centerY" constant="50" id="CKG-g6-hFq"/>
                                     <constraint firstItem="wm4-oX-soO" firstAttribute="centerX" secondItem="EWK-cY-Xas" secondAttribute="centerX" id="MgP-GN-6dV"/>
                                     <constraint firstAttribute="centerX" secondItem="igv-Oc-c4M" secondAttribute="centerX" id="PvH-Um-7o5"/>
                                     <constraint firstItem="SAs-1e-niI" firstAttribute="top" secondItem="wm4-oX-soO" secondAttribute="bottom" constant="10" id="d32-9d-lYS"/>
                                     <constraint firstItem="wm4-oX-soO" firstAttribute="top" secondItem="igv-Oc-c4M" secondAttribute="bottom" constant="20" id="dR4-5X-lSJ"/>
                                     <constraint firstItem="SAs-1e-niI" firstAttribute="centerX" secondItem="EWK-cY-Xas" secondAttribute="centerX" id="pvK-Zg-TTh"/>
+                                    <constraint firstItem="Zls-yh-cqq" firstAttribute="bottom" secondItem="8Yw-1i-uRn" secondAttribute="bottom" constant="40" id="uq9-yy-5vQ"/>
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="Zls-yh-cqq"/>
                                 <connections>
@@ -104,7 +116,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboarding_main" translatesAutoresizingMaskIntoConstraints="NO" id="sjb-LW-yFO">
-                                <rect key="frame" x="16" y="243.5" width="343" height="180"/>
+                                <rect key="frame" x="16" y="138" width="343" height="391"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WL6-Rq-pDc">
                                 <rect key="frame" x="103" y="549" width="169" height="38"/>
@@ -234,7 +246,7 @@
     </scenes>
     <resources>
         <image name="onboarding_logo" width="250" height="233.5"/>
-        <image name="onboarding_main" width="180" height="180"/>
+        <image name="onboarding_main" width="750" height="750"/>
         <image name="onboarding_push" width="293.5" height="293.5"/>
     </resources>
 </document>
