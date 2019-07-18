@@ -45,5 +45,14 @@ struct Config: KeanuConfig {
     static var universalLinkHost = Constants.universalLinkHost as String
     
     static var inviteLinkFormat = "https://\(Constants.universalLinkHost as String)/i/#%@"
+    
+    static var useNewVerificationBeta: Bool = {
+        let val = (Constants.useNewVerificationBeta as String?)?
+            .trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+        
+        // "true" in xcconfig *should* evaluate to "1". Anyway, we test for these
+        // other trueness values, just in case.
+        return val == "1" || val == "true" || val == "yes"
+    }()
 }
 
