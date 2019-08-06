@@ -164,7 +164,8 @@ DEPENDENCIES:
   - Keanu (from `../../Keanu`)
   - KeanuCore (from `../../Keanu`)
   - KeanuExtension (from `../../Keanu`)
-  - MatrixKit (from `https://github.com/matrix-org/matrix-ios-kit.git`)
+  - MatrixKit (from `https://github.com/N-Pex/matrix-ios-kit.git`, branch `fix_apns_push`)
+  - MatrixSDK (from `https://github.com/matrix-org/matrix-ios-sdk.git`, branch `develop`)
   - QRCode (from `https://github.com/brackendev/QRCode.git`)
 
 SPEC REPOS:
@@ -184,7 +185,6 @@ SPEC REPOS:
     - libPhoneNumber-iOS
     - Localize
     - MaterialComponents
-    - MatrixSDK
     - MBProgressHUD
     - MDFInternationalization
     - MDFTextAccessibility
@@ -205,7 +205,11 @@ EXTERNAL SOURCES:
   KeanuExtension:
     :path: "../../Keanu"
   MatrixKit:
-    :git: https://github.com/matrix-org/matrix-ios-kit.git
+    :branch: fix_apns_push
+    :git: https://github.com/N-Pex/matrix-ios-kit.git
+  MatrixSDK:
+    :branch: develop
+    :git: https://github.com/matrix-org/matrix-ios-sdk.git
   QRCode:
     :git: https://github.com/brackendev/QRCode.git
 
@@ -214,8 +218,11 @@ CHECKOUT OPTIONS:
     :commit: fe7835d344be6190d66fa7994fa593fd4f66dd31
     :git: https://github.com/htothee/BarcodeScanner.git
   MatrixKit:
-    :commit: da1a8cbe1f5aed3e46643b50841527559d6eb002
-    :git: https://github.com/matrix-org/matrix-ios-kit.git
+    :commit: d153f11192bd53d3a278b75cfee1e26da369a77b
+    :git: https://github.com/N-Pex/matrix-ios-kit.git
+  MatrixSDK:
+    :commit: 85314845144f41ec6a83b9778768c113940fa66a
+    :git: https://github.com/matrix-org/matrix-ios-sdk.git
   QRCode:
     :commit: e267650e0a6db653d57b149530fcfa3fa660f632
     :git: https://github.com/brackendev/QRCode.git
@@ -253,6 +260,6 @@ SPEC CHECKSUMS:
   SearchTextField: 40dc3cc57def5a211f263cac263622c163bbc25a
   SwiftUTI: e83d65dbe9fba0a0ff7cc9031cd30b2d82acebef
 
-PODFILE CHECKSUM: 92cae78daa909ba10db7eda80364f8defa59a87f
+PODFILE CHECKSUM: 23e61762873daa6c7bb6d27a4fc1eca6ac343761
 
 COCOAPODS: 1.6.1
