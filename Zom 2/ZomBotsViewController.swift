@@ -8,10 +8,11 @@
 
 import UIKit
 import KeanuCore
+import MatrixSDK
 
 fileprivate struct ZomBot {
     let name:String
-    let jid:String
+    let userId:String
     let description:String
     let image:UIImage?
     let avatar:Data?
@@ -27,7 +28,7 @@ fileprivate struct ZomBot {
             for (key, bot) in dict {
                 if let bot = bot as? NSDictionary {
                     let name = bot["name"] as? String
-                    let jid = bot["jid"] as? String
+                    let userId = bot["user"] as? String
                     let description = bot["description"] as? String
                     
                     // Get image
@@ -41,7 +42,7 @@ fileprivate struct ZomBot {
                     if let avatarStringEncoded = bot["avatar"] as? String {
                         avatar = Data(base64Encoded: avatarStringEncoded, options: .ignoreUnknownCharacters)!
                     }
-                    let zomBot = ZomBot(name: name ?? "", jid: jid ?? "", description: description ?? "", image: image, avatar: avatar)
+                    let zomBot = ZomBot(name: name ?? "", userId: userId ?? "", description: description ?? "", image: image, avatar: avatar)
                     bots.append(zomBot)
                 }
             }
@@ -95,11 +96,8 @@ open class ZomBotsViewController: UITableViewController {
     @IBAction func didPressStartChatButtonWithSender(_ sender: AnyObject) {
         if let button = sender as? UIButton {
             let bot = ZomBot.allBots[button.tag]
-//            if let appDelegate = UIApplication.shared.delegate as? ZomAppDelegate,
-//                let buddy = getZombotBuddy(bot: bot) {
-//                self.navigationController?.popViewController(animated: false)
-//                appDelegate.splitViewCoordinator.enterConversationWithBuddy(buddy.uniqueId)
-//            }
+            // Bots are not currently encrypted!
+            UIApplication.shared.openRoom(matrixId: bot.userId, encrypted: false)
         }
     }
     

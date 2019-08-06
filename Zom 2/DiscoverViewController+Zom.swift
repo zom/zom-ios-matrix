@@ -22,7 +22,7 @@ extension DiscoverViewController: DiscoverViewControllerDelegate {
 
     public func initializeRows(identifiers: [String]) -> [String] {
         var rows = identifiers
-        //rows.insert(DiscoverViewController.identifierBots, at: 0)
+        rows.insert(DiscoverViewController.identifierBots, at: 0)
         rows.append(DiscoverViewController.identifierChangeTheme)
         return rows
     }
