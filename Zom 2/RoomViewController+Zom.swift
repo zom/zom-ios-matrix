@@ -57,12 +57,8 @@ extension RoomViewController {
         RoomDataSource.bubbleProcessor = { (_ roomDataSource: RoomDataSource, _ event: MXEvent, _ roomBubbleData: RoomBubbleData?, _ roomState: MXRoomState) in
             
             // Zom sticker?!?
-            if event.eventType == __MXEventTypeRoomMessage,
-                let msgType = event.content["msgtype"] as? String,
-                msgType == kMXMessageTypeText,
-                let body = event.content["body"] as? String,
-                RoomViewController.isValidStickerShortCode(body) {
-                
+            if RoomViewController.isStickerEvent(event: event) {
+
                 // Replace this bubble with a custom sticker one
                 let bubble = RoomBubbleData(roomDataSource,
                                             state: roomState,
@@ -79,6 +75,17 @@ extension RoomViewController {
         
         // Set the delegate for the attachment picker, please see the RoomViewController extension.
         attachmentPickerDelegate = self
+    }
+    
+    public static func isStickerEvent(event: MXEvent) -> Bool {
+        if event.eventType == __MXEventTypeRoomMessage,
+            let msgType = event.content["msgtype"] as? String,
+            msgType == kMXMessageTypeText,
+            let body = event.content["body"] as? String,
+            RoomViewController.isValidStickerShortCode(body) {
+            return true
+        }
+        return false
     }
     
     fileprivate static func isValidStickerShortCode(_ message:String) -> Bool {
@@ -165,6 +172,12 @@ extension RoomViewController: RoomViewControllerAttachmentPickerDelegate {
             actionButton.backgroundColor = Theme.shared.mainThemeColor
             actionButton.tintColor = UIColor.white
         }
+    }
+    
+    @IBAction open func stickerButtonPressed(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "StickerShare", bundle: Bundle.main)
+        let vc = storyboard.instantiateInitialViewController()
+        self.present(vc!, animated: true, completion: nil)
     }
 }
 

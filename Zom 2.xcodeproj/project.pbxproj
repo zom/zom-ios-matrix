@@ -43,6 +43,7 @@
 		92C8BCC421FF62A5003D4EE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C8BCC321FF62A5003D4EE3 /* AppDelegate.swift */; };
 		92C8BCCB21FF62A9003D4EE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C8BCCA21FF62A9003D4EE3 /* Assets.xcassets */; };
 		92C8BCCE21FF62A9003D4EE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C8BCCC21FF62A9003D4EE3 /* LaunchScreen.storyboard */; };
+		92FAA35B230C248C00F472A0 /* RoomToolbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92FAA359230C248C00F472A0 /* RoomToolbar.xib */; };
 		C0226BD7BA5E30097BBCC8B6 /* Pods_Zom_2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7043637FD388A876828CDF45 /* Pods_Zom_2.framework */; };
 /* End PBXBuildFile section */
 
@@ -139,6 +140,7 @@
 		92C8BCCF21FF62A9003D4EE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92C8BCDD21FF6FC9003D4EE3 /* Zom2-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Zom2-Bridging-Header.h"; sourceTree = "<group>"; };
 		92C8BCDE21FF8CDA003D4EE3 /* Zom 2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Zom 2.entitlements"; sourceTree = "<group>"; };
+		92FAA35A230C248C00F472A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/RoomToolbar.xib; sourceTree = "<group>"; };
 		A08CB6942243AB570003876C /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A08CB6962243AB570003876C /* use_android_strings_in_zom.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = use_android_strings_in_zom.sh; sourceTree = "<group>"; };
 		A08CB6972243AB570003876C /* stringtool.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = stringtool.sh; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 		9286AC6922135EC800002536 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				92FAA359230C248C00F472A0 /* RoomToolbar.xib */,
 				9286AC6A22135EE100002536 /* Onboarding.storyboard */,
 				9286AC6C22135EE200002536 /* StickerShare.storyboard */,
 			);
@@ -478,6 +481,7 @@
 				924E7117220046BF00B398DD /* Config.xcconfig in Resources */,
 				9286AC6E22135EE200002536 /* Onboarding.storyboard in Resources */,
 				9286AC552212DCF100002536 /* Localizable.strings in Resources */,
+				92FAA35B230C248C00F472A0 /* RoomToolbar.xib in Resources */,
 				9286AC6F22135EE200002536 /* StickerShare.storyboard in Resources */,
 				92C8BCCB21FF62A9003D4EE3 /* Assets.xcassets in Resources */,
 				92B0D72022427AE30057154E /* ZomBots.plist in Resources */,
@@ -723,6 +727,14 @@
 				92B0D72D22427D350057154E /* bo */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		92FAA359230C248C00F472A0 /* RoomToolbar.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92FAA35A230C248C00F472A0 /* Base */,
+			);
+			name = RoomToolbar.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

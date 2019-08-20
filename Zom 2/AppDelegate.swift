@@ -10,6 +10,7 @@ import UIKit
 import UserNotifications
 import KeanuCore
 import Keanu
+import MatrixKit
 
 @UIApplicationMain
 class AppDelegate: BaseAppDelegate {
@@ -88,6 +89,18 @@ class AppDelegate: BaseAppDelegate {
         Bundle.swizzle()
         KeanuCore.setUp(with: Config.self)
         KeanuCore.setUpLocalization(fileName: "Localizable", bundle: Bundle.main)
+        
+        // Set formatter for "last message" so we can remove sticker short codes.
+        MXRoomSummary.lastMessageFormatter = { summary in
+            if let lastEvent = summary.lastMessageEvent, RoomViewController.isStickerEvent(event: lastEvent) {
+                    return "Sticker".localize()
+                }
+            return nil
+        }
+        
+        // Override the normal room toolbar to show a sticker button
+        //
+        RoomViewController.toolbarNibNormalMode = UINib(nibName: String(describing: RoomToolbar.self), bundle: Bundle.main)
         
         MessageCell.iconSecure = ""
         MessageCell.iconUnsecure = ""

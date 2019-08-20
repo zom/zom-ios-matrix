@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MaterialIcons-Regular.ttf">
+            <string>MaterialIcons-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="EYO-G1-2bz" customClass="RoomToolbar" customModule="Keanu">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0HC-Bx-Lbc">
+                    <rect key="frame" x="10" y="10" width="34" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="0HC-Bx-Lbc" secondAttribute="height" multiplier="1:1" id="fGy-Xe-aN9"/>
+                        <constraint firstAttribute="width" constant="34" id="fuY-Ij-0Ab"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MaterialIcons-Regular" family="Material Icons" pointSize="30"/>
+                    <state key="normal" title=""/>
+                    <connections>
+                        <action selector="attachButtonPressed:" destination="-2" eventType="touchUpInside" id="SVA-W4-DM5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPp-aL-mwp">
+                    <rect key="frame" x="54" y="10" width="34" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="34" id="ftL-SU-jDf"/>
+                        <constraint firstAttribute="width" secondItem="iPp-aL-mwp" secondAttribute="height" multiplier="1:1" id="nn8-90-qdN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MaterialIcons-Regular" family="Material Icons" pointSize="30"/>
+                    <state key="normal" title=""/>
+                    <connections>
+                        <action selector="stickerButtonPressed:" destination="-2" eventType="touchUpInside" id="Mia-Re-eqE"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oHu-og-k1F">
+                    <rect key="frame" x="98" y="10" width="223" height="34"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noh-a1-V7W">
+                    <rect key="frame" x="108" y="20.5" width="213" height="13.5"/>
+                    <fontDescription key="fontDescription" type="italicSystem" pointSize="11"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUQ-Fn-OOH">
+                    <rect key="frame" x="331" y="10" width="34" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="34" id="XOp-tS-HGW"/>
+                        <constraint firstAttribute="width" secondItem="wUQ-Fn-OOH" secondAttribute="height" multiplier="1:1" id="pXH-YV-3HY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MaterialIcons-Regular" family="Material Icons" pointSize="30"/>
+                    <state key="normal" title=""/>
+                    <connections>
+                        <action selector="sendButtonPressed:" destination="-2" eventType="touchUpInside" id="Lhr-cR-BA5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u11-fy-jio">
+                    <rect key="frame" x="331" y="10" width="34" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="u11-fy-jio" secondAttribute="height" multiplier="1:1" id="m7y-hi-8gV"/>
+                        <constraint firstAttribute="width" constant="34" id="os2-xq-OPH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MaterialIcons-Regular" family="Material Icons" pointSize="30"/>
+                    <state key="normal" title=""/>
+                    <connections>
+                        <action selector="microphoneButtonPressed:" destination="-2" eventType="touchUpInside" id="Dnr-GS-w8A"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="oHu-og-k1F" firstAttribute="leading" secondItem="iPp-aL-mwp" secondAttribute="trailing" constant="10" id="1N2-em-Zg6"/>
+                <constraint firstItem="iPp-aL-mwp" firstAttribute="top" secondItem="EYO-G1-2bz" secondAttribute="top" constant="10" id="6dc-ys-dG0"/>
+                <constraint firstItem="noh-a1-V7W" firstAttribute="leading" secondItem="oHu-og-k1F" secondAttribute="leading" constant="10" id="7QN-ZK-PcH"/>
+                <constraint firstItem="noh-a1-V7W" firstAttribute="centerY" secondItem="oHu-og-k1F" secondAttribute="centerY" id="903-Br-48x"/>
+                <constraint firstItem="noh-a1-V7W" firstAttribute="trailing" secondItem="oHu-og-k1F" secondAttribute="trailing" id="BQj-Wk-vpI"/>
+                <constraint firstItem="wUQ-Fn-OOH" firstAttribute="top" secondItem="EYO-G1-2bz" secondAttribute="top" constant="10" id="CRh-hC-aub"/>
+                <constraint firstItem="u11-fy-jio" firstAttribute="centerY" secondItem="wUQ-Fn-OOH" secondAttribute="centerY" id="E8M-iM-Evo"/>
+                <constraint firstItem="u11-fy-jio" firstAttribute="centerX" secondItem="wUQ-Fn-OOH" secondAttribute="centerX" id="O7K-kD-rp1"/>
+                <constraint firstItem="iPp-aL-mwp" firstAttribute="leading" secondItem="0HC-Bx-Lbc" secondAttribute="trailing" constant="10" id="RKv-uI-bSh"/>
+                <constraint firstItem="0HC-Bx-Lbc" firstAttribute="top" secondItem="EYO-G1-2bz" secondAttribute="top" constant="10" id="SIQ-NL-59e"/>
+                <constraint firstItem="0HC-Bx-Lbc" firstAttribute="leading" secondItem="EYO-G1-2bz" secondAttribute="leading" constant="10" id="TJI-Hg-lGS"/>
+                <constraint firstItem="u11-fy-jio" firstAttribute="width" secondItem="wUQ-Fn-OOH" secondAttribute="width" id="Urm-mo-gAx"/>
+                <constraint firstItem="wUQ-Fn-OOH" firstAttribute="leading" secondItem="oHu-og-k1F" secondAttribute="trailing" constant="10" id="YyZ-Sr-UDR"/>
+                <constraint firstAttribute="bottom" secondItem="oHu-og-k1F" secondAttribute="bottom" constant="10" id="Yzg-bE-eQr"/>
+                <constraint firstItem="oHu-og-k1F" firstAttribute="top" secondItem="EYO-G1-2bz" secondAttribute="top" constant="10" id="agE-Yi-bI1"/>
+                <constraint firstItem="u11-fy-jio" firstAttribute="height" secondItem="wUQ-Fn-OOH" secondAttribute="height" id="vz4-Sg-igF"/>
+                <constraint firstAttribute="trailing" secondItem="wUQ-Fn-OOH" secondAttribute="trailing" constant="10" id="z94-ZX-tUb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="hnL-BH-ryY"/>
+            <connections>
+                <outlet property="attachmentButton" destination="0HC-Bx-Lbc" id="d2y-Ha-KZZ"/>
+                <outlet property="microphoneButton" destination="u11-fy-jio" id="8eI-xv-PQL"/>
+                <outlet property="placeholderLabel" destination="noh-a1-V7W" id="wJY-mB-MD4"/>
+                <outlet property="sendButton" destination="wUQ-Fn-OOH" id="Ep0-l0-Bks"/>
+                <outlet property="textInputView" destination="oHu-og-k1F" id="t2Y-eD-Z8q"/>
+            </connections>
+            <point key="canvasLocation" x="62.5" y="-176"/>
+        </view>
+    </objects>
+</document>
