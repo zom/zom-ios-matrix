@@ -34,7 +34,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPp-aL-mwp">
-                    <rect key="frame" x="54" y="10" width="34" height="34"/>
+                    <rect key="frame" x="287" y="10" width="34" height="34"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="34" id="ftL-SU-jDf"/>
                         <constraint firstAttribute="width" secondItem="iPp-aL-mwp" secondAttribute="height" multiplier="1:1" id="nn8-90-qdN"/>
@@ -46,7 +46,7 @@
                     </connections>
                 </button>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oHu-og-k1F">
-                    <rect key="frame" x="98" y="10" width="223" height="34"/>
+                    <rect key="frame" x="54" y="10" width="223" height="34"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -63,7 +63,7 @@
                     </userDefinedRuntimeAttributes>
                 </textView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noh-a1-V7W">
-                    <rect key="frame" x="108" y="20.5" width="213" height="13.5"/>
+                    <rect key="frame" x="64" y="20.5" width="213" height="13.5"/>
                     <fontDescription key="fontDescription" type="italicSystem" pointSize="11"/>
                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
@@ -95,21 +95,21 @@
             </subviews>
             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
             <constraints>
-                <constraint firstItem="oHu-og-k1F" firstAttribute="leading" secondItem="iPp-aL-mwp" secondAttribute="trailing" constant="10" id="1N2-em-Zg6"/>
                 <constraint firstItem="iPp-aL-mwp" firstAttribute="top" secondItem="EYO-G1-2bz" secondAttribute="top" constant="10" id="6dc-ys-dG0"/>
                 <constraint firstItem="noh-a1-V7W" firstAttribute="leading" secondItem="oHu-og-k1F" secondAttribute="leading" constant="10" id="7QN-ZK-PcH"/>
                 <constraint firstItem="noh-a1-V7W" firstAttribute="centerY" secondItem="oHu-og-k1F" secondAttribute="centerY" id="903-Br-48x"/>
                 <constraint firstItem="noh-a1-V7W" firstAttribute="trailing" secondItem="oHu-og-k1F" secondAttribute="trailing" id="BQj-Wk-vpI"/>
                 <constraint firstItem="wUQ-Fn-OOH" firstAttribute="top" secondItem="EYO-G1-2bz" secondAttribute="top" constant="10" id="CRh-hC-aub"/>
                 <constraint firstItem="u11-fy-jio" firstAttribute="centerY" secondItem="wUQ-Fn-OOH" secondAttribute="centerY" id="E8M-iM-Evo"/>
+                <constraint firstItem="wUQ-Fn-OOH" firstAttribute="leading" secondItem="iPp-aL-mwp" secondAttribute="trailing" constant="10" id="Jxh-F0-b0F"/>
                 <constraint firstItem="u11-fy-jio" firstAttribute="centerX" secondItem="wUQ-Fn-OOH" secondAttribute="centerX" id="O7K-kD-rp1"/>
-                <constraint firstItem="iPp-aL-mwp" firstAttribute="leading" secondItem="0HC-Bx-Lbc" secondAttribute="trailing" constant="10" id="RKv-uI-bSh"/>
                 <constraint firstItem="0HC-Bx-Lbc" firstAttribute="top" secondItem="EYO-G1-2bz" secondAttribute="top" constant="10" id="SIQ-NL-59e"/>
                 <constraint firstItem="0HC-Bx-Lbc" firstAttribute="leading" secondItem="EYO-G1-2bz" secondAttribute="leading" constant="10" id="TJI-Hg-lGS"/>
                 <constraint firstItem="u11-fy-jio" firstAttribute="width" secondItem="wUQ-Fn-OOH" secondAttribute="width" id="Urm-mo-gAx"/>
-                <constraint firstItem="wUQ-Fn-OOH" firstAttribute="leading" secondItem="oHu-og-k1F" secondAttribute="trailing" constant="10" id="YyZ-Sr-UDR"/>
                 <constraint firstAttribute="bottom" secondItem="oHu-og-k1F" secondAttribute="bottom" constant="10" id="Yzg-bE-eQr"/>
                 <constraint firstItem="oHu-og-k1F" firstAttribute="top" secondItem="EYO-G1-2bz" secondAttribute="top" constant="10" id="agE-Yi-bI1"/>
+                <constraint firstItem="oHu-og-k1F" firstAttribute="leading" secondItem="0HC-Bx-Lbc" secondAttribute="trailing" constant="10" id="all-hd-2Ri"/>
+                <constraint firstItem="iPp-aL-mwp" firstAttribute="leading" secondItem="oHu-og-k1F" secondAttribute="trailing" constant="10" id="mxA-Bj-2nU"/>
                 <constraint firstItem="u11-fy-jio" firstAttribute="height" secondItem="wUQ-Fn-OOH" secondAttribute="height" id="vz4-Sg-igF"/>
                 <constraint firstAttribute="trailing" secondItem="wUQ-Fn-OOH" secondAttribute="trailing" constant="10" id="z94-ZX-tUb"/>
             </constraints>
