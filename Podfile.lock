@@ -17,29 +17,29 @@ PODS:
   - BarcodeScanner (4.1.4)
   - cmark (0.24.1)
   - CrossroadRegex (1.1.0)
-  - DTCoreText (1.6.22):
-    - DTCoreText/Core (= 1.6.22)
+  - DTCoreText (1.6.23):
+    - DTCoreText/Core (= 1.6.23)
     - DTFoundation/Core (~> 1.7.5)
     - DTFoundation/DTAnimatedGIF (~> 1.7.5)
     - DTFoundation/DTHTMLParser (~> 1.7.5)
     - DTFoundation/UIKit (~> 1.7.5)
-  - DTCoreText/Core (1.6.22):
+  - DTCoreText/Core (1.6.23):
     - DTFoundation/Core (~> 1.7.5)
     - DTFoundation/DTAnimatedGIF (~> 1.7.5)
     - DTFoundation/DTHTMLParser (~> 1.7.5)
     - DTFoundation/UIKit (~> 1.7.5)
-  - DTCoreText/Extension (1.6.22):
+  - DTCoreText/Extension (1.6.23):
     - DTFoundation/Core (~> 1.7.5)
     - DTFoundation/DTAnimatedGIF (~> 1.7.5)
     - DTFoundation/DTHTMLParser (~> 1.7.5)
     - DTFoundation/UIKit (~> 1.7.5)
-  - DTFoundation/Core (1.7.13)
-  - DTFoundation/DTAnimatedGIF (1.7.13)
-  - DTFoundation/DTHTMLParser (1.7.13):
+  - DTFoundation/Core (1.7.14)
+  - DTFoundation/DTAnimatedGIF (1.7.14)
+  - DTFoundation/DTHTMLParser (1.7.14):
     - DTFoundation/Core
-  - DTFoundation/UIKit (1.7.13):
+  - DTFoundation/UIKit (1.7.14):
     - DTFoundation/Core
-  - Eureka (5.0.0)
+  - Eureka (5.0.1)
   - FLAnimatedImage (1.0.12)
   - FontBlaster (4.1.0)
   - GZIP (1.2.3)
@@ -55,6 +55,7 @@ PODS:
     - PhoneNumberKit (~> 2.6)
     - PureLayout (~> 3.1)
     - QRCode (~> 2.0)
+    - RichEditorView (~> 5.0)
     - SearchTextField (~> 1.2)
   - KeanuCore (0.1.0):
     - CrossroadRegex (~> 1.1)
@@ -104,38 +105,23 @@ PODS:
   - MaterialComponents/Typography (80.0.0):
     - MaterialComponents/private/Application
     - MaterialComponents/private/Math
-  - MatrixKit (0.10.1):
-    - cmark (~> 0.24.1)
-    - DTCoreText (~> 1.6.21)
-    - HPGrowingTextView (~> 1.1)
-    - libPhoneNumber-iOS (~> 0.9.13)
-    - MatrixKit/Core (= 0.10.1)
-    - MatrixSDK (= 0.13.0)
-    - SwiftUTI (~> 1.0.6)
-  - MatrixKit/AppExtension (0.10.1):
+  - MatrixKit/AppExtension (0.10.2):
     - cmark (~> 0.24.1)
     - DTCoreText (~> 1.6.21)
     - DTCoreText/Extension
     - HPGrowingTextView (~> 1.1)
     - libPhoneNumber-iOS (~> 0.9.13)
-    - MatrixSDK (= 0.13.0)
+    - MatrixSDK (= 0.13.1)
     - SwiftUTI (~> 1.0.6)
-  - MatrixKit/Core (0.10.1):
-    - cmark (~> 0.24.1)
-    - DTCoreText (~> 1.6.21)
-    - HPGrowingTextView (~> 1.1)
-    - libPhoneNumber-iOS (~> 0.9.13)
-    - MatrixSDK (= 0.13.0)
-    - SwiftUTI (~> 1.0.6)
-  - MatrixSDK (0.13.0):
-    - MatrixSDK/Core (= 0.13.0)
-  - MatrixSDK/Core (0.13.0):
+  - MatrixSDK (0.13.1):
+    - MatrixSDK/Core (= 0.13.1)
+  - MatrixSDK/Core (0.13.1):
     - AFNetworking (~> 3.2.0)
     - GZIP (~> 1.2.2)
     - libbase58 (~> 0.1.4)
     - OLMKit (~> 3.1.0)
     - Realm (~> 3.13.1)
-  - MatrixSDK/SwiftSupport (0.13.0):
+  - MatrixSDK/SwiftSupport (0.13.1):
     - MatrixSDK/Core
   - MBProgressHUD (1.1.0)
   - MDFInternationalization (2.0.0)
@@ -156,6 +142,7 @@ PODS:
   - Realm (3.13.1):
     - Realm/Headers (= 3.13.1)
   - Realm/Headers (3.13.1)
+  - RichEditorView (5.0.0)
   - SearchTextField (1.2.4)
   - SwiftUTI (1.0.6)
 
@@ -164,8 +151,6 @@ DEPENDENCIES:
   - Keanu (from `../../Keanu`)
   - KeanuCore (from `../../Keanu`)
   - KeanuExtension (from `../../Keanu`)
-  - MatrixKit (from `https://github.com/N-Pex/matrix-ios-kit.git`, branch `fix_apns_push`)
-  - MatrixSDK (from `https://github.com/matrix-org/matrix-ios-sdk.git`, branch `develop`)
   - QRCode (from `https://github.com/brackendev/QRCode.git`)
 
 SPEC REPOS:
@@ -185,6 +170,8 @@ SPEC REPOS:
     - libPhoneNumber-iOS
     - Localize
     - MaterialComponents
+    - MatrixKit
+    - MatrixSDK
     - MBProgressHUD
     - MDFInternationalization
     - MDFTextAccessibility
@@ -192,6 +179,7 @@ SPEC REPOS:
     - PhoneNumberKit
     - PureLayout
     - Realm
+    - RichEditorView
     - SearchTextField
     - SwiftUTI
 
@@ -204,12 +192,6 @@ EXTERNAL SOURCES:
     :path: "../../Keanu"
   KeanuExtension:
     :path: "../../Keanu"
-  MatrixKit:
-    :branch: fix_apns_push
-    :git: https://github.com/N-Pex/matrix-ios-kit.git
-  MatrixSDK:
-    :branch: develop
-    :git: https://github.com/matrix-org/matrix-ios-sdk.git
   QRCode:
     :git: https://github.com/brackendev/QRCode.git
 
@@ -217,12 +199,6 @@ CHECKOUT OPTIONS:
   BarcodeScanner:
     :commit: fe7835d344be6190d66fa7994fa593fd4f66dd31
     :git: https://github.com/htothee/BarcodeScanner.git
-  MatrixKit:
-    :commit: d153f11192bd53d3a278b75cfee1e26da369a77b
-    :git: https://github.com/N-Pex/matrix-ios-kit.git
-  MatrixSDK:
-    :commit: 85314845144f41ec6a83b9778768c113940fa66a
-    :git: https://github.com/matrix-org/matrix-ios-sdk.git
   QRCode:
     :commit: e267650e0a6db653d57b149530fcfa3fa660f632
     :git: https://github.com/brackendev/QRCode.git
@@ -232,23 +208,23 @@ SPEC CHECKSUMS:
   BarcodeScanner: a29f55c0bb367a73aa9d744c1af6ed7ca7531984
   cmark: 1d9ad0375e3b9fa281732e992467903606015520
   CrossroadRegex: 5eaadb3f7b4014728f1cbd1014756b126c1dbd9a
-  DTCoreText: ad5135357a0e792f735970ed67d3ecda8b602d3d
-  DTFoundation: f03be9fd786f11e505bb8fc44e2a3732bf0917df
-  Eureka: 0f64f477ec8ef6201c6fec143d60ff5c201cf654
+  DTCoreText: 67023bb51b26711d5f640c851f4845aea14c24c9
+  DTFoundation: 25aa19bb7c6e225b1dfae195604fb8cf1da0ab4c
+  Eureka: da9d2294da234eae40b22e7273b9fc2335502fc1
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   FontBlaster: 127aa66419478d1c62926c7fdb39841633344a45
   GZIP: af5c90ef903776a7e9afe6ebebd794a84a2929d4
   HPGrowingTextView: 88a716d97fb853bcb08a4a08e4727da17efc9b19
   INSPhotoGallery: ad317cb9a59c7a5f08550e4155b49622c24dcab3
-  Keanu: efca27409f3fc20cb258f80c45ab57f5e60ca44b
+  Keanu: fd0923cdabb1a47c30e5c14c1e3ec10ea606cc84
   KeanuCore: bb7de9a36c29d68329c55fd9f47d086d5c591013
   KeanuExtension: fe02728daef99853bc3417dc685032f75b515ab7
   libbase58: 7c040313537b8c44b6e2d15586af8e21f7354efd
   libPhoneNumber-iOS: 0a32a9525cf8744fe02c5206eb30d571e38f7d75
   Localize: cb1ae53ed73decaad0dce217806ed983091913f5
   MaterialComponents: fcd7ab0d6087bce852e2c60c2c712809f76c7f9e
-  MatrixKit: a5e8c51d75ce2ded26781adc84f35aee2e46e2b6
-  MatrixSDK: 6886e7234c650408db5876b44a7f7608c865ce30
+  MatrixKit: 208801ba995442a6daa913eb6d639bb918c91c24
+  MatrixSDK: 16c8c4b530a7f9fb264baced52b6b0948b1d0a98
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
@@ -257,9 +233,10 @@ SPEC CHECKSUMS:
   PureLayout: f08c01b8dec00bb14a1fefa3de4c7d9c265df85e
   QRCode: 282441d0cfe8c4c1766b7578361fe93f72757685
   Realm: 50071da38fe079e0735e47c9f2eae738c68c5996
+  RichEditorView: 1bbb07b87ca2d479ac29a6877014b38b8df233ef
   SearchTextField: 40dc3cc57def5a211f263cac263622c163bbc25a
   SwiftUTI: e83d65dbe9fba0a0ff7cc9031cd30b2d82acebef
 
-PODFILE CHECKSUM: 23e61762873daa6c7bb6d27a4fc1eca6ac343761
+PODFILE CHECKSUM: 161834c4229854a86e8294833697e8f475741250
 
 COCOAPODS: 1.6.1
