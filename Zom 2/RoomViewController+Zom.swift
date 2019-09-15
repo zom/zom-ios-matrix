@@ -158,8 +158,12 @@ extension RoomViewController {
 extension RoomViewController: RoomViewControllerAttachmentPickerDelegate {
     public func addActions(attachmentPicker: AttachmentPicker, room: MXRoom?) {
         
-        // Add sticker options last
-        let _ = attachmentPicker.addAction("") {
+        // Add sticker option right before story button
+        var index:Int? = nil
+        if attachmentPicker.actions().count > 0 {
+            index = attachmentPicker.actions().count - 1
+        }
+        let _ = attachmentPicker.addAction("", at: index) {
             // Pick sticker!
             //closePickerView()
             let storyboard = UIStoryboard(name: "StickerShare", bundle: Bundle.main)
