@@ -57,6 +57,7 @@ PODS:
     - QRCode (~> 2.0)
     - RichEditorView (~> 5.0)
     - SearchTextField (~> 1.2)
+    - ViewRow (~> 0.6)
   - KeanuCore (0.1.0):
     - CrossroadRegex (~> 1.1)
     - FontBlaster (~> 4.1)
@@ -145,6 +146,8 @@ PODS:
   - RichEditorView (5.0.0)
   - SearchTextField (1.2.4)
   - SwiftUTI (1.0.6)
+  - ViewRow (0.6):
+    - Eureka (>= 5.0.0)
 
 DEPENDENCIES:
   - BarcodeScanner (from `https://github.com/htothee/BarcodeScanner.git`)
@@ -182,6 +185,7 @@ SPEC REPOS:
     - RichEditorView
     - SearchTextField
     - SwiftUTI
+    - ViewRow
 
 EXTERNAL SOURCES:
   BarcodeScanner:
@@ -216,7 +220,7 @@ SPEC CHECKSUMS:
   GZIP: af5c90ef903776a7e9afe6ebebd794a84a2929d4
   HPGrowingTextView: 88a716d97fb853bcb08a4a08e4727da17efc9b19
   INSPhotoGallery: ad317cb9a59c7a5f08550e4155b49622c24dcab3
-  Keanu: fd0923cdabb1a47c30e5c14c1e3ec10ea606cc84
+  Keanu: e6a529ce8bec6604f78865206a4cb7b2465b6849
   KeanuCore: bb7de9a36c29d68329c55fd9f47d086d5c591013
   KeanuExtension: fe02728daef99853bc3417dc685032f75b515ab7
   libbase58: 7c040313537b8c44b6e2d15586af8e21f7354efd
@@ -236,6 +240,7 @@ SPEC CHECKSUMS:
   RichEditorView: 1bbb07b87ca2d479ac29a6877014b38b8df233ef
   SearchTextField: 40dc3cc57def5a211f263cac263622c163bbc25a
   SwiftUTI: e83d65dbe9fba0a0ff7cc9031cd30b2d82acebef
+  ViewRow: 9bed2e09417d15a800c03cf0a778a3628c08d1a3
 
 PODFILE CHECKSUM: 161834c4229854a86e8294833697e8f475741250
 
