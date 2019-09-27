@@ -72,6 +72,8 @@ class Theme: NSObject {
 
         // On iOS 11 bar button items are descendants of button...
         UIButton.appearance(whenContainedInInstancesOf: [UINavigationBar.self]).tintColor = UIColor.white
+        // ...on iOS 13 they are no longer that.
+        UIBarButtonItem.appearance(whenContainedInInstancesOf: [UINavigationBar.self]).tintColor = UIColor.white
         UIBarButtonItem.appearance().setTitleTextAttributes([.foregroundColor: UIColor.white], for: .normal)
         
         let tabBarAppearance = UITabBar.appearance()
