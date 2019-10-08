@@ -39,7 +39,7 @@ PODS:
     - DTFoundation/Core
   - DTFoundation/UIKit (1.7.14):
     - DTFoundation/Core
-  - Eureka (5.0.1)
+  - Eureka (5.1.0)
   - FLAnimatedImage (1.0.12)
   - FontBlaster (4.1.0)
   - GZIP (1.2.3)
@@ -138,7 +138,7 @@ PODS:
   - PhoneNumberKit/PhoneNumberKitCore (2.6.0)
   - PhoneNumberKit/UIKit (2.6.0):
     - PhoneNumberKit/PhoneNumberKitCore
-  - PureLayout (3.1.4)
+  - PureLayout (3.1.5)
   - QRCode (2.0)
   - Realm (3.13.1):
     - Realm/Headers (= 3.13.1)
@@ -157,7 +157,7 @@ DEPENDENCIES:
   - QRCode (from `https://github.com/brackendev/QRCode.git`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - AFNetworking
     - cmark
     - CrossroadRegex
@@ -214,15 +214,15 @@ SPEC CHECKSUMS:
   CrossroadRegex: 5eaadb3f7b4014728f1cbd1014756b126c1dbd9a
   DTCoreText: 67023bb51b26711d5f640c851f4845aea14c24c9
   DTFoundation: 25aa19bb7c6e225b1dfae195604fb8cf1da0ab4c
-  Eureka: da9d2294da234eae40b22e7273b9fc2335502fc1
+  Eureka: 18a5076dcf0c41f9cd9748aa1c42f4d11434bdae
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   FontBlaster: 127aa66419478d1c62926c7fdb39841633344a45
   GZIP: af5c90ef903776a7e9afe6ebebd794a84a2929d4
   HPGrowingTextView: 88a716d97fb853bcb08a4a08e4727da17efc9b19
   INSPhotoGallery: ad317cb9a59c7a5f08550e4155b49622c24dcab3
-  Keanu: e6a529ce8bec6604f78865206a4cb7b2465b6849
-  KeanuCore: bb7de9a36c29d68329c55fd9f47d086d5c591013
-  KeanuExtension: fe02728daef99853bc3417dc685032f75b515ab7
+  Keanu: fcc409405dbf8e766a071c742c3a35b0f9ee4d59
+  KeanuCore: 0e6a907901f7e4620af4a403af52c76cbfe67122
+  KeanuExtension: da8935abf492a2f4b1106f2e58cff5d2b4450d95
   libbase58: 7c040313537b8c44b6e2d15586af8e21f7354efd
   libPhoneNumber-iOS: 0a32a9525cf8744fe02c5206eb30d571e38f7d75
   Localize: cb1ae53ed73decaad0dce217806ed983091913f5
@@ -234,7 +234,7 @@ SPEC CHECKSUMS:
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
   OLMKit: 4ee0159d63feeb86d836fdcfefe418e163511639
   PhoneNumberKit: 167ee1f0bbb6efce7c62559e620eae745595532f
-  PureLayout: f08c01b8dec00bb14a1fefa3de4c7d9c265df85e
+  PureLayout: 9b4ad47b2f0388c84ff534af23d96e720c1b875a
   QRCode: 282441d0cfe8c4c1766b7578361fe93f72757685
   Realm: 50071da38fe079e0735e47c9f2eae738c68c5996
   RichEditorView: 1bbb07b87ca2d479ac29a6877014b38b8df233ef
@@ -244,4 +244,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 161834c4229854a86e8294833697e8f475741250
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.8.3
