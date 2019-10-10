@@ -55,7 +55,7 @@ PODS:
     - PhoneNumberKit (~> 2.6)
     - PureLayout (~> 3.1)
     - QRCode (~> 2.0)
-    - RichEditorView (~> 5.0)
+    - RichEditorView
     - SearchTextField (~> 1.2)
     - ViewRow (~> 0.6)
   - KeanuCore (0.1.0):
@@ -143,7 +143,7 @@ PODS:
   - Realm (3.13.1):
     - Realm/Headers (= 3.13.1)
   - Realm/Headers (3.13.1)
-  - RichEditorView (5.0.0)
+  - RichEditorView (0.0.3)
   - SearchTextField (1.2.4)
   - SwiftUTI (1.0.6)
   - ViewRow (0.6):
@@ -155,6 +155,7 @@ DEPENDENCIES:
   - KeanuCore (from `../../Keanu`)
   - KeanuExtension (from `../../Keanu`)
   - QRCode (from `https://github.com/brackendev/QRCode.git`)
+  - RichEditorView (from `https://gitlab.com/keanuapp/keanuapp-ios-richeditorview.git`, branch `build_fixes`)
 
 SPEC REPOS:
   trunk:
@@ -182,7 +183,6 @@ SPEC REPOS:
     - PhoneNumberKit
     - PureLayout
     - Realm
-    - RichEditorView
     - SearchTextField
     - SwiftUTI
     - ViewRow
@@ -198,6 +198,9 @@ EXTERNAL SOURCES:
     :path: "../../Keanu"
   QRCode:
     :git: https://github.com/brackendev/QRCode.git
+  RichEditorView:
+    :branch: build_fixes
+    :git: https://gitlab.com/keanuapp/keanuapp-ios-richeditorview.git
 
 CHECKOUT OPTIONS:
   BarcodeScanner:
@@ -206,6 +209,9 @@ CHECKOUT OPTIONS:
   QRCode:
     :commit: e267650e0a6db653d57b149530fcfa3fa660f632
     :git: https://github.com/brackendev/QRCode.git
+  RichEditorView:
+    :commit: 23fe7dc66738a0fc33011b81040ba3498d2506b2
+    :git: https://gitlab.com/keanuapp/keanuapp-ios-richeditorview.git
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
@@ -220,7 +226,7 @@ SPEC CHECKSUMS:
   GZIP: af5c90ef903776a7e9afe6ebebd794a84a2929d4
   HPGrowingTextView: 88a716d97fb853bcb08a4a08e4727da17efc9b19
   INSPhotoGallery: ad317cb9a59c7a5f08550e4155b49622c24dcab3
-  Keanu: fcc409405dbf8e766a071c742c3a35b0f9ee4d59
+  Keanu: 2cfb8e05804aa69f86fdf9bf27159d137b8e2c82
   KeanuCore: 0e6a907901f7e4620af4a403af52c76cbfe67122
   KeanuExtension: da8935abf492a2f4b1106f2e58cff5d2b4450d95
   libbase58: 7c040313537b8c44b6e2d15586af8e21f7354efd
@@ -237,11 +243,11 @@ SPEC CHECKSUMS:
   PureLayout: 9b4ad47b2f0388c84ff534af23d96e720c1b875a
   QRCode: 282441d0cfe8c4c1766b7578361fe93f72757685
   Realm: 50071da38fe079e0735e47c9f2eae738c68c5996
-  RichEditorView: 1bbb07b87ca2d479ac29a6877014b38b8df233ef
+  RichEditorView: bd9637b517d9b0ff63f4d800507c7b4f378afa11
   SearchTextField: 40dc3cc57def5a211f263cac263622c163bbc25a
   SwiftUTI: e83d65dbe9fba0a0ff7cc9031cd30b2d82acebef
   ViewRow: 9bed2e09417d15a800c03cf0a778a3628c08d1a3
 
-PODFILE CHECKSUM: 161834c4229854a86e8294833697e8f475741250
+PODFILE CHECKSUM: c1e792b3c6abb5127913cc8225319b1f5e16b4ef
 
 COCOAPODS: 1.8.3
