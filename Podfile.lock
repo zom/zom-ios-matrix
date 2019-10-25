@@ -210,7 +210,7 @@ CHECKOUT OPTIONS:
     :commit: e267650e0a6db653d57b149530fcfa3fa660f632
     :git: https://github.com/brackendev/QRCode.git
   RichEditorView:
-    :commit: 23fe7dc66738a0fc33011b81040ba3498d2506b2
+    :commit: 225537e7959319b7a2ec681e1d728d2077e156fd
     :git: https://gitlab.com/keanuapp/keanuapp-ios-richeditorview.git
 
 SPEC CHECKSUMS:
@@ -250,4 +250,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 3c5345cddf9b8f6db17228e4821cd9a47846f407
 
-COCOAPODS: 1.8.3
+COCOAPODS: 1.8.4

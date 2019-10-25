@@ -11,8 +11,26 @@ import Keanu
 extension UIColor {
     public static let zomRed = UIColor(hexString: "#FFE7275A")
     public static let zomGreen = UIColor(hexString: "#FF7ED321")
-    public static let zomGray = UIColor(hexString: "#FFF1F2F3")
-    public static let zomDarkerGray = UIColor(hexString: "#FFCECECE")
+    public static var zomGray:UIColor {
+        get {
+            if #available(iOS 11.0, *) {
+                if let color = UIColor(named: "ZomGray") {
+                    return color
+                }
+            }
+            return UIColor(hexString: "#FFF1F2F3")
+        }
+    }
+    public static var zomDarkerGray:UIColor {
+        get {
+            if #available(iOS 11.0, *) {
+                if let color = UIColor(named: "ZomDarkerGray") {
+                    return color
+                }
+            }
+            return UIColor(hexString: "#FFCECECE")
+        }
+    }
 }
 
 class Theme: NSObject {
