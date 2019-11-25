@@ -47,7 +47,7 @@ PODS:
   - INSPhotoGallery (1.2.8)
   - Keanu (0.1.0):
     - BarcodeScanner (~> 4.1)
-    - Eureka (~> 5.0)
+    - Eureka (~> 5.1)
     - FLAnimatedImage (~> 1.0)
     - INSPhotoGallery (~> 1.2)
     - KeanuCore
@@ -62,7 +62,7 @@ PODS:
     - CrossroadRegex (~> 1.1)
     - FontBlaster (~> 4.1)
     - Localize (~> 2.2)
-    - MatrixKit/AppExtension (~> 0.9)
+    - MatrixKit/AppExtension (~> 0.11)
     - MatrixSDK/SwiftSupport
   - KeanuExtension (0.1.0):
     - KeanuCore
@@ -106,23 +106,23 @@ PODS:
   - MaterialComponents/Typography (80.0.0):
     - MaterialComponents/private/Application
     - MaterialComponents/private/Math
-  - MatrixKit/AppExtension (0.10.2):
+  - MatrixKit/AppExtension (0.11.2):
     - cmark (~> 0.24.1)
     - DTCoreText (~> 1.6.21)
     - DTCoreText/Extension
     - HPGrowingTextView (~> 1.1)
     - libPhoneNumber-iOS (~> 0.9.13)
-    - MatrixSDK (= 0.13.1)
+    - MatrixSDK (= 0.15.0)
     - SwiftUTI (~> 1.0.6)
-  - MatrixSDK (0.13.1):
-    - MatrixSDK/Core (= 0.13.1)
-  - MatrixSDK/Core (0.13.1):
+  - MatrixSDK (0.15.0):
+    - MatrixSDK/Core (= 0.15.0)
+  - MatrixSDK/Core (0.15.0):
     - AFNetworking (~> 3.2.0)
     - GZIP (~> 1.2.2)
     - libbase58 (~> 0.1.4)
     - OLMKit (~> 3.1.0)
-    - Realm (~> 3.13.1)
-  - MatrixSDK/SwiftSupport (0.13.1):
+    - Realm (~> 3.17.3)
+  - MatrixSDK/SwiftSupport (0.15.0):
     - MatrixSDK/Core
   - MBProgressHUD (1.1.0)
   - MDFInternationalization (2.0.0)
@@ -140,13 +140,13 @@ PODS:
     - PhoneNumberKit/PhoneNumberKitCore
   - PureLayout (3.1.5)
   - QRCode (2.0)
-  - Realm (3.13.1):
-    - Realm/Headers (= 3.13.1)
-  - Realm/Headers (3.13.1)
+  - Realm (3.17.3):
+    - Realm/Headers (= 3.17.3)
+  - Realm/Headers (3.17.3)
   - RichEditorView (0.0.3)
   - SearchTextField (1.2.4)
   - SwiftUTI (1.0.6)
-  - ViewRow (0.6):
+  - ViewRow (0.8):
     - Eureka (>= 5.0.0)
 
 DEPENDENCIES:
@@ -226,15 +226,15 @@ SPEC CHECKSUMS:
   GZIP: af5c90ef903776a7e9afe6ebebd794a84a2929d4
   HPGrowingTextView: 88a716d97fb853bcb08a4a08e4727da17efc9b19
   INSPhotoGallery: ad317cb9a59c7a5f08550e4155b49622c24dcab3
-  Keanu: 2cfb8e05804aa69f86fdf9bf27159d137b8e2c82
-  KeanuCore: 0e6a907901f7e4620af4a403af52c76cbfe67122
+  Keanu: f0c697b7470cb6c00f8eb2f4d28a6193a90d5ad3
+  KeanuCore: d738410bd05c51e55853361f4c1f54f1ae9d9e51
   KeanuExtension: da8935abf492a2f4b1106f2e58cff5d2b4450d95
   libbase58: 7c040313537b8c44b6e2d15586af8e21f7354efd
   libPhoneNumber-iOS: 0a32a9525cf8744fe02c5206eb30d571e38f7d75
   Localize: cb1ae53ed73decaad0dce217806ed983091913f5
   MaterialComponents: fcd7ab0d6087bce852e2c60c2c712809f76c7f9e
-  MatrixKit: 208801ba995442a6daa913eb6d639bb918c91c24
-  MatrixSDK: 16c8c4b530a7f9fb264baced52b6b0948b1d0a98
+  MatrixKit: 7f681c9086509a4f5e6e7172ce00f552cba1f8bc
+  MatrixSDK: 342384d62bac5d95a31a7dab79e5f687bd87ddca
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
@@ -242,11 +242,11 @@ SPEC CHECKSUMS:
   PhoneNumberKit: 167ee1f0bbb6efce7c62559e620eae745595532f
   PureLayout: 9b4ad47b2f0388c84ff534af23d96e720c1b875a
   QRCode: 282441d0cfe8c4c1766b7578361fe93f72757685
-  Realm: 50071da38fe079e0735e47c9f2eae738c68c5996
+  Realm: 5a1d9d47bfc101dd597668b1a8af4288a2557f6d
   RichEditorView: bd9637b517d9b0ff63f4d800507c7b4f378afa11
   SearchTextField: 40dc3cc57def5a211f263cac263622c163bbc25a
   SwiftUTI: e83d65dbe9fba0a0ff7cc9031cd30b2d82acebef
-  ViewRow: 9bed2e09417d15a800c03cf0a778a3628c08d1a3
+  ViewRow: 8da541e9c019f3be63f4e28f311a62cac2045ecf
 
 PODFILE CHECKSUM: 3c5345cddf9b8f6db17228e4821cd9a47846f407
 
