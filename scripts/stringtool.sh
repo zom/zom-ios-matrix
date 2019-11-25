@@ -79,13 +79,13 @@ function parseiOSStringsFile {
 
     sep=$(printf '\r')
     a=""
-    while read line; do
+    while read -r line; do
 	a="${a}${line}"
 	if [ "${line: -1}" == ";" ]; then
 	    line=$(echo "$a" | sed "s/\*\//${sep}/g")
 	    line=$(echo "$line" | sed "s/\" = \"/${sep}/g")
 	    oldIFS="$IFS"
-	    IFS=$'\r' read -a components -d '' <<< "$line"
+	    IFS=$'\r' read -r -a components -d '' <<< "$line"
 	    IFS="$oldIFS"
 
 	    comment="${components[0]}*/"
