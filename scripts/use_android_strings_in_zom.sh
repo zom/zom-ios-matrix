@@ -17,7 +17,10 @@
 #
 project_dir=""
 project_file=""
+android_resource_base=""
 android_input_files=()
+languages=()
+languages_index=0
 
 function addAndroidInputFile {
     local count=0
@@ -29,9 +32,9 @@ function addAndroidInputFile {
 }
 
 function showUsageAndExit {
-    echo "Usage: $0 -d <project_dir> -p <project_file> -i <android_strings_file> [-i <android_strings_file>...]";
+    echo "Usage: $0 -d <project_dir> -p <project_file> [-l <ios_language_code>] -i <android_strings_file> [-i <android_strings_file>...]";
     echo
-    echo "example: $0 -d ../Zom -p ../Zom.xcodeproj -i ../../../Zom-Android/app/src/main/res/values/zomstrings.xml -i ../../../Zom-Android/app/src/main/res/values/strings.xml"
+    echo "example: $0 -d ../Zom -p ../Zom.xcodeproj -l bo -l zh-Hant -i ../../../Zom-Android/app/src/main/res/values/zomstrings.xml -i ../../../Zom-Android/app/src/main/res/values/strings.xml"
     echo
     exit
 }
@@ -52,6 +55,11 @@ do
 	    ;;
 	-p|--project)
 	    project_file="$2"
+	    shift # past argument
+	    ;;
+	-l|--lang)
+	    languages[languages_index]="${2}"
+	    ((languages_index++))
 	    shift # past argument
 	    ;;
 	-i|--input)
@@ -125,41 +133,103 @@ function getAndroidLanguageCodeFromiOSLanguageCode {
     echo "-$id"
 }
 
+function getiOSLanguageCodeFromAndroidLanguageCode {
+    local id="$1"
+    local count=0
+    while [ "x${android_language_codes[count]}" != "x" ]
+    do
+	thisid="${android_language_codes[count]}"
+	if [ "$thisid" == "$id" ]; then
+	    echo "${ios_language_codes[count]}"
+	    return 1
+	fi
+	((count++))
+    done
+    echo "$id"
+}
+
 # Get languages
 #
 #
-languages=()
 ios_files=()
-languages_index=0
 base_dir_ios="$project_dir/"
 echo "Base dir is $base_dir_ios"
 
-while read languageDir; do
-    language="${languageDir%%.lproj}" # strip .lproj
-    language="${language##*/}" # strip everything to the last path character.lproj
-    if [[ "$language" == "Base" ]]
-    then
-	continue
-    fi
-    languages[languages_index]="${language}"
-    ((languages_index++))
-done <<<"$(find "$project_dir" -depth 1 -name "*.lproj" -print)"
+if [ "$languages_index" == "0" ]; then
+    echo "No languages given, use existing iOS res directories"
+    while read languageDir; do
+	language="${languageDir%%.lproj}" # strip .lproj
+	language="${language##*/}" # strip everything to the last path character.lproj
+	if [[ "$language" == "Base" ]]
+	then
+	    continue
+	fi
+	languages[languages_index]="${language}"
+	((languages_index++))
+    done <<<"$(find "$project_dir" -depth 1 -name "*.lproj" -print)"
+    
+    # Make sure corresponding Android strings file exists
+    #
+    #
+    languages_index=0
+    while [ "x${languages[languages_index]}" != "x" ]
+    do
+	language="${languages[languages_index]}"
+	language=$(getAndroidLanguageCodeFromiOSLanguageCode "$language")
+	((languages_index++))
+	android_path="${2/values/values$language}"
+	if [ ! -f $android_path ]; then
+	    echo "Warning: no matching strings file found at: $android_path!"
+	fi
+    done
+else
+    # Languages given. Make sure we have directories for those and copy over base files as needed
+    echo "Languages given. Make sure iOS directories exist..."
+    
+    languages_index=0
+    while [ "x${languages[languages_index]}" != "x" ]
+    do
+	language="${languages[languages_index]}"
+	if [[ "$language" == "Base" ]]
+	then
+	    continue
+	fi
+	langdir="${project_dir}/${language}.lproj"
+	if [ ! -d "$langdir" ]; then
+	    echo "Creating ${langdir}"
+	    mkdir "${langdir}"
+	fi
 
-# Make sure corresponding Android strings file exists
-#
-#
+	while read baseFile; do
+	    infile="$baseFile"
+	    filename="${infile##*/}" # strip everything to the last path character
+	    if [[ $infile == *"storyboard" ]]; then
+		filename="${filename/storyboard/strings}"
+		ibtool --export-strings-file "/tmp/base.strings" "$infile"
+		iconv -f utf-16 -t utf-8 /tmp/base.strings >  /tmp/base.strings.utf8
+		infile="/tmp/base.strings.utf8"
+	    fi
+	    if [ -f "${langdir}/${filename}" ]; then
+		echo "$filename exists"
+	    else
+		echo "$filename does not exist"
+		cp "$infile" "${langdir}/${filename}"
+	    fi
+	done <<<"$(find "${project_dir}/Base.lproj" -depth 1 \( -name "*.strings" -or -name "*.storyboard" \) -print)"
+	
+	((languages_index++))
+    done    
+fi
+
 languages_index=0
 while [ "x${languages[languages_index]}" != "x" ]
 do
     language="${languages[languages_index]}"
-    language=$(getAndroidLanguageCodeFromiOSLanguageCode "$language")
     ((languages_index++))
-    android_path="${2/values/values$language}"
-    if [ ! -f $android_path ]; then
-	echo "Warning: no matching strings file found at: $android_path!"
-    fi
+    echo "Language: $language"
 done
 
+#exit
 
 # Extract ids and English translations from Base.lproj files
 #
