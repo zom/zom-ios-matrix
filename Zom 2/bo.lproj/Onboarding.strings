@@ -1,18 +1,18 @@
+/* Class = "UIButton"; normalTitle = "Switch Language"; ObjectID = "8Yw-1i-uRn"; */
+"8Yw-1i-uRn.normalTitle" = "སྐད་ཡིག་བརྗེ་བསྒྱུར།";
+
+/* Class = "UIButton"; normalTitle = "Sign into an existing account"; ObjectID = "hai-SO-KIa"; */
+"hai-SO-KIa.normalTitle" = "སྔར་ཡོད་ཀྱི་ཁ་བྱང་བརྒྱུད་ནས་འཛུལ།";
+
+/* Class = "UIBarButtonItem"; title = "Cancel"; ObjectID = "U9e-l3-RWQ"; */
+"U9e-l3-RWQ.title" = "ཕྱིར་འཐེན།";
+
 /* Class = "UINavigationItem"; title = "Add Account"; ObjectID = "Vpw-4f-Vbp"; */
 "Vpw-4f-Vbp.title" = "ཁ་བྱང་གསར་བཟོ་བྱོས།";
 
 /* Class = "UIButton"; normalTitle = "Create an Account"; ObjectID = "WL6-Rq-pDc"; */
 "WL6-Rq-pDc.normalTitle" = "ཁ་བྱང་ཞིག་བཟོས།";
 
-/* Class = "UIButton"; normalTitle = "Sign into an existing account"; ObjectID = "hai-SO-KIa"; */
-"hai-SO-KIa.normalTitle" = "སྔར་ཡོད་ཀྱི་ཁ་བྱང་བརྒྱུད་ནས་འཛུལ།";
-
 /* Class = "UIButton"; normalTitle = "WELCOME TO ZOM"; ObjectID = "wm4-oX-soO"; */
 "wm4-oX-soO.normalTitle" = "འཛོམས་ནང་སླེབས་པར་དགའ་བསུ་ཞུ།";
-
-/* Class = "UIBarButtonItem"; title = "Cancel"; ObjectID = "U9e-l3-RWQ"; */
-"U9e-l3-RWQ.title" = "ཕྱིར་འཐེན།";
-
-/* Class = "UIButton"; normalTitle = "Switch Language"; ObjectID = "8Yw-1i-uRn"; */
-"8Yw-1i-uRn.normalTitle" = "སྐད་ཡིག་བརྗེ་བསྒྱུར།";
 

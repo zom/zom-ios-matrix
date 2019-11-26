@@ -1,7 +1,4 @@
 /* No comment */
-"User Name" = "འཛོམས་ཀྱི་ཁ་བྱང་ཞིག་བཟོས།";
-
-/* No comment */
 "Accept" = "མོས་མཐུན་ཡོད།";
 
 /* No comment */
@@ -14,6 +11,12 @@
 "Cancel" = "ཕྱིར་འཐེན།";
 
 /* No comment */
+"Change Theme" = "པར་ངོས་བརྗེས།";
+
+/* No comment */
+"Chats" = "གླེང་མོལ།";
+
+/* No comment */
 "Confirm" = "ངེས་བརྟན་གྱིས།";
 
 /* No comment */
@@ -24,6 +27,9 @@
 
 /* No comment */
 "Delete" = "གསུབ།";
+
+/* No comment */
+"Forward" = "བརྒྱུད་སྐུར།";
 
 /* No comment */
 "Friends" = "གྲོགས་པོ།";
@@ -44,23 +50,26 @@
 "Photo Stream" = "པར་མཛོད།";
 
 /* No comment */
-"Settings" = "སྒྲིག་བཟོ།";
-
-/* No comment */
-"Chats" = "གླེང་མོལ།";
-
-/* No comment */
 "Resend" = "བསྐྱར་གཏོང་།";
 
 /* No comment */
-"View profile" = "སྒེར་གྱི་ཡིག་ཆ་ལ་ལྟ།";
+"Settings" = "སྒྲིག་བཟོ།";
 
 /* No comment */
-"Forward" = "བརྒྱུད་སྐུར།";
+"Switch Language" = "སྐད་ཡིག་བརྗེ་བསྒྱུར།";
 
 /* No comment */
 "Undo" = "སྔོན་དུ་གང་ཡིན་པ་རང་འཇགས་ཞོག";
 
 /* No comment */
+"User Name" = "འཛོམས་ཀྱི་ཁ་བྱང་ཞིག་བཟོས།";
+
+/* No comment */
 "View Devices and Keys" = "ཡོ་ཆས་དང་ལྡེ་མིག་ཁག་ལ་ལྟ།";
+
+/* No comment */
+"View profile" = "སྒེར་གྱི་ཡིག་ཆ་ལ་ལྟ།";
+
+/* No comment */
+"Zom Services" = "འཛོམས་ཞབས་ཞུ།";
 
