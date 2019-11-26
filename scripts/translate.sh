@@ -115,7 +115,7 @@ my_dir="$(dirname "$0")"
 
 
 # Helper to translate from iOS language codes into corresponding Android language codes
-ios_language_codes=("Base" "en" "da-DK" "fa-IR" "nb-NO" "nl-NL" "pt-BR" "pt-PT" "ro-RO" "sl-SI" "zh-Hans-CN" "zh-Hant-TW")
+ios_language_codes=("Base" "en" "da-DK" "fa-IR" "nb-NO" "nl-NL" "pt-BR" "pt-PT" "ro-RO" "sl-SI" "zh-Hans" "zh-Hant")
 android_language_codes=("" "" "-da" "-fa" "-nb" "-nl" "-pt-rBR" "-pt" "-ro" "-sl-rSI" "-zh-rCN" "-zh-rTW")
 
 function getAndroidLanguageCodeFromiOSLanguageCode {
@@ -392,7 +392,7 @@ do
 	if [ "$android_key" != "" ]; then
 	    translation=$(findAndroidTranslation "$android_key")
 	    if [ ! "$translation" == "" ]; then
-		>&2 echo "Translation for $android_key is $translation"
+		#>&2 echo "Translation for $android_key is $translation"
 
 		perl -i -0pe "s/<trans-unit id=\"$id\".*?>(.*?)<source>(.*?)<\/source>[^<]*(<target>(.*?)<\/target>)?[^<]*/<trans-unit id=\"$id\" xml:space=\"preserve\">\1<source>\2<\/source><target>$translation<\/target>/smg" "/tmp/trans/${language}.xcloc/Localized Contents/${language}.xliff"
 	#	ios_values[count]="$translation"
@@ -408,6 +408,6 @@ do
     done < /tmp/trans/parsed_xliff.txt
 
     # Import back!
-    xcodebuild -importLocalizations -localizationPath "/tmp/trans/${languages}.xcloc" -project "$project_file"
+    xcodebuild -importLocalizations -localizationPath "/tmp/trans/${languages}.xcloc" -project "$project_file" 2>/dev/null
 done
 

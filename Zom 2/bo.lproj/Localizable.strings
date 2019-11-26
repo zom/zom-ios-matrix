@@ -29,6 +29,12 @@
 "Delete" = "གསུབ།";
 
 /* No comment */
+"Enter your friend's Matrix ID. Yours is %" = "ཁྱེད་ཀྱི་གྲོགས་པོའི་ཐོ་འགོད་མིང་ཐུང་བའམ།ཡང་ན་ཧྲིལ་པོ་གཏགས། ཁྱེད་རང་གི་ཐོ་འགོད་མིང་ནི %";
+
+/* No comment */
+"Find your friend on Matrix" = "ཁྱེད་ཀྱི་གྲོགས་པོ་འཚོལ།";
+
+/* No comment */
 "Forward" = "བརྒྱུད་སྐུར།";
 
 /* No comment */
