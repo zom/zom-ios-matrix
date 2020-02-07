@@ -32,7 +32,7 @@ class AppDelegate: BaseAppDelegate {
 
 
         // Initialize theme
-        let _ = Theme.shared
+        let _ = UITheme.shared
 
         // Uncomment to take itunes snapshots!
         // NOTE! Also return "false" som RoomDataSource.canPageBackwards, otherwise the
@@ -51,7 +51,7 @@ class AppDelegate: BaseAppDelegate {
         print("[\(String(describing: type(of: self)))] Background fetch initiated")
 
         // Initialize theme
-        let _ = Theme.shared
+        let _ = UITheme.shared
 
         // Overridden to provide config data
         setUp()
@@ -69,10 +69,7 @@ class AppDelegate: BaseAppDelegate {
      Listen to events when storyboard view controllers are instantiated. This allows us to override specific styles, set delegates etc.
      */
     override func storyboard(_ storyboard: UIStoryboard, instantiatedInitialViewController viewController: UIViewController?) {
-        if let viewController = viewController as? UINavigationController,
-            let roomViewController = viewController.viewControllers[0] as? RoomViewController {
-            roomViewController.initializeForZom()
-        } else if let tabViewController = viewController as? UITabBarController {
+        if let tabViewController = viewController as? UITabBarController {
             for tabVC in tabViewController.viewControllers ?? [] {
                 if let tabVC = tabVC as? UINavigationController,
                     let discoverVC = tabVC.viewControllers[0] as? DiscoverViewController {
@@ -92,7 +89,7 @@ class AppDelegate: BaseAppDelegate {
         
         // Set formatter for "last message" so we can remove sticker short codes.
         MXRoomSummary.lastMessageFormatter = { summary in
-            if let lastEvent = summary.lastMessageEvent, RoomViewController.isStickerEvent(event: lastEvent) {
+            if let lastEvent = summary.lastMessageEvent, ZomRoomViewController.isStickerEvent(event: lastEvent) {
                     return "Sticker".localize()
                 }
             return nil
@@ -112,6 +109,13 @@ class AppDelegate: BaseAppDelegate {
             !UserDefaults.standard.bool(forKey: AppDelegate.userDefaultsKeyMigratedZom1) {
             Scrubber.scrub()
             UserDefaults.standard.set(true, forKey: AppDelegate.userDefaultsKeyMigratedZom1)
+        }
+    }
+    
+    // Override Theme to create custom room view controllers!
+    override open var theme: Theme {
+        get {
+            return ZomTheme.shared
         }
     }
 }

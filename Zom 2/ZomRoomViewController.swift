@@ -9,7 +9,13 @@
 import Keanu
 import MatrixSDK
 
-extension RoomViewController {
+class ZomRoomViewController: RoomViewController {
+
+    override func viewDidLoad() {
+        initializeForZom()
+        super.viewDidLoad()
+    }
+    
     func initializeForZom() {
         
         // Create a custom renderer for Zom stickers
@@ -21,8 +27,8 @@ extension RoomViewController {
                 let msgType = event.content["msgtype"] as? String,
                 msgType == kMXMessageTypeText,
                 let body = event.content["body"] as? String,
-                RoomViewController.isValidStickerShortCode(body),
-                let filePath = RoomViewController.getStickerFilenameFromMessage(body)
+                ZomRoomViewController.isValidStickerShortCode(body),
+                let filePath = ZomRoomViewController.getStickerFilenameFromMessage(body)
             {
                 cell.render(roomBubbleData: roomBubbleData, delegate: delegate)
                 
@@ -57,7 +63,7 @@ extension RoomViewController {
         RoomDataSource.bubbleProcessor = { (_ roomDataSource: RoomDataSource, _ event: MXEvent, _ roomBubbleData: RoomBubbleData?, _ roomState: MXRoomState) in
             
             // Zom sticker?!?
-            if RoomViewController.isStickerEvent(event: event) {
+            if ZomRoomViewController.isStickerEvent(event: event) {
 
                 // Replace this bubble with a custom sticker one
                 let bubble = RoomBubbleData(roomDataSource,
@@ -82,7 +88,7 @@ extension RoomViewController {
             let msgType = event.content["msgtype"] as? String,
             msgType == kMXMessageTypeText,
             let body = event.content["body"] as? String,
-            RoomViewController.isValidStickerShortCode(body) {
+            ZomRoomViewController.isValidStickerShortCode(body) {
             return true
         }
         return false
@@ -173,7 +179,7 @@ extension RoomViewController: RoomViewControllerAttachmentPickerDelegate {
         
         // Style the buttons
         for actionButton in attachmentPicker.actions() {
-            actionButton.backgroundColor = Theme.shared.mainThemeColor
+            actionButton.backgroundColor = UITheme.shared.mainThemeColor
             actionButton.tintColor = UIColor.white
         }
     }

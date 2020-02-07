@@ -1,5 +1,5 @@
 //
-//  Theme.swift
+//  UITheme.swift
 //  Zom 2
 //
 //  Created by N-Pex on 29.01.19.
@@ -33,19 +33,19 @@ extension UIColor {
     }
 }
 
-class Theme: NSObject {
+class UITheme: NSObject {
     
     private static let USER_DEFAULTS_THEME_COLOR_KEY = "zom_ThemeColor"
     
     /**
      Singleton instance.
      */
-    public static let shared: Theme = {
-        return Theme().setupAppearance()
+    public static let shared: UITheme = {
+        return UITheme().setupAppearance()
     }()
     
     override init() {
-        if let themeColorString = UserDefaults.standard.string(forKey: Theme.USER_DEFAULTS_THEME_COLOR_KEY) {
+        if let themeColorString = UserDefaults.standard.string(forKey: UITheme.USER_DEFAULTS_THEME_COLOR_KEY) {
             mainThemeColor = UIColor(hexString: themeColorString)
         }
         else {
@@ -65,7 +65,7 @@ class Theme: NSObject {
         let _ = setupAppearance()
         
         let defaults = UserDefaults.standard
-        defaults.set(color.hexString(), forKey: Theme.USER_DEFAULTS_THEME_COLOR_KEY)
+        defaults.set(color.hexString(), forKey: UITheme.USER_DEFAULTS_THEME_COLOR_KEY)
         defaults.synchronize()
     }
     
@@ -78,7 +78,7 @@ class Theme: NSObject {
     
     // MARK: AppAppearance
     
-    func setupAppearance() -> Theme {
+    func setupAppearance() -> UITheme {
         UIView.appearance().tintColor = mainThemeColor
         
         var navBarAppearance = UINavigationBar.appearance()
