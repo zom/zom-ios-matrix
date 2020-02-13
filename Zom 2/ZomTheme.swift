@@ -19,4 +19,8 @@ public class ZomTheme: Theme {
         vc.hidesBottomBarWhenPushed = true
         return vc
     }
+    
+    public func createProfileViewController() -> ProfileViewController {
+        return BaseTheme.shared.createProfileViewController()
+    }
 }
