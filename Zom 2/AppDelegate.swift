@@ -87,14 +87,6 @@ class AppDelegate: BaseAppDelegate {
         KeanuCore.setUp(with: Config.self)
         KeanuCore.setUpLocalization(fileName: "Localizable", bundle: Bundle.main)
         
-        // Set formatter for "last message" so we can remove sticker short codes.
-        MXRoomSummary.lastMessageFormatter = { summary in
-            if let lastEvent = summary.lastMessageEvent, ZomRoomViewController.isStickerEvent(event: lastEvent) {
-                    return "Sticker".localize()
-                }
-            return nil
-        }
-        
         // Override the normal room toolbar to show a sticker button
         //
         RoomViewController.toolbarNibNormalMode = UINib(nibName: String(describing: RoomToolbar.self), bundle: Bundle.main)
@@ -110,6 +102,8 @@ class AppDelegate: BaseAppDelegate {
             Scrubber.scrub()
             UserDefaults.standard.set(true, forKey: AppDelegate.userDefaultsKeyMigratedZom1)
         }
+        
+        StickerManager.stickersFolderPath = Bundle.main.resourcePath! + "/Stickers"
     }
     
     // Override Theme to create custom room view controllers!
