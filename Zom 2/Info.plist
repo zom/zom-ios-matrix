@@ -39,6 +39,10 @@
 	<array>
 		<string>whatsapp</string>
 	</array>
+    <key>ITSAppUsesNonExemptEncryption</key>
+    <true/>
+    <key>ITSEncryptionExportComplianceCode</key>
+    <string>987246ba-fb3b-48f9-b3dd-1fecd57b90aa</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
