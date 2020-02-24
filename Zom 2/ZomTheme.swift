@@ -9,6 +9,7 @@
 import Keanu
 
 public class ZomTheme: Theme {
+
     /**
      Singleton instance.
      */
@@ -22,5 +23,9 @@ public class ZomTheme: Theme {
     
     public func createProfileViewController() -> ProfileViewController {
         return BaseTheme.shared.createProfileViewController()
+    }
+
+    public func createStoryViewController() -> StoryViewController {
+        return BaseTheme.shared.createStoryViewController()
     }
 }
