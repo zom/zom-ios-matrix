@@ -39,13 +39,14 @@ PODS:
     - DTFoundation/Core
   - DTFoundation/UIKit (1.7.14):
     - DTFoundation/Core
-  - Eureka (5.1.0)
+  - Eureka (5.2.0)
   - FLAnimatedImage (1.0.12)
   - FontBlaster (4.1.0)
   - GZIP (1.2.3)
   - HPGrowingTextView (1.1)
   - INSPhotoGallery (1.2.8)
   - Keanu (0.1.0):
+    - AFNetworking
     - BarcodeScanner (~> 4.1)
     - Eureka (~> 5.1)
     - FLAnimatedImage (~> 1.0)
@@ -106,25 +107,25 @@ PODS:
   - MaterialComponents/Typography (80.0.0):
     - MaterialComponents/private/Application
     - MaterialComponents/private/Math
-  - MatrixKit/AppExtension (0.11.2):
+  - MatrixKit/AppExtension (0.11.3):
     - cmark (~> 0.24.1)
     - DTCoreText (~> 1.6.21)
     - DTCoreText/Extension
     - HPGrowingTextView (~> 1.1)
     - libPhoneNumber-iOS (~> 0.9.13)
-    - MatrixSDK (= 0.15.0)
+    - MatrixSDK (= 0.15.2)
     - SwiftUTI (~> 1.0.6)
-  - MatrixSDK (0.15.0):
-    - MatrixSDK/Core (= 0.15.0)
-  - MatrixSDK/Core (0.15.0):
+  - MatrixSDK (0.15.2):
+    - MatrixSDK/Core (= 0.15.2)
+  - MatrixSDK/Core (0.15.2):
     - AFNetworking (~> 3.2.0)
     - GZIP (~> 1.2.2)
     - libbase58 (~> 0.1.4)
     - OLMKit (~> 3.1.0)
     - Realm (~> 3.17.3)
-  - MatrixSDK/SwiftSupport (0.15.0):
+  - MatrixSDK/SwiftSupport (0.15.2):
     - MatrixSDK/Core
-  - MBProgressHUD (1.1.0)
+  - MBProgressHUD (1.2.0)
   - MDFInternationalization (2.0.0)
   - MDFTextAccessibility (2.0.0)
   - OLMKit (3.1.0):
@@ -220,22 +221,22 @@ SPEC CHECKSUMS:
   CrossroadRegex: 5eaadb3f7b4014728f1cbd1014756b126c1dbd9a
   DTCoreText: 67023bb51b26711d5f640c851f4845aea14c24c9
   DTFoundation: 25aa19bb7c6e225b1dfae195604fb8cf1da0ab4c
-  Eureka: 18a5076dcf0c41f9cd9748aa1c42f4d11434bdae
+  Eureka: 820a761c700f6eaab3b60758f138e0d9b99072b3
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   FontBlaster: 127aa66419478d1c62926c7fdb39841633344a45
   GZIP: af5c90ef903776a7e9afe6ebebd794a84a2929d4
   HPGrowingTextView: 88a716d97fb853bcb08a4a08e4727da17efc9b19
   INSPhotoGallery: ad317cb9a59c7a5f08550e4155b49622c24dcab3
-  Keanu: f0c697b7470cb6c00f8eb2f4d28a6193a90d5ad3
+  Keanu: b4a19baa4acda6525c845e12c878add1b55f48b2
   KeanuCore: d738410bd05c51e55853361f4c1f54f1ae9d9e51
   KeanuExtension: da8935abf492a2f4b1106f2e58cff5d2b4450d95
   libbase58: 7c040313537b8c44b6e2d15586af8e21f7354efd
   libPhoneNumber-iOS: 0a32a9525cf8744fe02c5206eb30d571e38f7d75
   Localize: cb1ae53ed73decaad0dce217806ed983091913f5
   MaterialComponents: fcd7ab0d6087bce852e2c60c2c712809f76c7f9e
-  MatrixKit: 7f681c9086509a4f5e6e7172ce00f552cba1f8bc
-  MatrixSDK: 342384d62bac5d95a31a7dab79e5f687bd87ddca
-  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MatrixKit: 5a20025b05490a70694b701e607ec75e0988af21
+  MatrixSDK: f83bd3c5519c1cb9ac3998f6423574cf528f0250
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
   OLMKit: 4ee0159d63feeb86d836fdcfefe418e163511639
