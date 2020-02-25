@@ -28,4 +28,8 @@ public class ZomTheme: Theme {
     public func createStoryViewController() -> StoryViewController {
         return BaseTheme.shared.createStoryViewController()
     }
+
+    public func createRoomSettingsViewController() -> RoomSettingsViewController {
+        return BaseTheme.shared.createRoomSettingsViewController()
+    }
 }
