@@ -46,6 +46,7 @@ PODS:
   - HPGrowingTextView (1.1)
   - INSPhotoGallery (1.2.8)
   - Keanu (0.1.0):
+    - AFNetworking
     - BarcodeScanner (~> 4.1)
     - Eureka (~> 5.1)
     - FLAnimatedImage (~> 1.0)
@@ -226,7 +227,7 @@ SPEC CHECKSUMS:
   GZIP: af5c90ef903776a7e9afe6ebebd794a84a2929d4
   HPGrowingTextView: 88a716d97fb853bcb08a4a08e4727da17efc9b19
   INSPhotoGallery: ad317cb9a59c7a5f08550e4155b49622c24dcab3
-  Keanu: f0c697b7470cb6c00f8eb2f4d28a6193a90d5ad3
+  Keanu: 2e07890c00baf361b6d093e4b4ce04c904caca7b
   KeanuCore: d738410bd05c51e55853361f4c1f54f1ae9d9e51
   KeanuExtension: da8935abf492a2f4b1106f2e58cff5d2b4450d95
   libbase58: 7c040313537b8c44b6e2d15586af8e21f7354efd
