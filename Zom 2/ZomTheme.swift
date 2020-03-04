@@ -32,4 +32,8 @@ public class ZomTheme: Theme {
     public func createRoomSettingsViewController() -> RoomSettingsViewController {
         return BaseTheme.shared.createRoomSettingsViewController()
     }
+
+    public func createShowQrViewController() -> ShowQrViewController {
+        return BaseTheme.shared.createShowQrViewController()
+    }
 }
