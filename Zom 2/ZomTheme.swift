@@ -36,4 +36,8 @@ public class ZomTheme: Theme {
     public func createShowQrViewController() -> ShowQrViewController {
         return BaseTheme.shared.createShowQrViewController()
     }
+
+    public func createVerificationViewController() -> VerificationViewController {
+        return BaseTheme.shared.createVerificationViewController()
+    }
 }
