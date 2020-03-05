@@ -40,4 +40,8 @@ public class ZomTheme: Theme {
     public func createVerificationViewController() -> VerificationViewController {
         return BaseTheme.shared.createVerificationViewController()
     }
+
+    public func createAddFriendViewController() -> AddFriendViewController {
+        return BaseTheme.shared.createAddFriendViewController()
+    }
 }
