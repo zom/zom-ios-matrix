@@ -48,4 +48,8 @@ public class ZomTheme: Theme {
     public func createChooseFriendsViewController() -> ChooseFriendsViewController {
         return BaseTheme.shared.createChooseFriendsViewController()
     }
+
+    public func createPhotoStreamViewController() -> PhotoStreamViewController {
+        BaseTheme.shared.createPhotoStreamViewController()
+    }
 }

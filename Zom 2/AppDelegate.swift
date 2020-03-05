@@ -72,7 +72,7 @@ class AppDelegate: BaseAppDelegate {
         if let tabViewController = viewController as? UITabBarController {
             for tabVC in tabViewController.viewControllers ?? [] {
                 if let tabVC = tabVC as? UINavigationController,
-                    let discoverVC = tabVC.viewControllers[0] as? DiscoverViewController {
+                    let discoverVC = tabVC.viewControllers.first as? DiscoverViewController {
                     discoverVC.initializeForZom()
                 }
             }
