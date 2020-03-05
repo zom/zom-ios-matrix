@@ -44,4 +44,8 @@ public class ZomTheme: Theme {
     public func createAddFriendViewController() -> AddFriendViewController {
         return BaseTheme.shared.createAddFriendViewController()
     }
+
+    public func createChooseFriendsViewController() -> ChooseFriendsViewController {
+        return BaseTheme.shared.createChooseFriendsViewController()
+    }
 }
