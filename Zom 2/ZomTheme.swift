@@ -20,7 +20,11 @@ public class ZomTheme: Theme {
         vc.hidesBottomBarWhenPushed = true
         return vc
     }
-    
+
+    public func createRoomSettingsViewController() -> RoomSettingsViewController {
+        return BaseTheme.shared.createRoomSettingsViewController()
+    }
+
     public func createProfileViewController() -> ProfileViewController {
         return BaseTheme.shared.createProfileViewController()
     }
@@ -29,8 +33,16 @@ public class ZomTheme: Theme {
         return BaseTheme.shared.createStoryViewController()
     }
 
-    public func createRoomSettingsViewController() -> RoomSettingsViewController {
-        return BaseTheme.shared.createRoomSettingsViewController()
+    public func createStoryEditorViewController() -> StoryEditorViewController {
+        return BaseTheme.shared.createStoryEditorViewController()
+    }
+
+    public func createChooseFriendsViewController() -> ChooseFriendsViewController {
+        return BaseTheme.shared.createChooseFriendsViewController()
+    }
+
+    public func createAddFriendViewController() -> AddFriendViewController {
+        return BaseTheme.shared.createAddFriendViewController()
     }
 
     public func createShowQrViewController() -> ShowQrViewController {
@@ -39,14 +51,6 @@ public class ZomTheme: Theme {
 
     public func createVerificationViewController() -> VerificationViewController {
         return BaseTheme.shared.createVerificationViewController()
-    }
-
-    public func createAddFriendViewController() -> AddFriendViewController {
-        return BaseTheme.shared.createAddFriendViewController()
-    }
-
-    public func createChooseFriendsViewController() -> ChooseFriendsViewController {
-        return BaseTheme.shared.createChooseFriendsViewController()
     }
 
     public func createPhotoStreamViewController() -> PhotoStreamViewController {
