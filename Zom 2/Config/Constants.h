@@ -20,8 +20,6 @@
 
 @property (class, nonatomic, assign, readonly) NSString *pushServer;
 
-@property (class, nonatomic, assign, readonly) NSString *appGroupId;
-
 @property (class, nonatomic, assign, readonly) NSString *universalLinkHost;
 
 @property (class, nonatomic, assign, readonly) NSString *useNewVerificationBeta;
