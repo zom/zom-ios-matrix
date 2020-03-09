@@ -5,6 +5,9 @@
 "Active" = "དྲ་ཐོག་ན་འདུག";
 
 /* No comment */
+"Add Friends" = "གྲོགས་སྣོན།";
+
+/* No comment */
 "Archive" = "ཡིག་མཛོད།";
 
 /* No comment */
@@ -47,6 +50,12 @@
 "Me" = "ང་།";
 
 /* No comment */
+"Members" = "ཚོགས་མི།";
+
+/* No comment */
+"Notifications" = "བརྡ་ཁྱབ།";
+
+/* No comment */
 "OK" = "འགྲིག";
 
 /* No comment */
@@ -60,6 +69,9 @@
 
 /* No comment */
 "Settings" = "སྒྲིག་བཟོ།";
+
+/* No comment */
+"Share" = "ངོ་སྤྲོད་བྱོས།";
 
 /* No comment */
 "Switch Language" = "སྐད་ཡིག་བརྗེ་བསྒྱུར།";
