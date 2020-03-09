@@ -152,9 +152,9 @@ PODS:
 
 DEPENDENCIES:
   - BarcodeScanner (from `https://github.com/htothee/BarcodeScanner.git`)
-  - Keanu (from `../../Keanu`)
-  - KeanuCore (from `../../Keanu`)
-  - KeanuExtension (from `../../Keanu`)
+  - Keanu (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `490badef`)
+  - KeanuCore (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `490badef`)
+  - KeanuExtension (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `490badef`)
   - QRCode (from `https://github.com/brackendev/QRCode.git`)
   - RichEditorView (from `https://gitlab.com/keanuapp/keanuapp-ios-richeditorview.git`, branch `build_fixes`)
 
@@ -192,11 +192,14 @@ EXTERNAL SOURCES:
   BarcodeScanner:
     :git: https://github.com/htothee/BarcodeScanner.git
   Keanu:
-    :path: "../../Keanu"
+    :commit: 490badef
+    :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuCore:
-    :path: "../../Keanu"
+    :commit: 490badef
+    :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuExtension:
-    :path: "../../Keanu"
+    :commit: 490badef
+    :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   QRCode:
     :git: https://github.com/brackendev/QRCode.git
   RichEditorView:
@@ -207,6 +210,15 @@ CHECKOUT OPTIONS:
   BarcodeScanner:
     :commit: fe7835d344be6190d66fa7994fa593fd4f66dd31
     :git: https://github.com/htothee/BarcodeScanner.git
+  Keanu:
+    :commit: 490badef
+    :git: https://gitlab.com/keanuapp/keanuapp-ios.git
+  KeanuCore:
+    :commit: 490badef
+    :git: https://gitlab.com/keanuapp/keanuapp-ios.git
+  KeanuExtension:
+    :commit: 490badef
+    :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   QRCode:
     :commit: e267650e0a6db653d57b149530fcfa3fa660f632
     :git: https://github.com/brackendev/QRCode.git
@@ -227,7 +239,7 @@ SPEC CHECKSUMS:
   GZIP: af5c90ef903776a7e9afe6ebebd794a84a2929d4
   HPGrowingTextView: 88a716d97fb853bcb08a4a08e4727da17efc9b19
   INSPhotoGallery: ad317cb9a59c7a5f08550e4155b49622c24dcab3
-  Keanu: b4a19baa4acda6525c845e12c878add1b55f48b2
+  Keanu: 2e07890c00baf361b6d093e4b4ce04c904caca7b
   KeanuCore: d738410bd05c51e55853361f4c1f54f1ae9d9e51
   KeanuExtension: da8935abf492a2f4b1106f2e58cff5d2b4450d95
   libbase58: 7c040313537b8c44b6e2d15586af8e21f7354efd
@@ -249,6 +261,6 @@ SPEC CHECKSUMS:
   SwiftUTI: e83d65dbe9fba0a0ff7cc9031cd30b2d82acebef
   ViewRow: 8da541e9c019f3be63f4e28f311a62cac2045ecf
 
-PODFILE CHECKSUM: 3c5345cddf9b8f6db17228e4821cd9a47846f407
+PODFILE CHECKSUM: 796f0d6bc6c060bcaa7fdec9ae2a07625671b16e
 
 COCOAPODS: 1.8.4
