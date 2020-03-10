@@ -15,6 +15,7 @@ KEANU_APP_BUNDLE_ID[config=Debug] =
 KEANU_EXT_BUNDLE_ID[config=Debug] =
 KEANU_APP_GROUP[config=Debug] =
 DEVELOPMENT_TEAM[config=Debug] =
+CODE_SIGNING_STYLE[config=Debug] = Manual
 PROVISIONING_PROFILE_SPECIFIER_MAIN[config=Debug] =
 PROVISIONING_PROFILE_SPECIFIER_SHARE_EXTENSION[config=Debug] =
 
@@ -22,6 +23,7 @@ KEANU_APP_BUNDLE_ID[config=Release] = im.zom.messenger
 KEANU_EXT_BUNDLE_ID[config=Release] = im.zom.messenger.ShareExtension
 KEANU_APP_GROUP[config=Release] = group.im.zom.messenger
 DEVELOPMENT_TEAM[config=Release] = 9SV9LPRC42
+CODE_SIGNING_STYLE[config=Release] = Manual
 PROVISIONING_PROFILE_SPECIFIER_MAIN[config=Release] =
 PROVISIONING_PROFILE_SPECIFIER_SHARE_EXTENSION[config=Release] =
 
