@@ -33,6 +33,14 @@ public class ZomTheme: Theme {
         return BaseTheme.shared.createStoryViewController()
     }
 
+    public func createStoryAddMediaViewController() -> StoryAddMediaViewController {
+        return BaseTheme.shared.createStoryAddMediaViewController()
+    }
+
+    public func createStoryGalleryViewController() -> StoryGalleryViewController {
+        return BaseTheme.shared.createStoryGalleryViewController()
+    }
+
     public func createStoryEditorViewController() -> StoryEditorViewController {
         return BaseTheme.shared.createStoryEditorViewController()
     }
