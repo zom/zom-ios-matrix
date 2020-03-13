@@ -45,6 +45,14 @@ public class ZomTheme: Theme {
         return BaseTheme.shared.createStoryEditorViewController()
     }
 
+    public func createStickerPackViewController() -> StickerPackViewController {
+        return BaseTheme.shared.createStickerPackViewController()
+    }
+
+    public func createPickStickerViewController() -> PickStickerViewController {
+        return BaseTheme.shared.createPickStickerViewController()
+    }
+
     public func createChooseFriendsViewController() -> ChooseFriendsViewController {
         return BaseTheme.shared.createChooseFriendsViewController()
     }

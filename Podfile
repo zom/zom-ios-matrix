@@ -11,7 +11,7 @@ post_install do |installer|
 end
 
 def shared_pods
-    pod 'KeanuCore', :git => 'https://gitlab.com/keanuapp/keanuapp-ios.git', :commit => 'ad51dcb7'
+    pod 'KeanuCore', :git => 'https://gitlab.com/keanuapp/keanuapp-ios.git', :commit => '52cba60b'
     #pod 'MatrixKit', :git => 'https://github.com/N-Pex/matrix-ios-kit.git', :branch => 'fix_apns_push'
     #pod 'MatrixSDK', :git => 'https://github.com/matrix-org/matrix-ios-sdk.git', :branch => 'develop'
 end
@@ -22,12 +22,12 @@ target 'Zom 2' do
   pod 'BarcodeScanner', :git => 'https://github.com/htothee/BarcodeScanner.git'
   pod 'QRCode', :git => 'https://github.com/brackendev/QRCode.git'
 
-  pod 'Keanu', :git => 'https://gitlab.com/keanuapp/keanuapp-ios.git', :commit => 'ad51dcb7'
+  pod 'Keanu', :git => 'https://gitlab.com/keanuapp/keanuapp-ios.git', :commit => '52cba60b'
   pod 'RichEditorView', :git => 'https://gitlab.com/keanuapp/keanuapp-ios-richeditorview.git', :branch => 'build_fixes'
 end
 
 target 'ShareExtension' do
   shared_pods
 
-  pod 'KeanuExtension', :git => 'https://gitlab.com/keanuapp/keanuapp-ios.git', :commit => 'ad51dcb7'
+  pod 'KeanuExtension', :git => 'https://gitlab.com/keanuapp/keanuapp-ios.git', :commit => '52cba60b'
 end

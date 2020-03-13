@@ -22,9 +22,9 @@ class ZomRoomViewController: RoomViewController {
     }
     
     @IBAction open func stickerButtonPressed(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "StickerShare", bundle: Bundle(for: RoomViewController.self))
-        let vc = storyboard.instantiateInitialViewController()
-        self.present(vc!, animated: true, completion: nil)
+        let vc = UIApplication.shared.theme.createStickerPackViewController()
+        vc.pickDelegate = self
+        present(UINavigationController(rootViewController: vc), animated: true)
     }
 }
 
