@@ -15,6 +15,21 @@ public class ZomTheme: Theme {
      */
     public static let shared = ZomTheme()
     
+    public func createWelcomeViewController() -> WelcomeViewController {
+        return ZomWelcomeViewController(nibName: String(describing: ZomWelcomeViewController.self),
+                                        bundle: Bundle(for: type(of: self)))
+    }
+
+    public func createAddAccountViewController() -> AddAccountViewController {
+        return AddAccountViewController(nibName: "ZomAddAccountViewController",
+                                        bundle: Bundle(for: type(of: self)))
+    }
+
+    public func createEnablePushViewController() -> EnablePushViewController {
+        return EnablePushViewController(nibName: "ZomEnablePushViewController",
+                                        bundle: Bundle(for: type(of: self)))
+    }
+
     public func createRoomViewController() -> RoomViewController {
         let vc = ZomRoomViewController()
         vc.hidesBottomBarWhenPushed = true
