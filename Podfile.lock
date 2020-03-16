@@ -152,9 +152,9 @@ PODS:
 
 DEPENDENCIES:
   - BarcodeScanner (from `https://github.com/htothee/BarcodeScanner.git`)
-  - Keanu (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `d2fdf212`)
-  - KeanuCore (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `d2fdf212`)
-  - KeanuExtension (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `d2fdf212`)
+  - Keanu (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `848c5bdf`)
+  - KeanuCore (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `848c5bdf`)
+  - KeanuExtension (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `848c5bdf`)
   - QRCode (from `https://github.com/brackendev/QRCode.git`)
   - RichEditorView (from `https://gitlab.com/keanuapp/keanuapp-ios-richeditorview.git`, branch `build_fixes`)
 
@@ -192,13 +192,13 @@ EXTERNAL SOURCES:
   BarcodeScanner:
     :git: https://github.com/htothee/BarcodeScanner.git
   Keanu:
-    :commit: d2fdf212
+    :commit: 848c5bdf
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuCore:
-    :commit: d2fdf212
+    :commit: 848c5bdf
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuExtension:
-    :commit: d2fdf212
+    :commit: 848c5bdf
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   QRCode:
     :git: https://github.com/brackendev/QRCode.git
@@ -211,13 +211,13 @@ CHECKOUT OPTIONS:
     :commit: fe7835d344be6190d66fa7994fa593fd4f66dd31
     :git: https://github.com/htothee/BarcodeScanner.git
   Keanu:
-    :commit: d2fdf212
+    :commit: 848c5bdf
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuCore:
-    :commit: d2fdf212
+    :commit: 848c5bdf
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuExtension:
-    :commit: d2fdf212
+    :commit: 848c5bdf
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   QRCode:
     :commit: e267650e0a6db653d57b149530fcfa3fa660f632
@@ -261,6 +261,6 @@ SPEC CHECKSUMS:
   SwiftUTI: e83d65dbe9fba0a0ff7cc9031cd30b2d82acebef
   ViewRow: 8da541e9c019f3be63f4e28f311a62cac2045ecf
 
-PODFILE CHECKSUM: f09b067e66b14a511b3517347a4f812e399cff38
+PODFILE CHECKSUM: 9152cc9f73c6af3dbf26fd691e2b2dec67b8f9f0
 
 COCOAPODS: 1.9.1

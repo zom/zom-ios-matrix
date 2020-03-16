@@ -30,6 +30,22 @@ public class ZomTheme: Theme {
                                         bundle: Bundle(for: type(of: self)))
     }
 
+    public func createMainViewController() -> MainViewController {
+        return BaseTheme.shared.createMainViewController()
+    }
+
+    public func createChatListViewController() -> ChatListViewController {
+        return BaseTheme.shared.createChatListViewController()
+    }
+
+    public func createDiscoverViewController() -> DiscoverViewController {
+        return BaseTheme.shared.createDiscoverViewController()
+    }
+
+    public func createMeViewController() -> MeViewController {
+        return BaseTheme.shared.createMeViewController()
+    }
+
     public func createRoomViewController() -> RoomViewController {
         let vc = ZomRoomViewController()
         vc.hidesBottomBarWhenPushed = true
