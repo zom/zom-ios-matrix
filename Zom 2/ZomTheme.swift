@@ -15,6 +15,37 @@ public class ZomTheme: Theme {
      */
     public static let shared = ZomTheme()
     
+    public func createWelcomeViewController() -> WelcomeViewController {
+        return ZomWelcomeViewController(nibName: String(describing: ZomWelcomeViewController.self),
+                                        bundle: Bundle(for: type(of: self)))
+    }
+
+    public func createAddAccountViewController() -> AddAccountViewController {
+        return AddAccountViewController(nibName: "ZomAddAccountViewController",
+                                        bundle: Bundle(for: type(of: self)))
+    }
+
+    public func createEnablePushViewController() -> EnablePushViewController {
+        return EnablePushViewController(nibName: "ZomEnablePushViewController",
+                                        bundle: Bundle(for: type(of: self)))
+    }
+
+    public func createMainViewController() -> MainViewController {
+        return BaseTheme.shared.createMainViewController()
+    }
+
+    public func createChatListViewController() -> ChatListViewController {
+        return BaseTheme.shared.createChatListViewController()
+    }
+
+    public func createDiscoverViewController() -> DiscoverViewController {
+        return BaseTheme.shared.createDiscoverViewController()
+    }
+
+    public func createMeViewController() -> MeViewController {
+        return BaseTheme.shared.createMeViewController()
+    }
+
     public func createRoomViewController() -> RoomViewController {
         let vc = ZomRoomViewController()
         vc.hidesBottomBarWhenPushed = true
@@ -33,8 +64,24 @@ public class ZomTheme: Theme {
         return BaseTheme.shared.createStoryViewController()
     }
 
+    public func createStoryAddMediaViewController() -> StoryAddMediaViewController {
+        return BaseTheme.shared.createStoryAddMediaViewController()
+    }
+
+    public func createStoryGalleryViewController() -> StoryGalleryViewController {
+        return BaseTheme.shared.createStoryGalleryViewController()
+    }
+
     public func createStoryEditorViewController() -> StoryEditorViewController {
         return BaseTheme.shared.createStoryEditorViewController()
+    }
+
+    public func createStickerPackViewController() -> StickerPackViewController {
+        return BaseTheme.shared.createStickerPackViewController()
+    }
+
+    public func createPickStickerViewController() -> PickStickerViewController {
+        return BaseTheme.shared.createPickStickerViewController()
     }
 
     public func createChooseFriendsViewController() -> ChooseFriendsViewController {

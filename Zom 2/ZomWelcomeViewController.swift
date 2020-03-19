@@ -7,33 +7,38 @@
 //
 
 import Keanu
+import KeanuCore
 import MatrixSDK
 import Localize
 
-class ZomWelcomeViewController: UIViewController {
+class ZomWelcomeViewController: WelcomeViewController {
+
     @IBAction func switchLanguage() {
-        let alert = UIAlertController(title: "Switch Language".localize(), message: nil, preferredStyle: .actionSheet)
-        
+        var actions = [UIAlertAction]()
+
         for lang in Bundle.main.localizations {
-            guard lang != "Base" else {continue}
+            guard lang != "Base" else { continue }
+
             let title = Locale.current.localizedString(forIdentifier: lang)
-            alert.addAction(UIAlertAction(title: title, style: .default , handler:{ (UIAlertAction)in
-                self.setCurrentLanguage(code: lang)
+
+            actions.append(AlertHelper.defaultAction(title, handler: { [weak self] _ in
+                self?.setCurrentLanguage(code: lang)
             }))
         }
-        
-        alert.addAction(UIAlertAction(title: "Cancel".localize(), style: .cancel, handler:{ (UIAlertAction)in
-        }))
-        
-        self.present(alert, animated: true, completion: {
-        })
+
+        actions.append(AlertHelper.cancelAction())
+
+        AlertHelper.present(
+            self, title: "Switch Language".localize(),
+            style: .actionSheet, actions: actions)
     }
     
     func setCurrentLanguage(code: String) {
         UserDefaults.standard.set([code, "en"], forKey: "AppleLanguages")
-        UserDefaults.standard.synchronize()
+
         Localize.update(language: code)
         Localize.update(defaultLanguage: code)
+        
         UIApplication.shared.startOnboardingFlow()
     }
 }

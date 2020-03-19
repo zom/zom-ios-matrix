@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -106,7 +104,7 @@
                 <constraint firstItem="0HC-Bx-Lbc" firstAttribute="top" secondItem="EYO-G1-2bz" secondAttribute="top" constant="10" id="SIQ-NL-59e"/>
                 <constraint firstItem="0HC-Bx-Lbc" firstAttribute="leading" secondItem="EYO-G1-2bz" secondAttribute="leading" constant="10" id="TJI-Hg-lGS"/>
                 <constraint firstItem="u11-fy-jio" firstAttribute="width" secondItem="wUQ-Fn-OOH" secondAttribute="width" id="Urm-mo-gAx"/>
-                <constraint firstAttribute="bottom" secondItem="oHu-og-k1F" secondAttribute="bottom" constant="10" id="Yzg-bE-eQr"/>
+                <constraint firstItem="hnL-BH-ryY" firstAttribute="bottom" secondItem="oHu-og-k1F" secondAttribute="bottom" constant="10" id="Yzg-bE-eQr"/>
                 <constraint firstItem="oHu-og-k1F" firstAttribute="top" secondItem="EYO-G1-2bz" secondAttribute="top" constant="10" id="agE-Yi-bI1"/>
                 <constraint firstItem="oHu-og-k1F" firstAttribute="leading" secondItem="0HC-Bx-Lbc" secondAttribute="trailing" constant="10" id="all-hd-2Ri"/>
                 <constraint firstItem="iPp-aL-mwp" firstAttribute="leading" secondItem="oHu-og-k1F" secondAttribute="trailing" constant="10" id="mxA-Bj-2nU"/>
