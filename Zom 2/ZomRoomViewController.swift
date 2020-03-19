@@ -34,7 +34,7 @@ class ZomRoomViewController: RoomViewController {
 extension RoomViewController: RoomViewControllerAttachmentPickerDelegate {
     public func addActions(attachmentPicker: AttachmentPicker, room: MXRoom?) {
         // Style the buttons
-        for actionButton in attachmentPicker.actions() {
+        for actionButton in attachmentPicker.actions {
             actionButton.backgroundColor = UITheme.shared.mainThemeColor
             actionButton.tintColor = UIColor.white
         }
