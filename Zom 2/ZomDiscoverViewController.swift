@@ -15,6 +15,8 @@ class ZomDiscoverViewController: DiscoverViewController, DiscoverViewControllerD
     static let identifierStickerShare = "stickerShare"
     static let identifierChangeTheme = "changeTheme"
 
+    var stickerShareCell: ActionButtonCell?
+    
     override func viewDidLoad() {
         // First set delegate, then call super
         super.delegate = self
@@ -35,7 +37,8 @@ class ZomDiscoverViewController: DiscoverViewController, DiscoverViewControllerD
         case ZomDiscoverViewController.identifierBots:
             cell.apply("", "Zom Services".localize())
         case ZomDiscoverViewController.identifierStickerShare:
-            cell.apply("", "Sticker Share".localize())
+            stickerShareCell = cell
+            cell.apply("", "Sticker Share".localize())
         case ZomDiscoverViewController.identifierChangeTheme:
             cell.apply("", "Change Theme".localize())
         default: return false
@@ -74,21 +77,26 @@ class ZomDiscoverViewController: DiscoverViewController, DiscoverViewControllerD
         }
     }
     
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 89
+    }
+    
     // MARK: Sticker Share
     func didPickSticker(_ sticker: String, inPack: String) {
         DispatchQueue.main.async {
-//            if let image = UIImage(contentsOfFile: fileName) {
-//                let shareItems:Array = [image]
-//
-//                let activityViewController = UIActivityViewController(activityItems: shareItems, applicationActivities: nil)
-//                //activityViewController!.excludedActivityTypes = [UIActivityTypePrint, UIActivityTypePostToWeibo, UIActivityTypeCopyToPasteboard, UIActivityTypeAddToReadingList, UIActivityTypePostToVimeo]
-//                if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.phone {
-//                    self.tabBarController!.present(activityViewController, animated: true, completion: nil)
-//                } else {
-//                    let popup: UIPopoverController = UIPopoverController(contentViewController: activityViewController)
-//                    popup.present(from: pickStickerButton.bounds, in: pickStickerButton, permittedArrowDirections: UIPopoverArrowDirection.any, animated: true)
-//                }
-//            }
+            if
+                let cell = self.stickerShareCell,
+                let stickerFile = StickerManager.filenameFor(sticker: sticker, inPack: inPack),
+                let image = UIImage(contentsOfFile: stickerFile) {
+                let shareItems:Array = [image]
+                
+                let activityVc = UIActivityViewController(activityItems: shareItems, applicationActivities: nil)
+                
+                activityVc.popoverPresentationController?.sourceView = cell.contentView
+                activityVc.popoverPresentationController?.sourceRect = cell.contentView.bounds
+                
+                self.present(activityVc, animated: true, completion: nil)
+            }
         }
     }
 }

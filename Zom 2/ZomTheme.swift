@@ -9,7 +9,7 @@
 import Keanu
 
 public class ZomTheme: Theme {
-
+    
     /**
      Singleton instance.
      */
@@ -101,6 +101,11 @@ public class ZomTheme: Theme {
     }
 
     public func createPhotoStreamViewController() -> PhotoStreamViewController {
-        BaseTheme.shared.createPhotoStreamViewController()
+        return BaseTheme.shared.createPhotoStreamViewController()
     }
+    
+    public func createChatBubble(type: BubbleViewType, rect: CGRect) -> CGPath? {
+        return BaseTheme.shared.createChatBubble(type: type, rect: rect)
+    }
+
 }
