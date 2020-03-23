@@ -39,7 +39,7 @@ public class ZomTheme: Theme {
     }
 
     public func createDiscoverViewController() -> DiscoverViewController {
-        return BaseTheme.shared.createDiscoverViewController()
+        return ZomDiscoverViewController()
     }
 
     public func createMeViewController() -> MeViewController {

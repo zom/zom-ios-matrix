@@ -66,20 +66,6 @@ class AppDelegate: BaseAppDelegate {
     }
     
     /**
-     Listen to events when storyboard view controllers are instantiated. This allows us to override specific styles, set delegates etc.
-     */
-    override func storyboard(_ storyboard: UIStoryboard, instantiatedInitialViewController viewController: UIViewController?) {
-        if let tabViewController = viewController as? UITabBarController {
-            for tabVC in tabViewController.viewControllers ?? [] {
-                if let tabVC = tabVC as? UINavigationController,
-                    let discoverVC = tabVC.viewControllers.first as? DiscoverViewController {
-                    discoverVC.initializeForZom()
-                }
-            }
-        }
-    }
-    
-    /**
      Inject configuration and set up localization.
      */
     private func setUp() {

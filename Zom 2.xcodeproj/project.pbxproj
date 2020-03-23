@@ -13,7 +13,7 @@
 		401114E2223B18E300D2CC02 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 924E7118220046C700B398DD /* Constants.m */; };
 		401114E3223B18E700D2CC02 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 924E7116220046BF00B398DD /* Config.xcconfig */; };
 		604A9D0C53A47043FCD37CFA /* Pods_ShareExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5622C1933B28057F65987C81 /* Pods_ShareExtension.framework */; };
-		922D0CFD225B558C00EEDBC4 /* DiscoverViewController+Zom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922D0CFC225B558B00EEDBC4 /* DiscoverViewController+Zom.swift */; };
+		922D0CFD225B558C00EEDBC4 /* ZomDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922D0CFC225B558B00EEDBC4 /* ZomDiscoverViewController.swift */; };
 		924E7117220046BF00B398DD /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 924E7116220046BF00B398DD /* Config.xcconfig */; };
 		924E711B220046C700B398DD /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 924E7118220046C700B398DD /* Constants.m */; };
 		924E711C220046C700B398DD /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924E7119220046C700B398DD /* Config.swift */; };
@@ -87,7 +87,7 @@
 		615D7A03B9337839B1C578E4 /* Pods-ShareExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShareExtension/Pods-ShareExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		6DE7F91A6F9B83E63B8E827A /* Pods-Zom 2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zom 2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zom 2/Pods-Zom 2.release.xcconfig"; sourceTree = "<group>"; };
 		7043637FD388A876828CDF45 /* Pods_Zom_2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zom_2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		922D0CFC225B558B00EEDBC4 /* DiscoverViewController+Zom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DiscoverViewController+Zom.swift"; sourceTree = "<group>"; };
+		922D0CFC225B558B00EEDBC4 /* ZomDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZomDiscoverViewController.swift; sourceTree = "<group>"; };
 		924E7116220046BF00B398DD /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = SOURCE_ROOT; };
 		924E7118220046C700B398DD /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constants.m; path = Config/Constants.m; sourceTree = "<group>"; };
 		924E7119220046C700B398DD /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Config.swift; path = Config/Config.swift; sourceTree = "<group>"; };
@@ -280,7 +280,7 @@
 				924E711F22004CB600B398DD /* UITheme.swift */,
 				924E712122004D4C00B398DD /* Extensions */,
 				924E71322201E3EE00B398DD /* ZomRoomViewController.swift */,
-				922D0CFC225B558B00EEDBC4 /* DiscoverViewController+Zom.swift */,
+				922D0CFC225B558B00EEDBC4 /* ZomDiscoverViewController.swift */,
 				92A0AEFF2282C0EA00DDC988 /* ZomWelcomeViewController.swift */,
 				92B0D71422424A9B0057154E /* ZomPickColorViewController.swift */,
 				92B0D71622424C6C0057154E /* ZomPickColorViewController.storyboard */,
@@ -579,7 +579,7 @@
 				92A0AF042282CEDF00DDC988 /* Bundle+Zom.swift in Sources */,
 				92AF46C72264840700DF9257 /* MockData.swift in Sources */,
 				92E8E64D23ED586B00070B9B /* ZomTheme.swift in Sources */,
-				922D0CFD225B558C00EEDBC4 /* DiscoverViewController+Zom.swift in Sources */,
+				922D0CFD225B558C00EEDBC4 /* ZomDiscoverViewController.swift in Sources */,
 				924E71332201E3EE00B398DD /* ZomRoomViewController.swift in Sources */,
 				924E711B220046C700B398DD /* Constants.m in Sources */,
 				92B0D719224253400057154E /* ZomBotsViewController.swift in Sources */,
