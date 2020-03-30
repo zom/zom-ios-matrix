@@ -13,6 +13,8 @@ import Localize
 
 class ZomWelcomeViewController: WelcomeViewController {
 
+    @IBOutlet weak var switchLanguageButton: UIButton!
+    
     @IBAction func switchLanguage() {
         var actions = [UIAlertAction]()
 
@@ -28,9 +30,14 @@ class ZomWelcomeViewController: WelcomeViewController {
 
         actions.append(AlertHelper.cancelAction())
 
-        AlertHelper.present(
-            self, title: "Switch Language".localize(),
-            style: .actionSheet, actions: actions)
+        let alert = AlertHelper.build(message: nil, title: "Switch Language".localize(), style: .actionSheet, actions: actions)
+        if let popoverController = alert.popoverPresentationController {
+            popoverController.sourceView = switchLanguageButton
+            popoverController.sourceRect = switchLanguageButton.bounds
+            popoverController.permittedArrowDirections = []
+        }
+        present(alert, animated: true)
+        
     }
     
     func setCurrentLanguage(code: String) {

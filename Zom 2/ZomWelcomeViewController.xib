@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZomWelcomeViewController" customModule="Zom_2" customModuleProvider="target">
             <connections>
+                <outlet property="switchLanguageButton" destination="tjH-Q6-unr" id="5LH-sJ-y97"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
