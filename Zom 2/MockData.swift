@@ -6,7 +6,8 @@
 //  Copyright © 2019 Zom. All rights reserved.
 //
 
-import MatrixKit
+import KeanuCore
+import MatrixSDK
 
 class MockData {
     class func setup() {

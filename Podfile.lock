@@ -28,27 +28,21 @@ PODS:
     - DTFoundation/DTAnimatedGIF (~> 1.7.5)
     - DTFoundation/DTHTMLParser (~> 1.7.5)
     - DTFoundation/UIKit (~> 1.7.5)
-  - DTCoreText/Extension (1.6.23):
-    - DTFoundation/Core (~> 1.7.5)
-    - DTFoundation/DTAnimatedGIF (~> 1.7.5)
-    - DTFoundation/DTHTMLParser (~> 1.7.5)
-    - DTFoundation/UIKit (~> 1.7.5)
   - DTFoundation/Core (1.7.14)
   - DTFoundation/DTAnimatedGIF (1.7.14)
   - DTFoundation/DTHTMLParser (1.7.14):
     - DTFoundation/Core
   - DTFoundation/UIKit (1.7.14):
     - DTFoundation/Core
-  - Eureka (5.2.0)
+  - Eureka (5.2.1)
   - FLAnimatedImage (1.0.12)
   - FontBlaster (4.1.0)
   - GZIP (1.2.3)
-  - HPGrowingTextView (1.1)
   - INSPhotoGallery (1.2.8)
   - Keanu (0.1.0):
     - AFNetworking
     - BarcodeScanner (~> 4.1)
-    - Eureka (~> 5.1)
+    - Eureka (~> 5.2)
     - FLAnimatedImage (~> 1.0)
     - INSPhotoGallery (~> 1.2)
     - KeanuCore
@@ -60,11 +54,13 @@ PODS:
     - SearchTextField (~> 1.2)
     - ViewRow (~> 0.6)
   - KeanuCore (0.1.0):
+    - cmark (~> 0.24.1)
     - CrossroadRegex (~> 1.1)
+    - DTCoreText (~> 1.6.23)
     - FontBlaster (~> 4.1)
+    - libPhoneNumber-iOS (~> 0.9.15)
     - Localize (~> 2.2)
-    - MatrixKit/AppExtension (~> 0.11)
-    - MatrixSDK/SwiftSupport
+    - MatrixSDK/SwiftSupport (~> 0.15)
   - KeanuExtension (0.1.0):
     - KeanuCore
     - MBProgressHUD (~> 1.1)
@@ -107,16 +103,6 @@ PODS:
   - MaterialComponents/Typography (80.0.0):
     - MaterialComponents/private/Application
     - MaterialComponents/private/Math
-  - MatrixKit/AppExtension (0.11.3):
-    - cmark (~> 0.24.1)
-    - DTCoreText (~> 1.6.21)
-    - DTCoreText/Extension
-    - HPGrowingTextView (~> 1.1)
-    - libPhoneNumber-iOS (~> 0.9.13)
-    - MatrixSDK (= 0.15.2)
-    - SwiftUTI (~> 1.0.6)
-  - MatrixSDK (0.15.2):
-    - MatrixSDK/Core (= 0.15.2)
   - MatrixSDK/Core (0.15.2):
     - AFNetworking (~> 3.2.0)
     - GZIP (~> 1.2.2)
@@ -146,15 +132,14 @@ PODS:
   - Realm/Headers (3.17.3)
   - RichEditorView (0.0.3)
   - SearchTextField (1.2.4)
-  - SwiftUTI (1.0.6)
   - ViewRow (0.8):
     - Eureka (>= 5.0.0)
 
 DEPENDENCIES:
   - BarcodeScanner (from `https://github.com/htothee/BarcodeScanner.git`)
-  - Keanu (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `0348be4b`)
-  - KeanuCore (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `0348be4b`)
-  - KeanuExtension (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `0348be4b`)
+  - Keanu (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `6fcf31b9`)
+  - KeanuCore (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `6fcf31b9`)
+  - KeanuExtension (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `6fcf31b9`)
   - QRCode (from `https://github.com/brackendev/QRCode.git`)
   - RichEditorView (from `https://gitlab.com/keanuapp/keanuapp-ios-richeditorview.git`, branch `build_fixes`)
 
@@ -169,13 +154,11 @@ SPEC REPOS:
     - FLAnimatedImage
     - FontBlaster
     - GZIP
-    - HPGrowingTextView
     - INSPhotoGallery
     - libbase58
     - libPhoneNumber-iOS
     - Localize
     - MaterialComponents
-    - MatrixKit
     - MatrixSDK
     - MBProgressHUD
     - MDFInternationalization
@@ -185,20 +168,19 @@ SPEC REPOS:
     - PureLayout
     - Realm
     - SearchTextField
-    - SwiftUTI
     - ViewRow
 
 EXTERNAL SOURCES:
   BarcodeScanner:
     :git: https://github.com/htothee/BarcodeScanner.git
   Keanu:
-    :commit: 0348be4b
+    :commit: 6fcf31b9
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuCore:
-    :commit: 0348be4b
+    :commit: 6fcf31b9
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuExtension:
-    :commit: 0348be4b
+    :commit: 6fcf31b9
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   QRCode:
     :git: https://github.com/brackendev/QRCode.git
@@ -211,13 +193,13 @@ CHECKOUT OPTIONS:
     :commit: fe7835d344be6190d66fa7994fa593fd4f66dd31
     :git: https://github.com/htothee/BarcodeScanner.git
   Keanu:
-    :commit: 0348be4b
+    :commit: 6fcf31b9
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuCore:
-    :commit: 0348be4b
+    :commit: 6fcf31b9
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuExtension:
-    :commit: 0348be4b
+    :commit: 6fcf31b9
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   QRCode:
     :commit: e267650e0a6db653d57b149530fcfa3fa660f632
@@ -233,20 +215,18 @@ SPEC CHECKSUMS:
   CrossroadRegex: 5eaadb3f7b4014728f1cbd1014756b126c1dbd9a
   DTCoreText: 67023bb51b26711d5f640c851f4845aea14c24c9
   DTFoundation: 25aa19bb7c6e225b1dfae195604fb8cf1da0ab4c
-  Eureka: 820a761c700f6eaab3b60758f138e0d9b99072b3
+  Eureka: c883105488e05bc65539f583246ecf9657cabbfe
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   FontBlaster: 127aa66419478d1c62926c7fdb39841633344a45
   GZIP: af5c90ef903776a7e9afe6ebebd794a84a2929d4
-  HPGrowingTextView: 88a716d97fb853bcb08a4a08e4727da17efc9b19
   INSPhotoGallery: ad317cb9a59c7a5f08550e4155b49622c24dcab3
-  Keanu: 2e07890c00baf361b6d093e4b4ce04c904caca7b
-  KeanuCore: d738410bd05c51e55853361f4c1f54f1ae9d9e51
+  Keanu: 7eeb3075f31d9a865727feb166ffaa32ff7cb502
+  KeanuCore: 353f42456863eb6448adafd4a0e72d4ea73250a5
   KeanuExtension: da8935abf492a2f4b1106f2e58cff5d2b4450d95
   libbase58: 7c040313537b8c44b6e2d15586af8e21f7354efd
   libPhoneNumber-iOS: 0a32a9525cf8744fe02c5206eb30d571e38f7d75
   Localize: cb1ae53ed73decaad0dce217806ed983091913f5
   MaterialComponents: fcd7ab0d6087bce852e2c60c2c712809f76c7f9e
-  MatrixKit: 5a20025b05490a70694b701e607ec75e0988af21
   MatrixSDK: f83bd3c5519c1cb9ac3998f6423574cf528f0250
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
@@ -258,9 +238,8 @@ SPEC CHECKSUMS:
   Realm: 5a1d9d47bfc101dd597668b1a8af4288a2557f6d
   RichEditorView: bd9637b517d9b0ff63f4d800507c7b4f378afa11
   SearchTextField: 40dc3cc57def5a211f263cac263622c163bbc25a
-  SwiftUTI: e83d65dbe9fba0a0ff7cc9031cd30b2d82acebef
   ViewRow: 8da541e9c019f3be63f4e28f311a62cac2045ecf
 
-PODFILE CHECKSUM: b0b2caaa27605f1c390e0e339d4ce3fccbc314a5
+PODFILE CHECKSUM: 870551a5631e67e4916d30a2e5daeb9fb5978b50
 
 COCOAPODS: 1.9.1

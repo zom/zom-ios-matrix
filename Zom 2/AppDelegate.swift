@@ -10,7 +10,6 @@ import UIKit
 import UserNotifications
 import KeanuCore
 import Keanu
-import MatrixKit
 
 @UIApplicationMain
 class AppDelegate: BaseAppDelegate {
