@@ -1,42 +1,24 @@
 PODS:
-  - AFNetworking (3.2.1):
-    - AFNetworking/NSURLSession (= 3.2.1)
-    - AFNetworking/Reachability (= 3.2.1)
-    - AFNetworking/Security (= 3.2.1)
-    - AFNetworking/Serialization (= 3.2.1)
-    - AFNetworking/UIKit (= 3.2.1)
-  - AFNetworking/NSURLSession (3.2.1):
+  - AFNetworking (3.2.1.3):
+    - AFNetworking/NSURLSession (= 3.2.1.3)
+    - AFNetworking/Reachability (= 3.2.1.3)
+    - AFNetworking/Security (= 3.2.1.3)
+    - AFNetworking/Serialization (= 3.2.1.3)
+    - AFNetworking/UIKit (= 3.2.1.3)
+  - AFNetworking/NSURLSession (3.2.1.3):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.2.1)
-  - AFNetworking/Security (3.2.1)
-  - AFNetworking/Serialization (3.2.1)
-  - AFNetworking/UIKit (3.2.1):
+  - AFNetworking/Reachability (3.2.1.3)
+  - AFNetworking/Security (3.2.1.3)
+  - AFNetworking/Serialization (3.2.1.3)
+  - AFNetworking/UIKit (3.2.1.3):
     - AFNetworking/NSURLSession
   - BarcodeScanner (4.1.4)
-  - cmark (0.24.1)
-  - CrossroadRegex (1.1.0)
-  - DTCoreText (1.6.23):
-    - DTCoreText/Core (= 1.6.23)
-    - DTFoundation/Core (~> 1.7.5)
-    - DTFoundation/DTAnimatedGIF (~> 1.7.5)
-    - DTFoundation/DTHTMLParser (~> 1.7.5)
-    - DTFoundation/UIKit (~> 1.7.5)
-  - DTCoreText/Core (1.6.23):
-    - DTFoundation/Core (~> 1.7.5)
-    - DTFoundation/DTAnimatedGIF (~> 1.7.5)
-    - DTFoundation/DTHTMLParser (~> 1.7.5)
-    - DTFoundation/UIKit (~> 1.7.5)
-  - DTFoundation/Core (1.7.14)
-  - DTFoundation/DTAnimatedGIF (1.7.14)
-  - DTFoundation/DTHTMLParser (1.7.14):
-    - DTFoundation/Core
-  - DTFoundation/UIKit (1.7.14):
-    - DTFoundation/Core
+  - CrossroadRegex (1.2.0)
   - Eureka (5.2.1)
   - FLAnimatedImage (1.0.12)
-  - FontBlaster (4.1.0)
+  - FontBlaster (5.1.0)
   - GZIP (1.2.3)
   - INSPhotoGallery (1.2.8)
   - Keanu (0.1.0):
@@ -46,19 +28,17 @@ PODS:
     - FLAnimatedImage (~> 1.0)
     - INSPhotoGallery (~> 1.2)
     - KeanuCore
+    - libPhoneNumber-iOS (~> 0.9)
     - MaterialComponents/Snackbar (~> 80)
-    - PhoneNumberKit (~> 2.6)
     - PureLayout (~> 3.1)
     - QRCode (~> 2.0)
     - RichEditorView
     - SearchTextField (~> 1.2)
     - ViewRow (~> 0.6)
   - KeanuCore (0.1.0):
-    - cmark (~> 0.24.1)
     - CrossroadRegex (~> 1.1)
-    - DTCoreText (~> 1.6.23)
-    - FontBlaster (~> 4.1)
-    - libPhoneNumber-iOS (~> 0.9.15)
+    - FontBlaster (~> 5.1)
+    - libPhoneNumber-iOS (~> 0.9)
     - Localize (~> 2.2)
     - MatrixSDK/SwiftSupport (~> 0.15)
   - KeanuExtension (0.1.0):
@@ -119,12 +99,6 @@ PODS:
     - OLMKit/olmcpp (= 3.1.0)
   - OLMKit/olmc (3.1.0)
   - OLMKit/olmcpp (3.1.0)
-  - PhoneNumberKit (2.6.0):
-    - PhoneNumberKit/PhoneNumberKitCore (= 2.6.0)
-    - PhoneNumberKit/UIKit (= 2.6.0)
-  - PhoneNumberKit/PhoneNumberKitCore (2.6.0)
-  - PhoneNumberKit/UIKit (2.6.0):
-    - PhoneNumberKit/PhoneNumberKitCore
   - PureLayout (3.1.5)
   - QRCode (2.0)
   - Realm (3.17.3):
@@ -136,20 +110,17 @@ PODS:
     - Eureka (>= 5.0.0)
 
 DEPENDENCIES:
+  - AFNetworking (from `https://github.com/ElfSundae/AFNetworking.git`)
   - BarcodeScanner (from `https://github.com/htothee/BarcodeScanner.git`)
-  - Keanu (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `77e2c685`)
-  - KeanuCore (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `77e2c685`)
-  - KeanuExtension (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `77e2c685`)
+  - CrossroadRegex (from `https://github.com/crossroadlabs/Regex.git`, tag `1.2.0`)
+  - Keanu (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `2d3c4f4f`)
+  - KeanuCore (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `2d3c4f4f`)
+  - KeanuExtension (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `2d3c4f4f`)
   - QRCode (from `https://github.com/brackendev/QRCode.git`)
   - RichEditorView (from `https://gitlab.com/keanuapp/keanuapp-ios-richeditorview.git`, branch `build_fixes`)
 
 SPEC REPOS:
   trunk:
-    - AFNetworking
-    - cmark
-    - CrossroadRegex
-    - DTCoreText
-    - DTFoundation
     - Eureka
     - FLAnimatedImage
     - FontBlaster
@@ -164,23 +135,27 @@ SPEC REPOS:
     - MDFInternationalization
     - MDFTextAccessibility
     - OLMKit
-    - PhoneNumberKit
     - PureLayout
     - Realm
     - SearchTextField
     - ViewRow
 
 EXTERNAL SOURCES:
+  AFNetworking:
+    :git: https://github.com/ElfSundae/AFNetworking.git
   BarcodeScanner:
     :git: https://github.com/htothee/BarcodeScanner.git
+  CrossroadRegex:
+    :git: https://github.com/crossroadlabs/Regex.git
+    :tag: 1.2.0
   Keanu:
-    :commit: 77e2c685
+    :commit: 2d3c4f4f
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuCore:
-    :commit: 77e2c685
+    :commit: 2d3c4f4f
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuExtension:
-    :commit: 77e2c685
+    :commit: 2d3c4f4f
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   QRCode:
     :git: https://github.com/brackendev/QRCode.git
@@ -189,17 +164,23 @@ EXTERNAL SOURCES:
     :git: https://gitlab.com/keanuapp/keanuapp-ios-richeditorview.git
 
 CHECKOUT OPTIONS:
+  AFNetworking:
+    :commit: 3ee84ad0b2c338de79ff1a30869237b09737fd36
+    :git: https://github.com/ElfSundae/AFNetworking.git
   BarcodeScanner:
     :commit: fe7835d344be6190d66fa7994fa593fd4f66dd31
     :git: https://github.com/htothee/BarcodeScanner.git
+  CrossroadRegex:
+    :git: https://github.com/crossroadlabs/Regex.git
+    :tag: 1.2.0
   Keanu:
-    :commit: 77e2c685
+    :commit: 2d3c4f4f
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuCore:
-    :commit: 77e2c685
+    :commit: 2d3c4f4f
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuExtension:
-    :commit: 77e2c685
+    :commit: 2d3c4f4f
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   QRCode:
     :commit: e267650e0a6db653d57b149530fcfa3fa660f632
@@ -209,19 +190,16 @@ CHECKOUT OPTIONS:
     :git: https://gitlab.com/keanuapp/keanuapp-ios-richeditorview.git
 
 SPEC CHECKSUMS:
-  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  AFNetworking: d29ef85410d6b88e490447d6f264612b6723a37b
   BarcodeScanner: a29f55c0bb367a73aa9d744c1af6ed7ca7531984
-  cmark: 1d9ad0375e3b9fa281732e992467903606015520
-  CrossroadRegex: 5eaadb3f7b4014728f1cbd1014756b126c1dbd9a
-  DTCoreText: 67023bb51b26711d5f640c851f4845aea14c24c9
-  DTFoundation: 25aa19bb7c6e225b1dfae195604fb8cf1da0ab4c
+  CrossroadRegex: 9af32b4b4dc6ff404c87647ef1bc68ea711cc570
   Eureka: c883105488e05bc65539f583246ecf9657cabbfe
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
-  FontBlaster: 127aa66419478d1c62926c7fdb39841633344a45
+  FontBlaster: 67017432ef1d187e038c353fd48ed8744a54484a
   GZIP: af5c90ef903776a7e9afe6ebebd794a84a2929d4
   INSPhotoGallery: ad317cb9a59c7a5f08550e4155b49622c24dcab3
-  Keanu: 7eeb3075f31d9a865727feb166ffaa32ff7cb502
-  KeanuCore: 353f42456863eb6448adafd4a0e72d4ea73250a5
+  Keanu: b51bcfd2eead5d9a5046e4a2c05853f37b514ea3
+  KeanuCore: 4ce43b5426417f6c29902d73a20e8892eed541ba
   KeanuExtension: da8935abf492a2f4b1106f2e58cff5d2b4450d95
   libbase58: 7c040313537b8c44b6e2d15586af8e21f7354efd
   libPhoneNumber-iOS: 0a32a9525cf8744fe02c5206eb30d571e38f7d75
@@ -232,7 +210,6 @@ SPEC CHECKSUMS:
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
   OLMKit: 4ee0159d63feeb86d836fdcfefe418e163511639
-  PhoneNumberKit: 167ee1f0bbb6efce7c62559e620eae745595532f
   PureLayout: 9b4ad47b2f0388c84ff534af23d96e720c1b875a
   QRCode: 282441d0cfe8c4c1766b7578361fe93f72757685
   Realm: 5a1d9d47bfc101dd597668b1a8af4288a2557f6d
@@ -240,6 +217,6 @@ SPEC CHECKSUMS:
   SearchTextField: 40dc3cc57def5a211f263cac263622c163bbc25a
   ViewRow: 8da541e9c019f3be63f4e28f311a62cac2045ecf
 
-PODFILE CHECKSUM: 930175550230f01903064fcf646f2a500f4e84f2
+PODFILE CHECKSUM: 4021d01d989d11b6e3b8f452f1d20a5b832cf520
 
 COCOAPODS: 1.9.1
