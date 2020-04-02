@@ -11,9 +11,12 @@ post_install do |installer|
 end
 
 def shared_pods
-    pod 'KeanuCore', :git => 'https://gitlab.com/keanuapp/keanuapp-ios.git', :commit => '77e2c685'
+    pod 'KeanuCore', :git => 'https://gitlab.com/keanuapp/keanuapp-ios.git', :commit => '2d3c4f4f'
     #pod 'MatrixKit', :git => 'https://github.com/N-Pex/matrix-ios-kit.git', :branch => 'fix_apns_push'
     #pod 'MatrixSDK', :git => 'https://github.com/matrix-org/matrix-ios-sdk.git', :branch => 'develop'
+
+    pod 'AFNetworking', :git => 'https://github.com/ElfSundae/AFNetworking.git' # Removes UIWebView dependency.
+    pod 'CrossroadRegex', :git => 'https://github.com/crossroadlabs/Regex.git', :tag => '1.2.0'
 end
 
 target 'Zom 2' do
@@ -22,12 +25,12 @@ target 'Zom 2' do
   pod 'BarcodeScanner', :git => 'https://github.com/htothee/BarcodeScanner.git'
   pod 'QRCode', :git => 'https://github.com/brackendev/QRCode.git'
 
-  pod 'Keanu', :git => 'https://gitlab.com/keanuapp/keanuapp-ios.git', :commit => '77e2c685'
+  pod 'Keanu', :git => 'https://gitlab.com/keanuapp/keanuapp-ios.git', :commit => '2d3c4f4f'
   pod 'RichEditorView', :git => 'https://gitlab.com/keanuapp/keanuapp-ios-richeditorview.git', :branch => 'build_fixes'
 end
 
 target 'ShareExtension' do
   shared_pods
 
-  pod 'KeanuExtension', :git => 'https://gitlab.com/keanuapp/keanuapp-ios.git', :commit => '77e2c685'
+  pod 'KeanuExtension', :git => 'https://gitlab.com/keanuapp/keanuapp-ios.git', :commit => '2d3c4f4f'
 end
