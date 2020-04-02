@@ -113,9 +113,9 @@ DEPENDENCIES:
   - AFNetworking (from `https://github.com/ElfSundae/AFNetworking.git`)
   - BarcodeScanner (from `https://github.com/htothee/BarcodeScanner.git`)
   - CrossroadRegex (from `https://github.com/crossroadlabs/Regex.git`, tag `1.2.0`)
-  - Keanu (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `2d3c4f4f`)
-  - KeanuCore (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `2d3c4f4f`)
-  - KeanuExtension (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `2d3c4f4f`)
+  - Keanu (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `e9c14103`)
+  - KeanuCore (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `e9c14103`)
+  - KeanuExtension (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `e9c14103`)
   - QRCode (from `https://github.com/brackendev/QRCode.git`)
   - RichEditorView (from `https://gitlab.com/keanuapp/keanuapp-ios-richeditorview.git`, branch `build_fixes`)
 
@@ -149,13 +149,13 @@ EXTERNAL SOURCES:
     :git: https://github.com/crossroadlabs/Regex.git
     :tag: 1.2.0
   Keanu:
-    :commit: 2d3c4f4f
+    :commit: e9c14103
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuCore:
-    :commit: 2d3c4f4f
+    :commit: e9c14103
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuExtension:
-    :commit: 2d3c4f4f
+    :commit: e9c14103
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   QRCode:
     :git: https://github.com/brackendev/QRCode.git
@@ -174,13 +174,13 @@ CHECKOUT OPTIONS:
     :git: https://github.com/crossroadlabs/Regex.git
     :tag: 1.2.0
   Keanu:
-    :commit: 2d3c4f4f
+    :commit: e9c14103
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuCore:
-    :commit: 2d3c4f4f
+    :commit: e9c14103
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuExtension:
-    :commit: 2d3c4f4f
+    :commit: e9c14103
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   QRCode:
     :commit: e267650e0a6db653d57b149530fcfa3fa660f632
@@ -217,6 +217,6 @@ SPEC CHECKSUMS:
   SearchTextField: 40dc3cc57def5a211f263cac263622c163bbc25a
   ViewRow: 8da541e9c019f3be63f4e28f311a62cac2045ecf
 
-PODFILE CHECKSUM: 4021d01d989d11b6e3b8f452f1d20a5b832cf520
+PODFILE CHECKSUM: 2fe1cda6f6402a925bad58ac35bd721ba44ee423
 
 COCOAPODS: 1.9.1
