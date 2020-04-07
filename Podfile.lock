@@ -16,6 +16,23 @@ PODS:
     - AFNetworking/NSURLSession
   - BarcodeScanner (4.1.4)
   - CrossroadRegex (1.2.0)
+  - DTCoreText (1.6.23):
+    - DTCoreText/Core (= 1.6.23)
+    - DTFoundation/Core (~> 1.7.5)
+    - DTFoundation/DTAnimatedGIF (~> 1.7.5)
+    - DTFoundation/DTHTMLParser (~> 1.7.5)
+    - DTFoundation/UIKit (~> 1.7.5)
+  - DTCoreText/Core (1.6.23):
+    - DTFoundation/Core (~> 1.7.5)
+    - DTFoundation/DTAnimatedGIF (~> 1.7.5)
+    - DTFoundation/DTHTMLParser (~> 1.7.5)
+    - DTFoundation/UIKit (~> 1.7.5)
+  - DTFoundation/Core (1.7.14)
+  - DTFoundation/DTAnimatedGIF (1.7.14)
+  - DTFoundation/DTHTMLParser (1.7.14):
+    - DTFoundation/Core
+  - DTFoundation/UIKit (1.7.14):
+    - DTFoundation/Core
   - Eureka (5.2.1)
   - FLAnimatedImage (1.0.12)
   - FontBlaster (5.1.0)
@@ -37,6 +54,7 @@ PODS:
     - ViewRow (~> 0.6)
   - KeanuCore (0.1.0):
     - CrossroadRegex (~> 1.1)
+    - DTCoreText (~> 1.6)
     - FontBlaster (~> 5.1)
     - libPhoneNumber-iOS (~> 0.9)
     - Localize (~> 2.2)
@@ -113,14 +131,16 @@ DEPENDENCIES:
   - AFNetworking (from `https://github.com/ElfSundae/AFNetworking.git`)
   - BarcodeScanner (from `https://github.com/htothee/BarcodeScanner.git`)
   - CrossroadRegex (from `https://github.com/crossroadlabs/Regex.git`, tag `1.2.0`)
-  - Keanu (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `e9c14103`)
-  - KeanuCore (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `e9c14103`)
-  - KeanuExtension (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `e9c14103`)
+  - Keanu (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `ce3aebd9`)
+  - KeanuCore (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `ce3aebd9`)
+  - KeanuExtension (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `ce3aebd9`)
   - QRCode (from `https://github.com/brackendev/QRCode.git`)
   - RichEditorView (from `https://gitlab.com/keanuapp/keanuapp-ios-richeditorview.git`, branch `build_fixes`)
 
 SPEC REPOS:
   trunk:
+    - DTCoreText
+    - DTFoundation
     - Eureka
     - FLAnimatedImage
     - FontBlaster
@@ -149,13 +169,13 @@ EXTERNAL SOURCES:
     :git: https://github.com/crossroadlabs/Regex.git
     :tag: 1.2.0
   Keanu:
-    :commit: e9c14103
+    :commit: ce3aebd9
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuCore:
-    :commit: e9c14103
+    :commit: ce3aebd9
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuExtension:
-    :commit: e9c14103
+    :commit: ce3aebd9
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   QRCode:
     :git: https://github.com/brackendev/QRCode.git
@@ -174,13 +194,13 @@ CHECKOUT OPTIONS:
     :git: https://github.com/crossroadlabs/Regex.git
     :tag: 1.2.0
   Keanu:
-    :commit: e9c14103
+    :commit: ce3aebd9
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuCore:
-    :commit: e9c14103
+    :commit: ce3aebd9
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuExtension:
-    :commit: e9c14103
+    :commit: ce3aebd9
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   QRCode:
     :commit: e267650e0a6db653d57b149530fcfa3fa660f632
@@ -193,13 +213,15 @@ SPEC CHECKSUMS:
   AFNetworking: d29ef85410d6b88e490447d6f264612b6723a37b
   BarcodeScanner: a29f55c0bb367a73aa9d744c1af6ed7ca7531984
   CrossroadRegex: 9af32b4b4dc6ff404c87647ef1bc68ea711cc570
+  DTCoreText: 67023bb51b26711d5f640c851f4845aea14c24c9
+  DTFoundation: 25aa19bb7c6e225b1dfae195604fb8cf1da0ab4c
   Eureka: c883105488e05bc65539f583246ecf9657cabbfe
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   FontBlaster: 67017432ef1d187e038c353fd48ed8744a54484a
   GZIP: af5c90ef903776a7e9afe6ebebd794a84a2929d4
   INSPhotoGallery: ad317cb9a59c7a5f08550e4155b49622c24dcab3
   Keanu: b51bcfd2eead5d9a5046e4a2c05853f37b514ea3
-  KeanuCore: 4ce43b5426417f6c29902d73a20e8892eed541ba
+  KeanuCore: d3f253becdc3af3bdd20981f9b916bd882d2a7b2
   KeanuExtension: da8935abf492a2f4b1106f2e58cff5d2b4450d95
   libbase58: 7c040313537b8c44b6e2d15586af8e21f7354efd
   libPhoneNumber-iOS: 0a32a9525cf8744fe02c5206eb30d571e38f7d75
@@ -217,6 +239,6 @@ SPEC CHECKSUMS:
   SearchTextField: 40dc3cc57def5a211f263cac263622c163bbc25a
   ViewRow: 8da541e9c019f3be63f4e28f311a62cac2045ecf
 
-PODFILE CHECKSUM: 2fe1cda6f6402a925bad58ac35bd721ba44ee423
+PODFILE CHECKSUM: cdfedd5d5b4111e6afe244faee3a209a9805fa81
 
 COCOAPODS: 1.9.1
