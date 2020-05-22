@@ -1,18 +1,18 @@
 PODS:
-  - AFNetworking (3.2.3):
-    - AFNetworking/NSURLSession (= 3.2.3)
-    - AFNetworking/Reachability (= 3.2.3)
-    - AFNetworking/Security (= 3.2.3)
-    - AFNetworking/Serialization (= 3.2.3)
-    - AFNetworking/UIKit (= 3.2.3)
-  - AFNetworking/NSURLSession (3.2.3):
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.2.3)
-  - AFNetworking/Security (3.2.3)
-  - AFNetworking/Serialization (3.2.3)
-  - AFNetworking/UIKit (3.2.3):
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
   - AirShare (0.1.0):
     - AirShare/AirShare (= 0.1.0)
@@ -73,7 +73,7 @@ PODS:
     - FontBlaster (~> 5.1)
     - libPhoneNumber-iOS (~> 0.9)
     - Localize (~> 2.2)
-    - MatrixSDK/SwiftSupport (~> 0.16)
+    - MatrixSDK/SwiftSupport (~> 0.16.4)
   - KeanuExtension (0.1.0):
     - KeanuCore
     - MBProgressHUD (~> 1.1)
@@ -117,13 +117,13 @@ PODS:
   - MaterialComponents/Typography (80.0.0):
     - MaterialComponents/private/Application
     - MaterialComponents/private/Math
-  - MatrixSDK/Core (0.16.2):
-    - AFNetworking (~> 3.2.0)
+  - MatrixSDK/Core (0.16.5):
+    - AFNetworking (~> 4.0.0)
     - GZIP (~> 1.2.2)
     - libbase58 (~> 0.1.4)
     - OLMKit (~> 3.1.0)
-    - Realm (~> 3.17.3)
-  - MatrixSDK/SwiftSupport (0.16.2):
+    - Realm (~> 4.4.0)
+  - MatrixSDK/SwiftSupport (0.16.5):
     - MatrixSDK/Core
   - MBProgressHUD (1.2.0)
   - MDFInternationalization (2.0.0)
@@ -135,27 +135,27 @@ PODS:
   - OLMKit/olmcpp (3.1.0)
   - PureLayout (3.1.6)
   - QRCode (2.0)
-  - Realm (3.17.3):
-    - Realm/Headers (= 3.17.3)
-  - Realm/Headers (3.17.3)
+  - Realm (4.4.1):
+    - Realm/Headers (= 4.4.1)
+  - Realm/Headers (4.4.1)
   - RichEditorView (0.0.3)
   - SearchTextField (1.2.4)
   - ViewRow (0.8):
     - Eureka (>= 5.0.0)
 
 DEPENDENCIES:
-  - AFNetworking (from `https://github.com/ElfSundae/AFNetworking.git`, branch `3.x`)
   - AirShare (from `https://github.com/tladesignz/AirShare.git`)
   - BarcodeScanner (from `https://github.com/htothee/BarcodeScanner.git`)
   - CrossroadRegex (from `https://github.com/crossroadlabs/Regex.git`, tag `1.2.0`)
-  - Keanu (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `cda7ead6`)
-  - KeanuCore (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `cda7ead6`)
-  - KeanuExtension (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `cda7ead6`)
+  - Keanu (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `a7bc38fc`)
+  - KeanuCore (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `a7bc38fc`)
+  - KeanuExtension (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `a7bc38fc`)
   - QRCode (from `https://github.com/brackendev/QRCode.git`)
   - RichEditorView (from `https://gitlab.com/keanuapp/keanuapp-ios-richeditorview.git`, branch `build_fixes`)
 
 SPEC REPOS:
   trunk:
+    - AFNetworking
     - CocoaLumberjack
     - DTCoreText
     - DTFoundation
@@ -181,9 +181,6 @@ SPEC REPOS:
     - ViewRow
 
 EXTERNAL SOURCES:
-  AFNetworking:
-    :branch: 3.x
-    :git: https://github.com/ElfSundae/AFNetworking.git
   AirShare:
     :git: https://github.com/tladesignz/AirShare.git
   BarcodeScanner:
@@ -192,13 +189,13 @@ EXTERNAL SOURCES:
     :git: https://github.com/crossroadlabs/Regex.git
     :tag: 1.2.0
   Keanu:
-    :commit: cda7ead6
+    :commit: a7bc38fc
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuCore:
-    :commit: cda7ead6
+    :commit: a7bc38fc
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuExtension:
-    :commit: cda7ead6
+    :commit: a7bc38fc
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   QRCode:
     :git: https://github.com/brackendev/QRCode.git
@@ -207,9 +204,6 @@ EXTERNAL SOURCES:
     :git: https://gitlab.com/keanuapp/keanuapp-ios-richeditorview.git
 
 CHECKOUT OPTIONS:
-  AFNetworking:
-    :commit: bc8a93190eda7419c3e614ed14bde2e49d9ca447
-    :git: https://github.com/ElfSundae/AFNetworking.git
   AirShare:
     :commit: fd37e6111492f0d368a3dfbe332ac4d765c1968c
     :git: https://github.com/tladesignz/AirShare.git
@@ -220,13 +214,13 @@ CHECKOUT OPTIONS:
     :git: https://github.com/crossroadlabs/Regex.git
     :tag: 1.2.0
   Keanu:
-    :commit: cda7ead6
+    :commit: a7bc38fc
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuCore:
-    :commit: cda7ead6
+    :commit: a7bc38fc
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuExtension:
-    :commit: cda7ead6
+    :commit: a7bc38fc
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   QRCode:
     :commit: e267650e0a6db653d57b149530fcfa3fa660f632
@@ -236,7 +230,7 @@ CHECKOUT OPTIONS:
     :git: https://gitlab.com/keanuapp/keanuapp-ios-richeditorview.git
 
 SPEC CHECKSUMS:
-  AFNetworking: e69f250cc855f768eb0973ce7a343971e7b1e53e
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   AirShare: 791397bee68eb4e549adca76b7789dc76301043b
   BarcodeScanner: a29f55c0bb367a73aa9d744c1af6ed7ca7531984
   CocoaLumberjack: b17ae15142558d08bbacf69775fa10c4abbebcc9
@@ -250,25 +244,25 @@ SPEC CHECKSUMS:
   INSPhotoGallery: ad317cb9a59c7a5f08550e4155b49622c24dcab3
   ISEmojiView: f7cd94a6c93307f429ec5da001293d0b02247f03
   Keanu: 85bb6a54113b3f538d9adb00b1d6e0caf259f08a
-  KeanuCore: 90d69f7f4c914f26bacf60398113d3d6bea0a595
+  KeanuCore: 118feec5620af3caeff77be03a0a05f2bfabbd94
   KeanuExtension: da8935abf492a2f4b1106f2e58cff5d2b4450d95
   libbase58: 7c040313537b8c44b6e2d15586af8e21f7354efd
   libPhoneNumber-iOS: 0a32a9525cf8744fe02c5206eb30d571e38f7d75
   libsodium: 9a8faa5ef2fa0d2d57bd7f7d79bf8fb7c1a9f0ea
   Localize: cb1ae53ed73decaad0dce217806ed983091913f5
   MaterialComponents: fcd7ab0d6087bce852e2c60c2c712809f76c7f9e
-  MatrixSDK: 613dba898bbeb7823034b7b30418d89be263c20d
+  MatrixSDK: efe87af67440a67781be871b07e80b1f12ef5d48
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
   OLMKit: 4ee0159d63feeb86d836fdcfefe418e163511639
   PureLayout: bd3c4ec3a3819ad387c99ebb72c6b129c3ed4d2d
   QRCode: 282441d0cfe8c4c1766b7578361fe93f72757685
-  Realm: 5a1d9d47bfc101dd597668b1a8af4288a2557f6d
+  Realm: 4eb04d7487bd43c0581256f40b424eafb711deff
   RichEditorView: bd9637b517d9b0ff63f4d800507c7b4f378afa11
   SearchTextField: 40dc3cc57def5a211f263cac263622c163bbc25a
   ViewRow: 8da541e9c019f3be63f4e28f311a62cac2045ecf
 
-PODFILE CHECKSUM: e5548dcd721b26b6315a01806aef708bf5686b48
+PODFILE CHECKSUM: 7047a11d69d676bb0c043d1ccf051be86220aaa6
 
 COCOAPODS: 1.9.1

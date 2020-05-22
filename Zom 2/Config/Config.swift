@@ -54,5 +54,7 @@ struct Config: KeanuConfig {
         // other trueness values, just in case.
         return val == "1" || val == "true" || val == "yes"
     }()
+    
+    static var useExperimentalAirShare: Bool = false
 }
 
