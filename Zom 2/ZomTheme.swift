@@ -9,7 +9,6 @@
 import Keanu
 
 public class ZomTheme: Theme {
-    
     /**
      Singleton instance.
      */
@@ -108,4 +107,7 @@ public class ZomTheme: Theme {
         return BaseTheme.shared.createChatBubble(type: type, rect: rect)
     }
 
+    public func createQrScanViewController() -> QrScanViewController {
+        return BaseTheme.shared.createQrScanViewController()
+    }
 }
