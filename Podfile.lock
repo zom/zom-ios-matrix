@@ -149,9 +149,9 @@ DEPENDENCIES:
   - AirShare (from `https://github.com/tladesignz/AirShare.git`)
   - BarcodeScanner (from `https://github.com/htothee/BarcodeScanner.git`)
   - CrossroadRegex (from `https://github.com/crossroadlabs/Regex.git`, tag `1.2.0`)
-  - Keanu (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `68c31499`)
-  - KeanuCore (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `68c31499`)
-  - KeanuExtension (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `68c31499`)
+  - Keanu (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `4d3a46d4`)
+  - KeanuCore (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `4d3a46d4`)
+  - KeanuExtension (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `4d3a46d4`)
   - QRCode (from `https://github.com/brackendev/QRCode.git`)
   - RichEditorView (from `https://gitlab.com/keanuapp/keanuapp-ios-richeditorview.git`, branch `build_fixes`)
 
@@ -192,13 +192,13 @@ EXTERNAL SOURCES:
     :git: https://github.com/crossroadlabs/Regex.git
     :tag: 1.2.0
   Keanu:
-    :commit: 68c31499
+    :commit: 4d3a46d4
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuCore:
-    :commit: 68c31499
+    :commit: 4d3a46d4
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuExtension:
-    :commit: 68c31499
+    :commit: 4d3a46d4
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   QRCode:
     :git: https://github.com/brackendev/QRCode.git
@@ -217,13 +217,13 @@ CHECKOUT OPTIONS:
     :git: https://github.com/crossroadlabs/Regex.git
     :tag: 1.2.0
   Keanu:
-    :commit: 68c31499
+    :commit: 4d3a46d4
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuCore:
-    :commit: 68c31499
+    :commit: 4d3a46d4
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuExtension:
-    :commit: 68c31499
+    :commit: 4d3a46d4
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   QRCode:
     :commit: e267650e0a6db653d57b149530fcfa3fa660f632
@@ -267,6 +267,6 @@ SPEC CHECKSUMS:
   ViewRow: 8da541e9c019f3be63f4e28f311a62cac2045ecf
   ZXingObjC: fdbb269f25dd2032da343e06f10224d62f537bdb
 
-PODFILE CHECKSUM: d266d22ca5eaaadf62b348d08746447293ddd7a1
+PODFILE CHECKSUM: 89636bd335340ba3eaa72166da0f7691625aa5f6
 
 COCOAPODS: 1.9.1

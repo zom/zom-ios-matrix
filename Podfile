@@ -12,7 +12,7 @@ end
 
 def shared_pods
     #pod 'KeanuCore', :path => '../../Keanu'
-    pod 'KeanuCore', :git => 'https://gitlab.com/keanuapp/keanuapp-ios.git', :commit => '68c31499'
+    pod 'KeanuCore', :git => 'https://gitlab.com/keanuapp/keanuapp-ios.git', :commit => '4d3a46d4'
     #pod 'MatrixKit', :git => 'https://github.com/N-Pex/matrix-ios-kit.git', :branch => 'fix_apns_push'
     #pod 'MatrixSDK', :git => 'https://github.com/matrix-org/matrix-ios-sdk.git', :branch => 'develop'
 end
@@ -24,7 +24,7 @@ target 'Zom 2' do
   pod 'QRCode', :git => 'https://github.com/brackendev/QRCode.git'
 
   #pod 'Keanu', :path => '../../Keanu'
-  pod 'Keanu', :git => 'https://gitlab.com/keanuapp/keanuapp-ios.git', :commit => '68c31499'
+  pod 'Keanu', :git => 'https://gitlab.com/keanuapp/keanuapp-ios.git', :commit => '4d3a46d4'
   pod 'RichEditorView', :git => 'https://gitlab.com/keanuapp/keanuapp-ios-richeditorview.git', :branch => 'build_fixes'
   pod 'CrossroadRegex', :git => 'https://github.com/crossroadlabs/Regex.git', :tag => '1.2.0'
   pod 'AirShare', :git => 'https://github.com/tladesignz/AirShare.git'
@@ -34,5 +34,5 @@ target 'ShareExtension' do
   shared_pods
 
   #pod 'KeanuExtension', :path => '../../Keanu'
-  pod 'KeanuExtension', :git => 'https://gitlab.com/keanuapp/keanuapp-ios.git', :commit => '68c31499'
+  pod 'KeanuExtension', :git => 'https://gitlab.com/keanuapp/keanuapp-ios.git', :commit => '4d3a46d4'
 end

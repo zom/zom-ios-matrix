@@ -37,8 +37,8 @@
     return MACRO_STRING(KEANU_UNIVERSAL_LINK_HOST);
 }
 
-+ (NSString *) useNewVerificationBeta {
-    return MACRO_STRING(KEANU_USE_NEW_VERIFICATION_BETA);
++ (NSString *) useExperimentalAirShare {
+    return MACRO_STRING(KEANU_USE_EXPERIMENTAL_AIR_SHARE);
 }
 
 @end

@@ -22,6 +22,6 @@
 
 @property (class, nonatomic, assign, readonly) NSString *universalLinkHost;
 
-@property (class, nonatomic, assign, readonly) NSString *useNewVerificationBeta;
+@property (class, nonatomic, assign, readonly) NSString *useExperimentalAirShare;
 
 @end
