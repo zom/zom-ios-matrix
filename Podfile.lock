@@ -47,7 +47,7 @@ PODS:
     - DTFoundation/Core
   - Eureka (5.2.1)
   - FLAnimatedImage (1.0.12)
-  - FontBlaster (5.1.0)
+  - FontBlaster (5.1.1)
   - GZIP (1.2.3)
   - INSPhotoGallery (1.2.8)
   - ISEmojiView (0.2.6)
@@ -72,7 +72,7 @@ PODS:
     - FontBlaster (~> 5.1)
     - libPhoneNumber-iOS (~> 0.9)
     - Localize (~> 2.2)
-    - MatrixSDK/SwiftSupport (~> 0.16.4)
+    - MatrixSDK/SwiftSupport (~> 0.16.5)
   - KeanuExtension (0.1.0):
     - KeanuCore
     - MBProgressHUD (~> 1.1)
@@ -149,9 +149,9 @@ DEPENDENCIES:
   - AirShare (from `https://github.com/tladesignz/AirShare.git`)
   - BarcodeScanner (from `https://github.com/htothee/BarcodeScanner.git`)
   - CrossroadRegex (from `https://github.com/crossroadlabs/Regex.git`, tag `1.2.0`)
-  - Keanu (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `4d3a46d4`)
-  - KeanuCore (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `4d3a46d4`)
-  - KeanuExtension (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `4d3a46d4`)
+  - Keanu (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `55ed9ed8`)
+  - KeanuCore (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `55ed9ed8`)
+  - KeanuExtension (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `55ed9ed8`)
   - QRCode (from `https://github.com/brackendev/QRCode.git`)
   - RichEditorView (from `https://gitlab.com/keanuapp/keanuapp-ios-richeditorview.git`, branch `build_fixes`)
 
@@ -192,13 +192,13 @@ EXTERNAL SOURCES:
     :git: https://github.com/crossroadlabs/Regex.git
     :tag: 1.2.0
   Keanu:
-    :commit: 4d3a46d4
+    :commit: 55ed9ed8
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuCore:
-    :commit: 4d3a46d4
+    :commit: 55ed9ed8
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuExtension:
-    :commit: 4d3a46d4
+    :commit: 55ed9ed8
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   QRCode:
     :git: https://github.com/brackendev/QRCode.git
@@ -217,13 +217,13 @@ CHECKOUT OPTIONS:
     :git: https://github.com/crossroadlabs/Regex.git
     :tag: 1.2.0
   Keanu:
-    :commit: 4d3a46d4
+    :commit: 55ed9ed8
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuCore:
-    :commit: 4d3a46d4
+    :commit: 55ed9ed8
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuExtension:
-    :commit: 4d3a46d4
+    :commit: 55ed9ed8
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   QRCode:
     :commit: e267650e0a6db653d57b149530fcfa3fa660f632
@@ -242,12 +242,12 @@ SPEC CHECKSUMS:
   DTFoundation: 25aa19bb7c6e225b1dfae195604fb8cf1da0ab4c
   Eureka: c883105488e05bc65539f583246ecf9657cabbfe
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
-  FontBlaster: 67017432ef1d187e038c353fd48ed8744a54484a
+  FontBlaster: 8897ebdbb4b6ace3ab78c92b665d88c954f19e4a
   GZIP: af5c90ef903776a7e9afe6ebebd794a84a2929d4
   INSPhotoGallery: ad317cb9a59c7a5f08550e4155b49622c24dcab3
   ISEmojiView: f7cd94a6c93307f429ec5da001293d0b02247f03
   Keanu: 47f64d59e1669b4d6d4dbfac051d036e5c7b8977
-  KeanuCore: 118feec5620af3caeff77be03a0a05f2bfabbd94
+  KeanuCore: 7bf474db84bc310600f7e7636d4e70f5b25244a8
   KeanuExtension: da8935abf492a2f4b1106f2e58cff5d2b4450d95
   libbase58: 7c040313537b8c44b6e2d15586af8e21f7354efd
   libPhoneNumber-iOS: 0a32a9525cf8744fe02c5206eb30d571e38f7d75
@@ -267,6 +267,6 @@ SPEC CHECKSUMS:
   ViewRow: 8da541e9c019f3be63f4e28f311a62cac2045ecf
   ZXingObjC: fdbb269f25dd2032da343e06f10224d62f537bdb
 
-PODFILE CHECKSUM: 89636bd335340ba3eaa72166da0f7691625aa5f6
+PODFILE CHECKSUM: 6aa8ab1ba5e4dc4b0da11d464bf7653799ba64ef
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.9.3
