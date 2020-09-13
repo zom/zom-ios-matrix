@@ -23,27 +23,26 @@ PODS:
     - CocoaLumberjack (~> 3.6)
     - libsodium
     - PureLayout (~> 3.1)
-  - BarcodeScanner (4.1.4)
-  - CocoaLumberjack (3.6.1):
-    - CocoaLumberjack/Core (= 3.6.1)
-  - CocoaLumberjack/Core (3.6.1)
+  - CocoaLumberjack (3.6.2):
+    - CocoaLumberjack/Core (= 3.6.2)
+  - CocoaLumberjack/Core (3.6.2)
   - CrossroadRegex (1.2.0)
-  - DTCoreText (1.6.23):
-    - DTCoreText/Core (= 1.6.23)
+  - DTCoreText (1.6.25):
+    - DTCoreText/Core (= 1.6.25)
     - DTFoundation/Core (~> 1.7.5)
     - DTFoundation/DTAnimatedGIF (~> 1.7.5)
     - DTFoundation/DTHTMLParser (~> 1.7.5)
     - DTFoundation/UIKit (~> 1.7.5)
-  - DTCoreText/Core (1.6.23):
+  - DTCoreText/Core (1.6.25):
     - DTFoundation/Core (~> 1.7.5)
     - DTFoundation/DTAnimatedGIF (~> 1.7.5)
     - DTFoundation/DTHTMLParser (~> 1.7.5)
     - DTFoundation/UIKit (~> 1.7.5)
-  - DTFoundation/Core (1.7.14)
-  - DTFoundation/DTAnimatedGIF (1.7.14)
-  - DTFoundation/DTHTMLParser (1.7.14):
+  - DTFoundation/Core (1.7.15)
+  - DTFoundation/DTAnimatedGIF (1.7.15)
+  - DTFoundation/DTHTMLParser (1.7.15):
     - DTFoundation/Core
-  - DTFoundation/UIKit (1.7.14):
+  - DTFoundation/UIKit (1.7.15):
     - DTFoundation/Core
   - Eureka (5.2.1)
   - FLAnimatedImage (1.0.12)
@@ -116,13 +115,13 @@ PODS:
   - MaterialComponents/Typography (80.0.0):
     - MaterialComponents/private/Application
     - MaterialComponents/private/Math
-  - MatrixSDK/Core (0.16.5):
+  - MatrixSDK/Core (0.16.14):
     - AFNetworking (~> 4.0.0)
     - GZIP (~> 1.2.2)
     - libbase58 (~> 0.1.4)
     - OLMKit (~> 3.1.0)
     - Realm (~> 4.4.0)
-  - MatrixSDK/SwiftSupport (0.16.5):
+  - MatrixSDK/SwiftSupport (0.16.14):
     - MatrixSDK/Core
   - MBProgressHUD (1.2.0)
   - MDFInternationalization (2.0.0)
@@ -133,7 +132,6 @@ PODS:
   - OLMKit/olmc (3.1.0)
   - OLMKit/olmcpp (3.1.0)
   - PureLayout (3.1.6)
-  - QRCode (2.0)
   - Realm (4.4.1):
     - Realm/Headers (= 4.4.1)
   - Realm/Headers (4.4.1)
@@ -147,12 +145,10 @@ PODS:
 
 DEPENDENCIES:
   - AirShare (from `https://github.com/tladesignz/AirShare.git`)
-  - BarcodeScanner (from `https://github.com/htothee/BarcodeScanner.git`)
   - CrossroadRegex (from `https://github.com/crossroadlabs/Regex.git`, tag `1.2.0`)
-  - Keanu (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `55ed9ed8`)
-  - KeanuCore (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `55ed9ed8`)
-  - KeanuExtension (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `55ed9ed8`)
-  - QRCode (from `https://github.com/brackendev/QRCode.git`)
+  - Keanu (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `57acd421`)
+  - KeanuCore (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `57acd421`)
+  - KeanuExtension (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `57acd421`)
   - RichEditorView (from `https://gitlab.com/keanuapp/keanuapp-ios-richeditorview.git`, branch `build_fixes`)
 
 SPEC REPOS:
@@ -186,22 +182,18 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   AirShare:
     :git: https://github.com/tladesignz/AirShare.git
-  BarcodeScanner:
-    :git: https://github.com/htothee/BarcodeScanner.git
   CrossroadRegex:
     :git: https://github.com/crossroadlabs/Regex.git
     :tag: 1.2.0
   Keanu:
-    :commit: 55ed9ed8
+    :commit: 57acd421
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuCore:
-    :commit: 55ed9ed8
+    :commit: 57acd421
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuExtension:
-    :commit: 55ed9ed8
+    :commit: 57acd421
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
-  QRCode:
-    :git: https://github.com/brackendev/QRCode.git
   RichEditorView:
     :branch: build_fixes
     :git: https://gitlab.com/keanuapp/keanuapp-ios-richeditorview.git
@@ -210,24 +202,18 @@ CHECKOUT OPTIONS:
   AirShare:
     :commit: fd37e6111492f0d368a3dfbe332ac4d765c1968c
     :git: https://github.com/tladesignz/AirShare.git
-  BarcodeScanner:
-    :commit: fe7835d344be6190d66fa7994fa593fd4f66dd31
-    :git: https://github.com/htothee/BarcodeScanner.git
   CrossroadRegex:
     :git: https://github.com/crossroadlabs/Regex.git
     :tag: 1.2.0
   Keanu:
-    :commit: 55ed9ed8
+    :commit: 57acd421
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuCore:
-    :commit: 55ed9ed8
+    :commit: 57acd421
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuExtension:
-    :commit: 55ed9ed8
+    :commit: 57acd421
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
-  QRCode:
-    :commit: e267650e0a6db653d57b149530fcfa3fa660f632
-    :git: https://github.com/brackendev/QRCode.git
   RichEditorView:
     :commit: 225537e7959319b7a2ec681e1d728d2077e156fd
     :git: https://gitlab.com/keanuapp/keanuapp-ios-richeditorview.git
@@ -235,11 +221,10 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   AirShare: 791397bee68eb4e549adca76b7789dc76301043b
-  BarcodeScanner: a29f55c0bb367a73aa9d744c1af6ed7ca7531984
-  CocoaLumberjack: b17ae15142558d08bbacf69775fa10c4abbebcc9
+  CocoaLumberjack: bd155f2dd06c0e0b03f876f7a3ee55693122ec94
   CrossroadRegex: 9af32b4b4dc6ff404c87647ef1bc68ea711cc570
-  DTCoreText: 67023bb51b26711d5f640c851f4845aea14c24c9
-  DTFoundation: 25aa19bb7c6e225b1dfae195604fb8cf1da0ab4c
+  DTCoreText: e92f4cf6b36d9d71ce4436d12cf089d74ab0596b
+  DTFoundation: 767ca882209ef4d5132ec7e702526d5ed5bb71a2
   Eureka: c883105488e05bc65539f583246ecf9657cabbfe
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   FontBlaster: 8897ebdbb4b6ace3ab78c92b665d88c954f19e4a
@@ -254,19 +239,18 @@ SPEC CHECKSUMS:
   libsodium: 9a8faa5ef2fa0d2d57bd7f7d79bf8fb7c1a9f0ea
   Localize: cb1ae53ed73decaad0dce217806ed983091913f5
   MaterialComponents: fcd7ab0d6087bce852e2c60c2c712809f76c7f9e
-  MatrixSDK: efe87af67440a67781be871b07e80b1f12ef5d48
+  MatrixSDK: b1bdfb8ff9a5a5fd421dda2da60a6cedfed73545
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
   OLMKit: 4ee0159d63feeb86d836fdcfefe418e163511639
   PureLayout: bd3c4ec3a3819ad387c99ebb72c6b129c3ed4d2d
-  QRCode: 282441d0cfe8c4c1766b7578361fe93f72757685
   Realm: 4eb04d7487bd43c0581256f40b424eafb711deff
   RichEditorView: bd9637b517d9b0ff63f4d800507c7b4f378afa11
   SearchTextField: 40dc3cc57def5a211f263cac263622c163bbc25a
   ViewRow: 8da541e9c019f3be63f4e28f311a62cac2045ecf
   ZXingObjC: fdbb269f25dd2032da343e06f10224d62f537bdb
 
-PODFILE CHECKSUM: 6aa8ab1ba5e4dc4b0da11d464bf7653799ba64ef
+PODFILE CHECKSUM: b1029e51b1f0db84b166a1a989e361c62370d71c
 
 COCOAPODS: 1.9.3

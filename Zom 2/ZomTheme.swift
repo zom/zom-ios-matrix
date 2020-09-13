@@ -9,6 +9,7 @@
 import Keanu
 
 public class ZomTheme: Theme {
+    
     /**
      Singleton instance.
      */
@@ -110,4 +111,17 @@ public class ZomTheme: Theme {
     public func createQrScanViewController() -> QrScanViewController {
         return BaseTheme.shared.createQrScanViewController()
     }
+    
+    public func createNewDeviceViewController() -> NewDeviceViewController {
+        return BaseTheme.shared.createNewDeviceViewController()
+    }
+    
+    public func createManualCompareViewController() -> ManualCompareViewController {
+        return BaseTheme.shared.createManualCompareViewController()
+    }
+    
+    public func createIntrusionViewController() -> IntrusionViewController {
+        return BaseTheme.shared.createIntrusionViewController()
+    }
+
 }
