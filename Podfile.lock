@@ -146,9 +146,9 @@ PODS:
 DEPENDENCIES:
   - AirShare (from `https://github.com/tladesignz/AirShare.git`)
   - CrossroadRegex (from `https://github.com/crossroadlabs/Regex.git`, tag `1.2.0`)
-  - Keanu (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `57acd421`)
-  - KeanuCore (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `57acd421`)
-  - KeanuExtension (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `57acd421`)
+  - Keanu (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `498a9b5f`)
+  - KeanuCore (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `498a9b5f`)
+  - KeanuExtension (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `498a9b5f`)
   - RichEditorView (from `https://gitlab.com/keanuapp/keanuapp-ios-richeditorview.git`, branch `build_fixes`)
 
 SPEC REPOS:
@@ -186,13 +186,13 @@ EXTERNAL SOURCES:
     :git: https://github.com/crossroadlabs/Regex.git
     :tag: 1.2.0
   Keanu:
-    :commit: 57acd421
+    :commit: 498a9b5f
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuCore:
-    :commit: 57acd421
+    :commit: 498a9b5f
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuExtension:
-    :commit: 57acd421
+    :commit: 498a9b5f
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   RichEditorView:
     :branch: build_fixes
@@ -206,13 +206,13 @@ CHECKOUT OPTIONS:
     :git: https://github.com/crossroadlabs/Regex.git
     :tag: 1.2.0
   Keanu:
-    :commit: 57acd421
+    :commit: 498a9b5f
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuCore:
-    :commit: 57acd421
+    :commit: 498a9b5f
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuExtension:
-    :commit: 57acd421
+    :commit: 498a9b5f
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   RichEditorView:
     :commit: 225537e7959319b7a2ec681e1d728d2077e156fd
@@ -251,6 +251,6 @@ SPEC CHECKSUMS:
   ViewRow: 8da541e9c019f3be63f4e28f311a62cac2045ecf
   ZXingObjC: fdbb269f25dd2032da343e06f10224d62f537bdb
 
-PODFILE CHECKSUM: b1029e51b1f0db84b166a1a989e361c62370d71c
+PODFILE CHECKSUM: 57f0ee3e66c8b08ee43a3b4c1a966bf9bccbf57c
 
 COCOAPODS: 1.9.3
