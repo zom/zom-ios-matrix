@@ -18,11 +18,14 @@ extension Bundle {
     }
     
     @objc public func zom_localizedString(forKey key: String, value: String?, table tableName: String?) -> String {
-        var language = UserDefaults.standard.array(forKey: "AppleLanguages")?.first as? String
+        var language = UserDefaults.standard.array(forKey: "AppleLanguages")?.first as? String ?? "Base"
         if language == "en" {
             language = "Base"
         }
-        if let path = path(forResource: language ?? "Base", ofType: "lproj"), let bundle = Bundle(path: path) {
+        if
+            !self.bundlePath.hasSuffix(language + ".lproj"),
+            let path = path(forResource: language, ofType: "lproj"),
+            let bundle = Bundle(path: path) {
             return bundle.localizedString(forKey: key, value: value, table: tableName) 
         } else {
             return zom_localizedString(forKey: key, value: value, table: tableName)
