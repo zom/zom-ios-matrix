@@ -12,7 +12,7 @@ end
 
 def shared_pods
     #pod 'KeanuCore', :path => '../../Keanu'
-    pod 'KeanuCore', :git => 'https://gitlab.com/keanuapp/keanuapp-ios.git', :commit => 'fa1e01ff'
+    pod 'KeanuCore', :git => 'https://gitlab.com/keanuapp/keanuapp-ios.git', :commit => 'a94fc78a'
     #pod 'MatrixKit', :git => 'https://github.com/N-Pex/matrix-ios-kit.git', :branch => 'fix_apns_push'
     #pod 'MatrixSDK', :git => 'https://github.com/matrix-org/matrix-ios-sdk.git', :branch => 'develop'
 end
@@ -25,12 +25,12 @@ target 'Zom 2' do
   pod 'AirShare', :git => 'https://github.com/tladesignz/AirShare.git'
 
   #pod 'Keanu', :path => '../../Keanu'
-  pod 'Keanu', :git => 'https://gitlab.com/keanuapp/keanuapp-ios.git', :commit => 'fa1e01ff'
+  pod 'Keanu', :git => 'https://gitlab.com/keanuapp/keanuapp-ios.git', :commit => 'a94fc78a'
 end
 
 target 'ShareExtension' do
   shared_pods
 
   #pod 'KeanuExtension', :path => '../../Keanu'
-  pod 'KeanuExtension', :git => 'https://gitlab.com/keanuapp/keanuapp-ios.git', :commit => 'fa1e01ff'
+  pod 'KeanuExtension', :git => 'https://gitlab.com/keanuapp/keanuapp-ios.git', :commit => 'a94fc78a'
 end
