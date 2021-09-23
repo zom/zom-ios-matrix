@@ -91,10 +91,10 @@ class AppDelegate: BaseAppDelegate {
         StickerManager.stickersFolderPath = Bundle.main.resourcePath! + "/Stickers"
     }
     
-    // Override Theme to create custom room view controllers!
-    override open var theme: Theme {
+    // Override Router to create custom room view controllers!
+    override open var router: Router {
         get {
-            return ZomTheme.shared
+            return ZomRouter.shared
         }
     }
 }

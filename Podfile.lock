@@ -23,30 +23,30 @@ PODS:
     - CocoaLumberjack (~> 3.6)
     - libsodium
     - PureLayout (~> 3.1)
-  - CocoaLumberjack (3.6.2):
-    - CocoaLumberjack/Core (= 3.6.2)
-  - CocoaLumberjack/Core (3.6.2)
+  - CocoaLumberjack (3.7.2):
+    - CocoaLumberjack/Core (= 3.7.2)
+  - CocoaLumberjack/Core (3.7.2)
   - CrossroadRegex (1.2.0)
-  - DTCoreText (1.6.25):
-    - DTCoreText/Core (= 1.6.25)
+  - DTCoreText (1.6.26):
+    - DTCoreText/Core (= 1.6.26)
     - DTFoundation/Core (~> 1.7.5)
     - DTFoundation/DTAnimatedGIF (~> 1.7.5)
     - DTFoundation/DTHTMLParser (~> 1.7.5)
     - DTFoundation/UIKit (~> 1.7.5)
-  - DTCoreText/Core (1.6.25):
+  - DTCoreText/Core (1.6.26):
     - DTFoundation/Core (~> 1.7.5)
     - DTFoundation/DTAnimatedGIF (~> 1.7.5)
     - DTFoundation/DTHTMLParser (~> 1.7.5)
     - DTFoundation/UIKit (~> 1.7.5)
-  - DTFoundation/Core (1.7.17)
-  - DTFoundation/DTAnimatedGIF (1.7.17)
-  - DTFoundation/DTHTMLParser (1.7.17):
+  - DTFoundation/Core (1.7.18)
+  - DTFoundation/DTAnimatedGIF (1.7.18)
+  - DTFoundation/DTHTMLParser (1.7.18):
     - DTFoundation/Core
-  - DTFoundation/UIKit (1.7.17):
+  - DTFoundation/UIKit (1.7.18):
     - DTFoundation/Core
   - Eureka (5.3.3)
   - FLAnimatedImage (1.0.16)
-  - FontBlaster (5.1.1)
+  - FontBlaster (5.2.0)
   - GZIP (1.3.0)
   - INSPhotoGallery (1.2.8)
   - ISEmojiView (0.2.6)
@@ -59,7 +59,9 @@ PODS:
     - ISEmojiView
     - KeanuCore
     - libPhoneNumber-iOS (~> 0.9)
-    - MaterialComponents/Snackbar (~> 80)
+    - MaterialComponents/Buttons (~> 124)
+    - MaterialComponents/Snackbar (~> 124)
+    - MobileVLCKit (~> 3.3)
     - PureLayout (~> 3.1)
     - RichEditorView
     - SearchTextField (~> 1.2)
@@ -71,7 +73,7 @@ PODS:
     - FontBlaster (~> 5.1)
     - libPhoneNumber-iOS (~> 0.9)
     - Localize (~> 2.2)
-    - MatrixSDK (~> 0.18.9)
+    - MatrixSDK (~> 0.20.1)
   - KeanuExtension (0.1.0):
     - KeanuCore
     - MBProgressHUD (~> 1.1)
@@ -79,64 +81,98 @@ PODS:
   - libPhoneNumber-iOS (0.9.15)
   - libsodium (1.0.12)
   - Localize (2.3.0)
-  - MaterialComponents/AnimationTiming (80.0.0)
-  - MaterialComponents/Buttons (80.0.0):
+  - MaterialComponents/AnimationTiming (124.2.0)
+  - MaterialComponents/Availability (124.2.0)
+  - MaterialComponents/Buttons (124.2.0):
+    - MaterialComponents/Elevation
     - MaterialComponents/Ink
     - MaterialComponents/private/Math
+    - MaterialComponents/Ripple
+    - MaterialComponents/Shadow
     - MaterialComponents/ShadowElevations
     - MaterialComponents/ShadowLayer
+    - MaterialComponents/ShapeLibrary
     - MaterialComponents/Shapes
     - MaterialComponents/Typography
     - MDFInternationalization
     - MDFTextAccessibility
-  - MaterialComponents/Ink (80.0.0):
+  - MaterialComponents/Elevation (124.2.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
     - MaterialComponents/private/Math
-  - MaterialComponents/OverlayWindow (80.0.0):
+  - MaterialComponents/Ink (124.2.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/OverlayWindow (124.2.0):
+    - MaterialComponents/Availability
     - MaterialComponents/private/Application
-  - MaterialComponents/private/Application (80.0.0)
-  - MaterialComponents/private/KeyboardWatcher (80.0.0):
+  - MaterialComponents/private/Application (124.2.0)
+  - MaterialComponents/private/Color (124.2.0):
+    - MaterialComponents/Availability
+  - MaterialComponents/private/KeyboardWatcher (124.2.0):
     - MaterialComponents/private/Application
-  - MaterialComponents/private/Math (80.0.0)
-  - MaterialComponents/private/Overlay (80.0.0)
-  - MaterialComponents/ShadowElevations (80.0.0)
-  - MaterialComponents/ShadowLayer (80.0.0):
+  - MaterialComponents/private/Math (124.2.0)
+  - MaterialComponents/private/Overlay (124.2.0)
+  - MaterialComponents/Ripple (124.2.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/Shadow (124.2.0):
+    - MaterialComponents/Availability
+  - MaterialComponents/ShadowElevations (124.2.0)
+  - MaterialComponents/ShadowLayer (124.2.0):
     - MaterialComponents/ShadowElevations
-  - MaterialComponents/Shapes (80.0.0):
+  - MaterialComponents/ShapeLibrary (124.2.0):
+    - MaterialComponents/private/Math
+    - MaterialComponents/Shapes
+  - MaterialComponents/Shapes (124.2.0):
+    - MaterialComponents/private/Color
     - MaterialComponents/private/Math
     - MaterialComponents/ShadowLayer
-  - MaterialComponents/Snackbar (80.0.0):
+  - MaterialComponents/Snackbar (124.2.0):
     - MaterialComponents/AnimationTiming
+    - MaterialComponents/Availability
     - MaterialComponents/Buttons
+    - MaterialComponents/Elevation
     - MaterialComponents/OverlayWindow
     - MaterialComponents/private/Application
     - MaterialComponents/private/KeyboardWatcher
+    - MaterialComponents/private/Math
     - MaterialComponents/private/Overlay
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
     - MaterialComponents/Typography
-  - MaterialComponents/Typography (80.0.0):
+  - MaterialComponents/Typography (124.2.0):
     - MaterialComponents/private/Application
     - MaterialComponents/private/Math
-  - MatrixSDK (0.18.12):
-    - MatrixSDK/Core (= 0.18.12)
-  - MatrixSDK/Core (0.18.12):
+    - MDFTextAccessibility
+  - MatrixSDK (0.20.1):
+    - MatrixSDK/Core (= 0.20.1)
+  - MatrixSDK/Core (0.20.1):
     - AFNetworking (~> 4.0.0)
     - GZIP (~> 1.3.0)
     - libbase58 (~> 0.1.4)
-    - OLMKit (~> 3.2.2)
-    - Realm (= 10.7.2)
+    - OLMKit (~> 3.2.4)
+    - Realm (= 10.7.6)
+    - SwiftyBeaver (= 1.9.5)
   - MBProgressHUD (1.2.0)
-  - MDFInternationalization (2.0.0)
+  - MDFInternationalization (3.0.0)
   - MDFTextAccessibility (2.0.1)
-  - OLMKit (3.2.4):
-    - OLMKit/olmc (= 3.2.4)
-    - OLMKit/olmcpp (= 3.2.4)
-  - OLMKit/olmc (3.2.4)
-  - OLMKit/olmcpp (3.2.4)
-  - PureLayout (3.1.6)
-  - Realm (10.7.2):
-    - Realm/Headers (= 10.7.2)
-  - Realm/Headers (10.7.2)
+  - MobileVLCKit (3.3.17)
+  - OLMKit (3.2.5):
+    - OLMKit/olmc (= 3.2.5)
+    - OLMKit/olmcpp (= 3.2.5)
+  - OLMKit/olmc (3.2.5)
+  - OLMKit/olmcpp (3.2.5)
+  - PureLayout (3.1.9)
+  - Realm (10.7.6):
+    - Realm/Headers (= 10.7.6)
+  - Realm/Headers (10.7.6)
   - RichEditorView (0.0.3)
   - SearchTextField (1.2.4)
+  - SwiftyBeaver (1.9.5)
   - ViewRow (0.8):
     - Eureka (>= 5.0.0)
   - ZXingObjC (3.6.5):
@@ -146,9 +182,9 @@ PODS:
 DEPENDENCIES:
   - AirShare (from `https://github.com/tladesignz/AirShare.git`)
   - CrossroadRegex (from `https://github.com/crossroadlabs/Regex.git`, tag `1.2.0`)
-  - Keanu (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `858e3a2d`)
-  - KeanuCore (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `858e3a2d`)
-  - KeanuExtension (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `858e3a2d`)
+  - Keanu (from `../../Keanu`)
+  - KeanuCore (from `../../Keanu`)
+  - KeanuExtension (from `../../Keanu`)
   - RichEditorView (from `https://gitlab.com/keanuapp/keanuapp-ios-richeditorview.git`, branch `build_fixes`)
 
 SPEC REPOS:
@@ -172,10 +208,12 @@ SPEC REPOS:
     - MBProgressHUD
     - MDFInternationalization
     - MDFTextAccessibility
+    - MobileVLCKit
     - OLMKit
     - PureLayout
     - Realm
     - SearchTextField
+    - SwiftyBeaver
     - ViewRow
     - ZXingObjC
 
@@ -186,14 +224,11 @@ EXTERNAL SOURCES:
     :git: https://github.com/crossroadlabs/Regex.git
     :tag: 1.2.0
   Keanu:
-    :commit: 858e3a2d
-    :git: https://gitlab.com/keanuapp/keanuapp-ios.git
+    :path: "../../Keanu"
   KeanuCore:
-    :commit: 858e3a2d
-    :git: https://gitlab.com/keanuapp/keanuapp-ios.git
+    :path: "../../Keanu"
   KeanuExtension:
-    :commit: 858e3a2d
-    :git: https://gitlab.com/keanuapp/keanuapp-ios.git
+    :path: "../../Keanu"
   RichEditorView:
     :branch: build_fixes
     :git: https://gitlab.com/keanuapp/keanuapp-ios-richeditorview.git
@@ -205,15 +240,6 @@ CHECKOUT OPTIONS:
   CrossroadRegex:
     :git: https://github.com/crossroadlabs/Regex.git
     :tag: 1.2.0
-  Keanu:
-    :commit: 858e3a2d
-    :git: https://gitlab.com/keanuapp/keanuapp-ios.git
-  KeanuCore:
-    :commit: 858e3a2d
-    :git: https://gitlab.com/keanuapp/keanuapp-ios.git
-  KeanuExtension:
-    :commit: 858e3a2d
-    :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   RichEditorView:
     :commit: 225537e7959319b7a2ec681e1d728d2077e156fd
     :git: https://gitlab.com/keanuapp/keanuapp-ios-richeditorview.git
@@ -221,36 +247,38 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   AirShare: 791397bee68eb4e549adca76b7789dc76301043b
-  CocoaLumberjack: bd155f2dd06c0e0b03f876f7a3ee55693122ec94
+  CocoaLumberjack: b7e05132ff94f6ae4dfa9d5bce9141893a21d9da
   CrossroadRegex: 9af32b4b4dc6ff404c87647ef1bc68ea711cc570
-  DTCoreText: e92f4cf6b36d9d71ce4436d12cf089d74ab0596b
-  DTFoundation: 989698be00d3f19438c38a49a8ebb3f6919dcac5
+  DTCoreText: ec749e013f2e1f76de5e7c7634642e600a7467ce
+  DTFoundation: a53f8cda2489208cbc71c648be177f902ee17536
   Eureka: e6d720290c56bb23333ad1a0e020b2a98a0e9a43
   FLAnimatedImage: 8f3e854ebf9680b71f0b6e700939687fc4d82b4b
-  FontBlaster: 8897ebdbb4b6ace3ab78c92b665d88c954f19e4a
+  FontBlaster: b848e9d7b0ed2f2b3ebaf5b83458eb4ff9ba0764
   GZIP: 416858efbe66b41b206895ac6dfd5493200d95b3
   INSPhotoGallery: ad317cb9a59c7a5f08550e4155b49622c24dcab3
   ISEmojiView: f7cd94a6c93307f429ec5da001293d0b02247f03
-  Keanu: 47f64d59e1669b4d6d4dbfac051d036e5c7b8977
-  KeanuCore: e26708db13342fd90d5ec7e101a6c107b327dc5c
-  KeanuExtension: da8935abf492a2f4b1106f2e58cff5d2b4450d95
+  Keanu: 9f019bbd95558fee7f7d109a882f417003bd52c5
+  KeanuCore: 9004a7479321af5a5539cdaf0ec522fd4382fafc
+  KeanuExtension: d0ea01b0c08b225926ad3ef40496754193942dad
   libbase58: 7c040313537b8c44b6e2d15586af8e21f7354efd
   libPhoneNumber-iOS: 0a32a9525cf8744fe02c5206eb30d571e38f7d75
   libsodium: 9a8faa5ef2fa0d2d57bd7f7d79bf8fb7c1a9f0ea
   Localize: cb1ae53ed73decaad0dce217806ed983091913f5
-  MaterialComponents: fcd7ab0d6087bce852e2c60c2c712809f76c7f9e
-  MatrixSDK: f72f413738e0f03892d9127c6b0b96cd8642abe1
+  MaterialComponents: 1a9b2d9d45b1601ae544de85089adc4c464306d4
+  MatrixSDK: 37fbb6a650095387e908937b7411c4370599c90b
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
-  MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
+  MDFInternationalization: d697c55307816222a55685c4ccb1044ffb030c12
   MDFTextAccessibility: f4bb4cc2194286651b59a215fdeaa0e05dc90ba5
-  OLMKit: 2d73cd67d149b5c3e3a8eb8ecae93d0b429d8a02
-  PureLayout: bd3c4ec3a3819ad387c99ebb72c6b129c3ed4d2d
-  Realm: e523da9ade306c5ae87e85dc09fdef148d3e1cc1
+  MobileVLCKit: c5dd1b0ae933dc9c2348099840e753496dcdd908
+  OLMKit: 9fb4799c4a044dd2c06bda31ec31a12191ad30b5
+  PureLayout: 5fb5e5429519627d60d079ccb1eaa7265ce7cf88
+  Realm: ed860452717c8db8f4bf832b6807f7f2ce708839
   RichEditorView: bd9637b517d9b0ff63f4d800507c7b4f378afa11
   SearchTextField: 40dc3cc57def5a211f263cac263622c163bbc25a
+  SwiftyBeaver: 84069991dd5dca07d7069100985badaca7f0ce82
   ViewRow: 8da541e9c019f3be63f4e28f311a62cac2045ecf
   ZXingObjC: fdbb269f25dd2032da343e06f10224d62f537bdb
 
-PODFILE CHECKSUM: 898adfe8c9dc66bd020e0551e675b0108819fc87
+PODFILE CHECKSUM: ae0fb1fa3bd101b49113befe472e341c27b05093
 
 COCOAPODS: 1.10.1

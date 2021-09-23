@@ -13,6 +13,7 @@ import KeanuCore
  via Objective-C `Constants` object.
  */
 struct Config: KeanuConfig {
+    static var altDomains: [String : [String]] = ["nang.zom.im":["d28hky1zw9ef1q.cloudfront.net"]]
     
     static var defaultHomeServer = Constants.defaultHomeServer as String
     

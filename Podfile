@@ -1,4 +1,4 @@
-platform :ios, '9.3'
+platform :ios, '11'
 use_frameworks!
 
 post_install do |installer|
@@ -8,13 +8,20 @@ post_install do |installer|
       '$(FRAMEWORK_SEARCH_PATHS)'
     ]
   end
+  installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings.delete 'IPHONEOS_DEPLOYMENT_TARGET'
+        config.build_settings['ENABLE_BITCODE'] = 'NO'
+      end
+    end
 end
 
 def shared_pods
     #pod 'KeanuCore', :path => '../../Keanu'
-    pod 'KeanuCore', :git => 'https://gitlab.com/keanuapp/keanuapp-ios.git', :commit => '858e3a2d'
+    pod 'KeanuCore', :git => 'https://gitlab.com/keanuapp/keanuapp-ios.git', :commit => '039f3742'
     #pod 'MatrixKit', :git => 'https://github.com/N-Pex/matrix-ios-kit.git', :branch => 'fix_apns_push'
     #pod 'MatrixSDK', :git => 'https://github.com/matrix-org/matrix-ios-sdk.git', :branch => 'develop'
+    #pod 'MatrixSDK', :path => '../../matrix-ios-sdk'
 end
 
 target 'Zom 2' do
@@ -25,12 +32,12 @@ target 'Zom 2' do
   pod 'AirShare', :git => 'https://github.com/tladesignz/AirShare.git'
 
   #pod 'Keanu', :path => '../../Keanu'
-  pod 'Keanu', :git => 'https://gitlab.com/keanuapp/keanuapp-ios.git', :commit => '858e3a2d'
+  pod 'Keanu', :git => 'https://gitlab.com/keanuapp/keanuapp-ios.git', :commit => '039f3742'
 end
 
 target 'ShareExtension' do
   shared_pods
 
   #pod 'KeanuExtension', :path => '../../Keanu'
-  pod 'KeanuExtension', :git => 'https://gitlab.com/keanuapp/keanuapp-ios.git', :commit => '858e3a2d'
+  pod 'KeanuExtension', :git => 'https://gitlab.com/keanuapp/keanuapp-ios.git', :commit => '039f3742'
 end

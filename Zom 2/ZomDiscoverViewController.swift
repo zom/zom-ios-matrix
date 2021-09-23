@@ -55,7 +55,7 @@ class ZomDiscoverViewController: DiscoverViewController, DiscoverViewControllerD
             return true
             
         case ZomDiscoverViewController.identifierStickerShare:
-            let vc = UIApplication.shared.theme.createStickerPackViewController()
+            let vc = UIApplication.shared.router.stickerPack()
             vc.pickDelegate = self
             present(UINavigationController(rootViewController: vc), animated: true)
             return true
