@@ -148,13 +148,13 @@ PODS:
     - MaterialComponents/private/Application
     - MaterialComponents/private/Math
     - MDFTextAccessibility
-  - MatrixSDK (0.20.1):
-    - MatrixSDK/Core (= 0.20.1)
-  - MatrixSDK/Core (0.20.1):
+  - MatrixSDK (0.20.3):
+    - MatrixSDK/Core (= 0.20.3)
+  - MatrixSDK/Core (0.20.3):
     - AFNetworking (~> 4.0.0)
     - GZIP (~> 1.3.0)
     - libbase58 (~> 0.1.4)
-    - OLMKit (~> 3.2.4)
+    - OLMKit (~> 3.2.5)
     - Realm (= 10.7.6)
     - SwiftyBeaver (= 1.9.5)
   - MBProgressHUD (1.2.0)
@@ -182,9 +182,9 @@ PODS:
 DEPENDENCIES:
   - AirShare (from `https://github.com/tladesignz/AirShare.git`)
   - CrossroadRegex (from `https://github.com/crossroadlabs/Regex.git`, tag `1.2.0`)
-  - Keanu (from `../../Keanu`)
-  - KeanuCore (from `../../Keanu`)
-  - KeanuExtension (from `../../Keanu`)
+  - Keanu (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `5e9bec83`)
+  - KeanuCore (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `5e9bec83`)
+  - KeanuExtension (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `5e9bec83`)
   - RichEditorView (from `https://gitlab.com/keanuapp/keanuapp-ios-richeditorview.git`, branch `build_fixes`)
 
 SPEC REPOS:
@@ -224,11 +224,14 @@ EXTERNAL SOURCES:
     :git: https://github.com/crossroadlabs/Regex.git
     :tag: 1.2.0
   Keanu:
-    :path: "../../Keanu"
+    :commit: 5e9bec83
+    :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuCore:
-    :path: "../../Keanu"
+    :commit: 5e9bec83
+    :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuExtension:
-    :path: "../../Keanu"
+    :commit: 5e9bec83
+    :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   RichEditorView:
     :branch: build_fixes
     :git: https://gitlab.com/keanuapp/keanuapp-ios-richeditorview.git
@@ -240,6 +243,15 @@ CHECKOUT OPTIONS:
   CrossroadRegex:
     :git: https://github.com/crossroadlabs/Regex.git
     :tag: 1.2.0
+  Keanu:
+    :commit: 5e9bec83
+    :git: https://gitlab.com/keanuapp/keanuapp-ios.git
+  KeanuCore:
+    :commit: 5e9bec83
+    :git: https://gitlab.com/keanuapp/keanuapp-ios.git
+  KeanuExtension:
+    :commit: 5e9bec83
+    :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   RichEditorView:
     :commit: 225537e7959319b7a2ec681e1d728d2077e156fd
     :git: https://gitlab.com/keanuapp/keanuapp-ios-richeditorview.git
@@ -265,7 +277,7 @@ SPEC CHECKSUMS:
   libsodium: 9a8faa5ef2fa0d2d57bd7f7d79bf8fb7c1a9f0ea
   Localize: cb1ae53ed73decaad0dce217806ed983091913f5
   MaterialComponents: 1a9b2d9d45b1601ae544de85089adc4c464306d4
-  MatrixSDK: 37fbb6a650095387e908937b7411c4370599c90b
+  MatrixSDK: de1158691a3b3bfb0cc7a294f358f9def3d3cd9c
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MDFInternationalization: d697c55307816222a55685c4ccb1044ffb030c12
   MDFTextAccessibility: f4bb4cc2194286651b59a215fdeaa0e05dc90ba5
@@ -279,6 +291,6 @@ SPEC CHECKSUMS:
   ViewRow: 8da541e9c019f3be63f4e28f311a62cac2045ecf
   ZXingObjC: fdbb269f25dd2032da343e06f10224d62f537bdb
 
-PODFILE CHECKSUM: ae0fb1fa3bd101b49113befe472e341c27b05093
+PODFILE CHECKSUM: 8eaedb6618f840e085f4e90a73aef7e18da461c7
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.2
