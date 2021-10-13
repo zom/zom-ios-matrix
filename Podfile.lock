@@ -148,13 +148,13 @@ PODS:
     - MaterialComponents/private/Application
     - MaterialComponents/private/Math
     - MDFTextAccessibility
-  - MatrixSDK (0.20.3):
-    - MatrixSDK/Core (= 0.20.3)
-  - MatrixSDK/Core (0.20.3):
+  - MatrixSDK (0.20.1):
+    - MatrixSDK/Core (= 0.20.1)
+  - MatrixSDK/Core (0.20.1):
     - AFNetworking (~> 4.0.0)
     - GZIP (~> 1.3.0)
     - libbase58 (~> 0.1.4)
-    - OLMKit (~> 3.2.5)
+    - OLMKit (~> 3.2.4)
     - Realm (= 10.7.6)
     - SwiftyBeaver (= 1.9.5)
   - MBProgressHUD (1.2.0)
@@ -277,7 +277,7 @@ SPEC CHECKSUMS:
   libsodium: 9a8faa5ef2fa0d2d57bd7f7d79bf8fb7c1a9f0ea
   Localize: cb1ae53ed73decaad0dce217806ed983091913f5
   MaterialComponents: 1a9b2d9d45b1601ae544de85089adc4c464306d4
-  MatrixSDK: de1158691a3b3bfb0cc7a294f358f9def3d3cd9c
+  MatrixSDK: 37fbb6a650095387e908937b7411c4370599c90b
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MDFInternationalization: d697c55307816222a55685c4ccb1044ffb030c12
   MDFTextAccessibility: f4bb4cc2194286651b59a215fdeaa0e05dc90ba5
