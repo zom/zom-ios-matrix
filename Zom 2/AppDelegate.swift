@@ -10,6 +10,7 @@ import UIKit
 import UserNotifications
 import KeanuCore
 import Keanu
+import MatrixSDK
 
 @UIApplicationMain
 class AppDelegate: BaseAppDelegate {
@@ -69,6 +70,9 @@ class AppDelegate: BaseAppDelegate {
      */
     private func setUp() {
         Bundle.swizzle()
+        
+        ZomUtil.swizzle(RLMObject.self, originalSelector: Selector(("objectForKeyedSubscript:")), swizzledSelector: #selector(RLMObject.objectForKeyedSubscriptFixed))
+        
         KeanuCore.setUp(with: Config.self)
         KeanuCore.setUpLocalization(fileName: "Localizable", bundle: Bundle.main)
         
@@ -96,5 +100,26 @@ class AppDelegate: BaseAppDelegate {
         get {
             return ZomRouter.shared
         }
+    }
+}
+
+
+fileprivate extension RLMObject {
+    // Hack to make sure that "cryptoVersion" access is not crashing the app.
+    //
+    @objc func objectForKeyedSubscriptFixed(string: NSString) -> AnyObject {
+        if (string == "cryptoVersion") {
+            do {
+                var result: NSNumber = 0
+                try ObjC.catchException {
+                    result = self.objectForKeyedSubscriptFixed(string: string) as! NSNumber
+                }
+                return result
+            }
+            catch {
+                return NSNumber(integerLiteral: 1)
+            }
+        }
+        return self.objectForKeyedSubscriptFixed(string: string)
     }
 }

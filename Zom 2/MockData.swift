@@ -35,7 +35,7 @@ class MockData {
     
     private class func addRoom(session:MXSession, id:String, title:String) -> MXRoom? {
         if let room = session.perform(Selector("getOrCreateRoom:notify:"), with: id, with: true)?.takeUnretainedValue() as? MXRoom {
-            room.summary.__membership = __MXMembershipJoin
+            room.summary.membership = MXMembership.join
             room.summary.displayname = title
             return room
         }
