@@ -666,7 +666,7 @@
 				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = "$(CODE_SIGNING_STYLE)";
-				CURRENT_PROJECT_VERSION = 252;
+				CURRENT_PROJECT_VERSION = 253;
 				DEVELOPMENT_TEAM = "$(DEVELOPMENT_TEAM)";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ShareExtension/Info.plist;
@@ -694,7 +694,7 @@
 				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = "$(CODE_SIGNING_STYLE)";
-				CURRENT_PROJECT_VERSION = 252;
+				CURRENT_PROJECT_VERSION = 253;
 				DEVELOPMENT_TEAM = "$(DEVELOPMENT_TEAM)";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ShareExtension/Info.plist;
@@ -887,7 +887,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Zom 2/Zom 2.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 252;
+				CURRENT_PROJECT_VERSION = 253;
 				DEVELOPMENT_TEAM = 9SV9LPRC42;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Zom 2/Info.plist";
@@ -914,7 +914,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Zom 2/Zom 2.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 252;
+				CURRENT_PROJECT_VERSION = 253;
 				DEVELOPMENT_TEAM = 9SV9LPRC42;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Zom 2/Info.plist";
