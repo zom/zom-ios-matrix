@@ -168,9 +168,9 @@ PODS:
 DEPENDENCIES:
   - CrossroadRegex (from `https://github.com/crossroadlabs/Regex.git`, tag `1.2.0`)
   - ISEmojiView (from `https://github.com/tladesignz/ISEmojiView.git`)
-  - Keanu (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `f9ac1a5c`)
-  - KeanuCore (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `f9ac1a5c`)
-  - KeanuExtension (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `f9ac1a5c`)
+  - Keanu (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `03058733`)
+  - KeanuCore (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `03058733`)
+  - KeanuExtension (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `03058733`)
   - RichEditorView (from `https://gitlab.com/keanuapp/keanuapp-ios-richeditorview.git`, branch `build_fixes`)
 
 SPEC REPOS:
@@ -207,13 +207,13 @@ EXTERNAL SOURCES:
   ISEmojiView:
     :git: https://github.com/tladesignz/ISEmojiView.git
   Keanu:
-    :commit: f9ac1a5c
+    :commit: '03058733'
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuCore:
-    :commit: f9ac1a5c
+    :commit: '03058733'
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuExtension:
-    :commit: f9ac1a5c
+    :commit: '03058733'
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   RichEditorView:
     :branch: build_fixes
@@ -227,13 +227,13 @@ CHECKOUT OPTIONS:
     :commit: 567e60fe3b722e33a21e07204815c3b27437a085
     :git: https://github.com/tladesignz/ISEmojiView.git
   Keanu:
-    :commit: f9ac1a5c
+    :commit: '03058733'
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuCore:
-    :commit: f9ac1a5c
+    :commit: '03058733'
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuExtension:
-    :commit: f9ac1a5c
+    :commit: '03058733'
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   RichEditorView:
     :commit: 225537e7959319b7a2ec681e1d728d2077e156fd
@@ -271,6 +271,6 @@ SPEC CHECKSUMS:
   ViewRow: 8da541e9c019f3be63f4e28f311a62cac2045ecf
   ZXingObjC: fdbb269f25dd2032da343e06f10224d62f537bdb
 
-PODFILE CHECKSUM: f25fcd55a3e7c200b7696b1ae4485950b190f050
+PODFILE CHECKSUM: fe014f5a2be19ba6a6c775679e8fbdf4cb2ebca7
 
 COCOAPODS: 1.11.2
