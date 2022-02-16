@@ -1,6 +1,8 @@
 platform :ios, '11'
 use_frameworks!
 
+source 'https://github.com/CocoaPods/Specs.git' # Direct access to GitHub as last resort.
+
 post_install do |installer|
   installer.pods_project.build_configurations.each do |config|
     next unless config.name == 'Debug'
@@ -18,7 +20,7 @@ end
 
 def shared_pods
     #pod 'KeanuCore', :path => '../../Keanu'
-    pod 'KeanuCore', :git => 'https://gitlab.com/keanuapp/keanuapp-ios.git', :commit => '4de9f8f5'
+    pod 'KeanuCore', :git => 'https://gitlab.com/keanuapp/keanuapp-ios.git', :commit => 'f9ac1a5c'
     #pod 'MatrixKit', :git => 'https://github.com/N-Pex/matrix-ios-kit.git', :branch => 'fix_apns_push'
     #pod 'MatrixSDK', :git => 'https://github.com/matrix-org/matrix-ios-sdk.git', :branch => 'develop'
     #pod 'MatrixSDK', :path => '../../matrix-ios-sdk'
@@ -29,15 +31,15 @@ target 'Zom 2' do
 
   pod 'RichEditorView', :git => 'https://gitlab.com/keanuapp/keanuapp-ios-richeditorview.git', :branch => 'build_fixes'
   pod 'CrossroadRegex', :git => 'https://github.com/crossroadlabs/Regex.git', :tag => '1.2.0'
-  pod 'AirShare', :git => 'https://github.com/tladesignz/AirShare.git'
-
+  pod 'ISEmojiView', :git => 'https://github.com/tladesignz/ISEmojiView.git'
+  #pod 'AirShare', :git => 'https://github.com/tladesignz/AirShare.git'
   #pod 'Keanu', :path => '../../Keanu'
-  pod 'Keanu', :git => 'https://gitlab.com/keanuapp/keanuapp-ios.git', :commit => '4de9f8f5'
+  pod 'Keanu', :git => 'https://gitlab.com/keanuapp/keanuapp-ios.git', :commit => 'f9ac1a5c'
 end
 
 target 'ShareExtension' do
   shared_pods
 
   #pod 'KeanuExtension', :path => '../../Keanu'
-  pod 'KeanuExtension', :git => 'https://gitlab.com/keanuapp/keanuapp-ios.git', :commit => '4de9f8f5'
+  pod 'KeanuExtension', :git => 'https://gitlab.com/keanuapp/keanuapp-ios.git', :commit => 'f9ac1a5c'
 end
