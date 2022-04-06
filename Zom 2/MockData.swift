@@ -43,8 +43,8 @@ class MockData {
     }
     
     private class func addDummyEvent(room:MXRoom) {
-        guard let event = room.fakeEvent(withEventId: UUID().uuidString, eventType: "m.ignored", andContent: [:]) else {return}
-        room.mxSession.store.storeEvent(forRoom: room.roomId, event: event, direction: __MXTimelineDirectionForwards)
+        guard let event = room.fakeEvent(withEventId: UUID().uuidString, eventType: "m.ignored", andContent: [:], threadId: nil) else {return}
+        room.mxSession.store.storeEvent(forRoom: room.roomId, event: event, direction: .forwards)
     }
     
     private class func createMessageEvent(message:String, sender:String = "@user:example.com") -> MXEvent? {
@@ -69,12 +69,12 @@ class MockData {
             "body":message,
             "type":"m.room.message",
             "msgtype":"m.text"
-            ]) else {return}
+        ], threadId: nil) else {return}
         event.sender = sender
         if sender == "@user:example.com" {
             event.sentState = MXEventSentStateSent
         }
-        room.mxSession.store.storeEvent(forRoom: room.roomId, event: event, direction: __MXTimelineDirectionForwards)
+        room.mxSession.store.storeEvent(forRoom: room.roomId, event: event, direction: .forwards)
         if updateSummary {
             room.summary.handle(event)
         }

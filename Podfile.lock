@@ -48,7 +48,7 @@ PODS:
     - libPhoneNumber-iOS (~> 0.9)
     - MaterialComponents/Buttons (~> 124)
     - MaterialComponents/Snackbar (~> 124)
-    - MobileVLCKit (~> 3.3)
+    - MobileVLCKit (~> 3.4)
     - PureLayout (~> 3.1)
     - RichEditorView
     - SearchTextField (~> 1.2)
@@ -60,7 +60,7 @@ PODS:
     - FontBlaster (~> 5.1)
     - libPhoneNumber-iOS (~> 0.9)
     - Localize (~> 2.2)
-    - MatrixSDK (~> 0.20.10)
+    - MatrixSDK (~> 0.23.1)
   - KeanuExtension (0.1.0):
     - KeanuCore
     - MBProgressHUD (~> 1.1)
@@ -134,9 +134,9 @@ PODS:
     - MaterialComponents/private/Application
     - MaterialComponents/private/Math
     - MDFTextAccessibility
-  - MatrixSDK (0.20.16):
-    - MatrixSDK/Core (= 0.20.16)
-  - MatrixSDK/Core (0.20.16):
+  - MatrixSDK (0.23.2):
+    - MatrixSDK/Core (= 0.23.2)
+  - MatrixSDK/Core (0.23.2):
     - AFNetworking (~> 4.0.0)
     - GZIP (~> 1.3.0)
     - libbase58 (~> 0.1.4)
@@ -146,7 +146,7 @@ PODS:
   - MBProgressHUD (1.2.0)
   - MDFInternationalization (3.0.0)
   - MDFTextAccessibility (2.0.1)
-  - MobileVLCKit (3.3.17)
+  - MobileVLCKit (3.4.0)
   - OLMKit (3.2.5):
     - OLMKit/olmc (= 3.2.5)
     - OLMKit/olmcpp (= 3.2.5)
@@ -168,9 +168,9 @@ PODS:
 DEPENDENCIES:
   - CrossroadRegex (from `https://github.com/crossroadlabs/Regex.git`, tag `1.2.0`)
   - ISEmojiView (from `https://github.com/tladesignz/ISEmojiView.git`)
-  - Keanu (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `c97ac29bb`)
-  - KeanuCore (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `c97ac29bb`)
-  - KeanuExtension (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `c97ac29bb`)
+  - Keanu (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `b4f27b5c`)
+  - KeanuCore (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `b4f27b5c`)
+  - KeanuExtension (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `b4f27b5c`)
   - RichEditorView (from `https://gitlab.com/keanuapp/keanuapp-ios-richeditorview.git`, branch `build_fixes`)
 
 SPEC REPOS:
@@ -207,13 +207,13 @@ EXTERNAL SOURCES:
   ISEmojiView:
     :git: https://github.com/tladesignz/ISEmojiView.git
   Keanu:
-    :commit: c97ac29bb
+    :commit: b4f27b5c
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuCore:
-    :commit: c97ac29bb
+    :commit: b4f27b5c
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuExtension:
-    :commit: c97ac29bb
+    :commit: b4f27b5c
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   RichEditorView:
     :branch: build_fixes
@@ -227,13 +227,13 @@ CHECKOUT OPTIONS:
     :commit: 567e60fe3b722e33a21e07204815c3b27437a085
     :git: https://github.com/tladesignz/ISEmojiView.git
   Keanu:
-    :commit: c97ac29bb
+    :commit: b4f27b5c
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuCore:
-    :commit: c97ac29bb
+    :commit: b4f27b5c
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuExtension:
-    :commit: c97ac29bb
+    :commit: b4f27b5c
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   RichEditorView:
     :commit: 225537e7959319b7a2ec681e1d728d2077e156fd
@@ -250,18 +250,18 @@ SPEC CHECKSUMS:
   GZIP: 416858efbe66b41b206895ac6dfd5493200d95b3
   INSPhotoGallery: ad317cb9a59c7a5f08550e4155b49622c24dcab3
   ISEmojiView: 548ce8479bc80f883bd2326c47f8d47a03d828d4
-  Keanu: b1eca3781ba0e821ceff229746d8cb108e7bb3f9
-  KeanuCore: 901adfbe5c1c045b08a64c56ce2ec1ba69eefe39
+  Keanu: 7c5d4f2d0f31fb5ad59c9974d48277c22328cad1
+  KeanuCore: 91937dbeac4d646696ce5407d889f32be6e9d079
   KeanuExtension: d0ea01b0c08b225926ad3ef40496754193942dad
   libbase58: 7c040313537b8c44b6e2d15586af8e21f7354efd
   libPhoneNumber-iOS: 0a32a9525cf8744fe02c5206eb30d571e38f7d75
   Localize: cb1ae53ed73decaad0dce217806ed983091913f5
   MaterialComponents: 1a9b2d9d45b1601ae544de85089adc4c464306d4
-  MatrixSDK: af6a70532bb43af59f43a1f4dae512a26afeab0b
+  MatrixSDK: ab6cbb1e8c437eac4f999be516b5e76c2bca9f6a
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MDFInternationalization: d697c55307816222a55685c4ccb1044ffb030c12
   MDFTextAccessibility: f4bb4cc2194286651b59a215fdeaa0e05dc90ba5
-  MobileVLCKit: c5dd1b0ae933dc9c2348099840e753496dcdd908
+  MobileVLCKit: 20ccee43f7788a94ea1f67179e33d9600779dfd9
   OLMKit: 9fb4799c4a044dd2c06bda31ec31a12191ad30b5
   PureLayout: 5fb5e5429519627d60d079ccb1eaa7265ce7cf88
   Realm: b6027801398f3743fc222f096faa85281b506e6c
@@ -271,6 +271,6 @@ SPEC CHECKSUMS:
   ViewRow: 8da541e9c019f3be63f4e28f311a62cac2045ecf
   ZXingObjC: fdbb269f25dd2032da343e06f10224d62f537bdb
 
-PODFILE CHECKSUM: e0b1d39b1d2bbf116f160e9e83e8be03ff4d1112
+PODFILE CHECKSUM: 2117bc169019e2c74de2f0ef3aea8bb5d4da2798
 
 COCOAPODS: 1.11.2
