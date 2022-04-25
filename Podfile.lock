@@ -60,7 +60,7 @@ PODS:
     - FontBlaster (~> 5.1)
     - libPhoneNumber-iOS (~> 0.9)
     - Localize (~> 2.2)
-    - MatrixSDK (~> 0.23.2)
+    - MatrixSDK (~> 0.23.3)
   - KeanuExtension (0.1.0):
     - KeanuCore
     - MBProgressHUD (~> 1.1)
@@ -134,9 +134,9 @@ PODS:
     - MaterialComponents/private/Application
     - MaterialComponents/private/Math
     - MDFTextAccessibility
-  - MatrixSDK (0.23.2):
-    - MatrixSDK/Core (= 0.23.2)
-  - MatrixSDK/Core (0.23.2):
+  - MatrixSDK (0.23.3):
+    - MatrixSDK/Core (= 0.23.3)
+  - MatrixSDK/Core (0.23.3):
     - AFNetworking (~> 4.0.0)
     - GZIP (~> 1.3.0)
     - libbase58 (~> 0.1.4)
@@ -168,9 +168,9 @@ PODS:
 DEPENDENCIES:
   - CrossroadRegex (from `https://github.com/crossroadlabs/Regex.git`, tag `1.2.0`)
   - ISEmojiView (from `https://github.com/tladesignz/ISEmojiView.git`)
-  - Keanu (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `c0bb1e40`)
-  - KeanuCore (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `c0bb1e40`)
-  - KeanuExtension (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `c0bb1e40`)
+  - Keanu (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `ef37d177`)
+  - KeanuCore (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `ef37d177`)
+  - KeanuExtension (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `ef37d177`)
   - RichEditorView (from `https://gitlab.com/keanuapp/keanuapp-ios-richeditorview.git`, branch `build_fixes`)
 
 SPEC REPOS:
@@ -207,13 +207,13 @@ EXTERNAL SOURCES:
   ISEmojiView:
     :git: https://github.com/tladesignz/ISEmojiView.git
   Keanu:
-    :commit: c0bb1e40
+    :commit: ef37d177
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuCore:
-    :commit: c0bb1e40
+    :commit: ef37d177
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuExtension:
-    :commit: c0bb1e40
+    :commit: ef37d177
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   RichEditorView:
     :branch: build_fixes
@@ -227,13 +227,13 @@ CHECKOUT OPTIONS:
     :commit: 567e60fe3b722e33a21e07204815c3b27437a085
     :git: https://github.com/tladesignz/ISEmojiView.git
   Keanu:
-    :commit: c0bb1e40
+    :commit: ef37d177
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuCore:
-    :commit: c0bb1e40
+    :commit: ef37d177
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuExtension:
-    :commit: c0bb1e40
+    :commit: ef37d177
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   RichEditorView:
     :commit: 225537e7959319b7a2ec681e1d728d2077e156fd
@@ -251,13 +251,13 @@ SPEC CHECKSUMS:
   INSPhotoGallery: ad317cb9a59c7a5f08550e4155b49622c24dcab3
   ISEmojiView: 548ce8479bc80f883bd2326c47f8d47a03d828d4
   Keanu: 7c5d4f2d0f31fb5ad59c9974d48277c22328cad1
-  KeanuCore: 3560f9af92665008ddefb54726845effdd1b7d6b
+  KeanuCore: 67e680890934963f3bbaf289f481833fda1284d0
   KeanuExtension: d0ea01b0c08b225926ad3ef40496754193942dad
   libbase58: 7c040313537b8c44b6e2d15586af8e21f7354efd
   libPhoneNumber-iOS: 0a32a9525cf8744fe02c5206eb30d571e38f7d75
   Localize: cb1ae53ed73decaad0dce217806ed983091913f5
   MaterialComponents: 1a9b2d9d45b1601ae544de85089adc4c464306d4
-  MatrixSDK: ab6cbb1e8c437eac4f999be516b5e76c2bca9f6a
+  MatrixSDK: 4a2d2ddc1bd58c63f40e14706306e1beaffea02d
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MDFInternationalization: d697c55307816222a55685c4ccb1044ffb030c12
   MDFTextAccessibility: f4bb4cc2194286651b59a215fdeaa0e05dc90ba5
@@ -271,6 +271,6 @@ SPEC CHECKSUMS:
   ViewRow: 8da541e9c019f3be63f4e28f311a62cac2045ecf
   ZXingObjC: fdbb269f25dd2032da343e06f10224d62f537bdb
 
-PODFILE CHECKSUM: 14c1b3087a87b83c87a852dad25d87ca03e0da94
+PODFILE CHECKSUM: bd1a7a3951cab71537cd2dae260ab659182e039a
 
 COCOAPODS: 1.11.2
