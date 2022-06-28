@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		070D65B48D10D8A09952DC15 /* Pods_ShareExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6CAA1D7273FA0F0FC25FAFB /* Pods_ShareExtension.framework */; };
 		401114D4223B0F7800D2CC02 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401114D3223B0F7800D2CC02 /* MainViewController.swift */; };
 		401114DB223B0F7900D2CC02 /* ShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 401114D1223B0F7800D2CC02 /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		401114E1223B18E000D2CC02 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924E7119220046C700B398DD /* Config.swift */; };
 		401114E2223B18E300D2CC02 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 924E7118220046C700B398DD /* Constants.m */; };
 		401114E3223B18E700D2CC02 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 924E7116220046BF00B398DD /* Config.xcconfig */; };
-		786689965F98ECDBA88AC388 /* Pods_Zom_2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAEF777060B9FB9752BECC8 /* Pods_Zom_2.framework */; };
+		73247F4205C00A02856D5854 /* Pods_NSE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1CA4D7EC9BC579A18F32A3A /* Pods_NSE.framework */; };
 		922D0CFD225B558C00EEDBC4 /* ZomDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922D0CFC225B558B00EEDBC4 /* ZomDiscoverViewController.swift */; };
 		923EC4AC272B3F3E0051A268 /* ObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 923EC4AB272B3F3E0051A268 /* ObjC.m */; };
 		924E7117220046BF00B398DD /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 924E7116220046BF00B398DD /* Config.xcconfig */; };
@@ -22,6 +23,12 @@
 		924E712322004D8600B398DD /* UIColor+Zom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924E712222004D8600B398DD /* UIColor+Zom.swift */; };
 		924E71332201E3EE00B398DD /* ZomRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924E71322201E3EE00B398DD /* ZomRoomViewController.swift */; };
 		924E71352201F54D00B398DD /* Stickers in Resources */ = {isa = PBXBuildFile; fileRef = 924E71342201F54D00B398DD /* Stickers */; };
+		925E413D2869F8A10087D8F3 /* notification-tone-swift-gesture.m4r in Resources */ = {isa = PBXBuildFile; fileRef = 925E413A2869F8A10087D8F3 /* notification-tone-swift-gesture.m4r */; };
+		925E413E2869F8A10087D8F3 /* notification-tone-swift-gesture.m4r in Resources */ = {isa = PBXBuildFile; fileRef = 925E413A2869F8A10087D8F3 /* notification-tone-swift-gesture.m4r */; };
+		925E413F2869F8A10087D8F3 /* achievement-message-tone.m4r in Resources */ = {isa = PBXBuildFile; fileRef = 925E413B2869F8A10087D8F3 /* achievement-message-tone.m4r */; };
+		925E41402869F8A10087D8F3 /* achievement-message-tone.m4r in Resources */ = {isa = PBXBuildFile; fileRef = 925E413B2869F8A10087D8F3 /* achievement-message-tone.m4r */; };
+		925E41412869F8A10087D8F3 /* message-ringtone-magic.m4r in Resources */ = {isa = PBXBuildFile; fileRef = 925E413C2869F8A10087D8F3 /* message-ringtone-magic.m4r */; };
+		925E41422869F8A10087D8F3 /* message-ringtone-magic.m4r in Resources */ = {isa = PBXBuildFile; fileRef = 925E413C2869F8A10087D8F3 /* message-ringtone-magic.m4r */; };
 		9286AC552212DCF100002536 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9286AC532212DCF100002536 /* Localizable.strings */; };
 		92A0AF002282C0EA00DDC988 /* ZomWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A0AEFF2282C0EA00DDC988 /* ZomWelcomeViewController.swift */; };
 		92A0AF042282CEDF00DDC988 /* Bundle+Zom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A0AF032282CEDF00DDC988 /* Bundle+Zom.swift */; };
@@ -36,15 +43,20 @@
 		92B0D71B224253B60057154E /* ZomBotsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B0D71A224253B60057154E /* ZomBotsViewController.storyboard */; };
 		92B0D71D2242552B0057154E /* ZomBotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B0D71C2242552B0057154E /* ZomBotCell.swift */; };
 		92B0D72022427AE30057154E /* ZomBots.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92B0D71E22427AE20057154E /* ZomBots.plist */; };
+		92C34139285C8A35005CD052 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C34138285C8A35005CD052 /* NotificationService.swift */; };
+		92C3413D285C8A35005CD052 /* NSE.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 92C34136285C8A34005CD052 /* NSE.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		92C8BCC421FF62A5003D4EE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C8BCC321FF62A5003D4EE3 /* AppDelegate.swift */; };
 		92C8BCCB21FF62A9003D4EE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C8BCCA21FF62A9003D4EE3 /* Assets.xcassets */; };
 		92C8BCCE21FF62A9003D4EE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C8BCCC21FF62A9003D4EE3 /* LaunchScreen.storyboard */; };
+		92E606FD285C9B7200F29F3E /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924E7119220046C700B398DD /* Config.swift */; };
+		92E606FE285C9BDB00F29F3E /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 924E7118220046C700B398DD /* Constants.m */; };
+		92E606FF285C9C2600F29F3E /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 924E7116220046BF00B398DD /* Config.xcconfig */; };
 		92E8E64D23ED586B00070B9B /* ZomRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E8E64C23ED586B00070B9B /* ZomRouter.swift */; };
 		92FAA35B230C248C00F472A0 /* RoomToolbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92FAA359230C248C00F472A0 /* RoomToolbar.xib */; };
 		A0C05873241BB76000EC5E53 /* ZomWelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0C05872241BB76000EC5E53 /* ZomWelcomeViewController.xib */; };
 		A0C05877241BBA0500EC5E53 /* ZomAddAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0C05876241BBA0500EC5E53 /* ZomAddAccountViewController.xib */; };
 		A0C05879241BBFD100EC5E53 /* ZomEnablePushViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0C05878241BBFD100EC5E53 /* ZomEnablePushViewController.xib */; };
-		C3F15B0852B7345E532207F3 /* Pods_ShareExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 477CBA36055EE0BA03ACA4A5 /* Pods_ShareExtension.framework */; };
+		F9C8CEE633A95BB7F3E346E8 /* Pods_Zom_2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53390B827602A254E679830F /* Pods_Zom_2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +74,13 @@
 			remoteGlobalIDString = 92C8BCBF21FF62A5003D4EE3;
 			remoteInfo = "Zom 2";
 		};
+		92C3413B285C8A35005CD052 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92C8BCB821FF62A5003D4EE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92C34135285C8A34005CD052;
+			remoteInfo = NSE;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -72,6 +91,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				401114DB223B0F7900D2CC02 /* ShareExtension.appex in Embed App Extensions */,
+				92C3413D285C8A35005CD052 /* NSE.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,12 +99,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		17CBB368099E7961402846CD /* Pods-ShareExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareExtension.release.xcconfig"; path = "Target Support Files/Pods-ShareExtension/Pods-ShareExtension.release.xcconfig"; sourceTree = "<group>"; };
+		1AEF73E382811B383D27CEDC /* Pods-NSE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSE.debug.xcconfig"; path = "Target Support Files/Pods-NSE/Pods-NSE.debug.xcconfig"; sourceTree = "<group>"; };
+		3A15057FB16D83F9E40D2CC5 /* Pods-ShareExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareExtension.debug.xcconfig"; path = "Target Support Files/Pods-ShareExtension/Pods-ShareExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		401114D1223B0F7800D2CC02 /* ShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		401114D3223B0F7800D2CC02 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		401114D8223B0F7900D2CC02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		401114E0223B0FF300D2CC02 /* ShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShareExtension.entitlements; sourceTree = "<group>"; };
-		477CBA36055EE0BA03ACA4A5 /* Pods_ShareExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		526A377CC5EBBE825526C05D /* Pods-Zom 2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zom 2.debug.xcconfig"; path = "Target Support Files/Pods-Zom 2/Pods-Zom 2.debug.xcconfig"; sourceTree = "<group>"; };
+		53390B827602A254E679830F /* Pods_Zom_2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zom_2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		750833EE0C554A0F7EA7A31C /* Pods-ShareExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareExtension.release.xcconfig"; path = "Target Support Files/Pods-ShareExtension/Pods-ShareExtension.release.xcconfig"; sourceTree = "<group>"; };
 		922D0CFC225B558B00EEDBC4 /* ZomDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZomDiscoverViewController.swift; sourceTree = "<group>"; };
 		923EC4AA272B3F0B0051A268 /* ObjC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjC.h; sourceTree = "<group>"; };
 		923EC4AB272B3F3E0051A268 /* ObjC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjC.m; sourceTree = "<group>"; };
@@ -96,6 +119,10 @@
 		924E712222004D8600B398DD /* UIColor+Zom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIColor+Zom.swift"; path = "Extensions/UIColor+Zom.swift"; sourceTree = "<group>"; };
 		924E71322201E3EE00B398DD /* ZomRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZomRoomViewController.swift; sourceTree = "<group>"; };
 		924E71342201F54D00B398DD /* Stickers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Stickers; sourceTree = "<group>"; };
+		925E413A2869F8A10087D8F3 /* notification-tone-swift-gesture.m4r */ = {isa = PBXFileReference; lastKnownFileType = file; name = "notification-tone-swift-gesture.m4r"; path = "Assets/Sounds/notification-tone-swift-gesture.m4r"; sourceTree = "<group>"; };
+		925E413B2869F8A10087D8F3 /* achievement-message-tone.m4r */ = {isa = PBXFileReference; lastKnownFileType = file; name = "achievement-message-tone.m4r"; path = "Assets/Sounds/achievement-message-tone.m4r"; sourceTree = "<group>"; };
+		925E413C2869F8A10087D8F3 /* message-ringtone-magic.m4r */ = {isa = PBXFileReference; lastKnownFileType = file; name = "message-ringtone-magic.m4r"; path = "Assets/Sounds/message-ringtone-magic.m4r"; sourceTree = "<group>"; };
+		927AB3DA285C937600E4CFA6 /* NSE.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NSE.entitlements; sourceTree = "<group>"; };
 		9286AC522212DCDA00002536 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9286AC542212DCF100002536 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9286AC562212DCFB00002536 /* bo */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = bo; path = bo.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -122,6 +149,9 @@
 		92B0D72A22427D100057154E /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		92B0D72B22427D100057154E /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "zh-Hant"; path = "zh-Hant.lproj/ZomBots.plist"; sourceTree = "<group>"; };
 		92B0D72D22427D350057154E /* bo */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = bo; path = bo.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		92C34136285C8A34005CD052 /* NSE.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NSE.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		92C34138285C8A35005CD052 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		92C3413A285C8A35005CD052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92C8BCC021FF62A5003D4EE3 /* Zom 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zom 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C8BCC321FF62A5003D4EE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92C8BCCA21FF62A9003D4EE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -130,7 +160,6 @@
 		92C8BCDE21FF8CDA003D4EE3 /* Zom 2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Zom 2.entitlements"; sourceTree = "<group>"; };
 		92E8E64C23ED586B00070B9B /* ZomRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZomRouter.swift; sourceTree = "<group>"; };
 		92FAA35A230C248C00F472A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/RoomToolbar.xib; sourceTree = "<group>"; };
-		9AB37D71F3617E703EA91E99 /* Pods-ShareExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareExtension.debug.xcconfig"; path = "Target Support Files/Pods-ShareExtension/Pods-ShareExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		A08CB6942243AB570003876C /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A08CB6962243AB570003876C /* use_android_strings_in_zom.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = use_android_strings_in_zom.sh; sourceTree = "<group>"; };
 		A08CB6972243AB570003876C /* stringtool.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = stringtool.sh; sourceTree = "<group>"; };
@@ -140,9 +169,10 @@
 		A0C05872241BB76000EC5E53 /* ZomWelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZomWelcomeViewController.xib; sourceTree = "<group>"; };
 		A0C05876241BBA0500EC5E53 /* ZomAddAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZomAddAccountViewController.xib; sourceTree = "<group>"; };
 		A0C05878241BBFD100EC5E53 /* ZomEnablePushViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZomEnablePushViewController.xib; sourceTree = "<group>"; };
-		AFAEF777060B9FB9752BECC8 /* Pods_Zom_2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zom_2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE99B7DAEF2FAC302FCE250E /* Pods-Zom 2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zom 2.release.xcconfig"; path = "Target Support Files/Pods-Zom 2/Pods-Zom 2.release.xcconfig"; sourceTree = "<group>"; };
-		F2A354F7DA529414B6FD0F70 /* Pods-Zom 2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zom 2.debug.xcconfig"; path = "Target Support Files/Pods-Zom 2/Pods-Zom 2.debug.xcconfig"; sourceTree = "<group>"; };
+		C1CA4D7EC9BC579A18F32A3A /* Pods_NSE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NSE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6CAA1D7273FA0F0FC25FAFB /* Pods_ShareExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7509A3B377FF17B92593D1F /* Pods-Zom 2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zom 2.release.xcconfig"; path = "Target Support Files/Pods-Zom 2/Pods-Zom 2.release.xcconfig"; sourceTree = "<group>"; };
+		E42A7D05100F99E53BE8D84F /* Pods-NSE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSE.release.xcconfig"; path = "Target Support Files/Pods-NSE/Pods-NSE.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +180,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3F15B0852B7345E532207F3 /* Pods_ShareExtension.framework in Frameworks */,
+				070D65B48D10D8A09952DC15 /* Pods_ShareExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,11 +191,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		92C34133285C8A34005CD052 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73247F4205C00A02856D5854 /* Pods_NSE.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		92C8BCBD21FF62A5003D4EE3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				786689965F98ECDBA88AC388 /* Pods_Zom_2.framework in Frameworks */,
+				F9C8CEE633A95BB7F3E346E8 /* Pods_Zom_2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +228,16 @@
 				923EC4AB272B3F3E0051A268 /* ObjC.m */,
 			);
 			name = Shared;
+			sourceTree = "<group>";
+		};
+		5563FBD081E381BB8F582956 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1CA4D7EC9BC579A18F32A3A /* Pods_NSE.framework */,
+				C6CAA1D7273FA0F0FC25FAFB /* Pods_ShareExtension.framework */,
+				53390B827602A254E679830F /* Pods_Zom_2.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		924E7115220046AF00B398DD /* Config */ = {
@@ -237,6 +285,16 @@
 			path = Screenshots;
 			sourceTree = "<group>";
 		};
+		92C34137285C8A34005CD052 /* NSE */ = {
+			isa = PBXGroup;
+			children = (
+				927AB3DA285C937600E4CFA6 /* NSE.entitlements */,
+				92C34138285C8A35005CD052 /* NotificationService.swift */,
+				92C3413A285C8A35005CD052 /* Info.plist */,
+			);
+			path = NSE;
+			sourceTree = "<group>";
+		};
 		92C8BCB721FF62A5003D4EE3 = {
 			isa = PBXGroup;
 			children = (
@@ -245,9 +303,10 @@
 				92C8BCC221FF62A5003D4EE3 /* Zom 2 */,
 				401114D2223B0F7800D2CC02 /* ShareExtension */,
 				92AF46B722645DE400DF9257 /* Screenshots */,
+				92C34137285C8A34005CD052 /* NSE */,
 				92C8BCC121FF62A5003D4EE3 /* Products */,
 				EDF9C0F4548A5826E8A99C06 /* Pods */,
-				C829ED53313449E14C617DF9 /* Frameworks */,
+				5563FBD081E381BB8F582956 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -257,6 +316,7 @@
 				92C8BCC021FF62A5003D4EE3 /* Zom 2.app */,
 				401114D1223B0F7800D2CC02 /* ShareExtension.appex */,
 				92AF46B622645DE400DF9257 /* Screenshots.xctest */,
+				92C34136285C8A34005CD052 /* NSE.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -264,6 +324,9 @@
 		92C8BCC221FF62A5003D4EE3 /* Zom 2 */ = {
 			isa = PBXGroup;
 			children = (
+				925E413B2869F8A10087D8F3 /* achievement-message-tone.m4r */,
+				925E413C2869F8A10087D8F3 /* message-ringtone-magic.m4r */,
+				925E413A2869F8A10087D8F3 /* notification-tone-swift-gesture.m4r */,
 				92C8BCDE21FF8CDA003D4EE3 /* Zom 2.entitlements */,
 				92C8BCC321FF62A5003D4EE3 /* AppDelegate.swift */,
 				92C8BCCA21FF62A9003D4EE3 /* Assets.xcassets */,
@@ -310,22 +373,15 @@
 			path = scripts;
 			sourceTree = "<group>";
 		};
-		C829ED53313449E14C617DF9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				477CBA36055EE0BA03ACA4A5 /* Pods_ShareExtension.framework */,
-				AFAEF777060B9FB9752BECC8 /* Pods_Zom_2.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		EDF9C0F4548A5826E8A99C06 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9AB37D71F3617E703EA91E99 /* Pods-ShareExtension.debug.xcconfig */,
-				17CBB368099E7961402846CD /* Pods-ShareExtension.release.xcconfig */,
-				F2A354F7DA529414B6FD0F70 /* Pods-Zom 2.debug.xcconfig */,
-				DE99B7DAEF2FAC302FCE250E /* Pods-Zom 2.release.xcconfig */,
+				1AEF73E382811B383D27CEDC /* Pods-NSE.debug.xcconfig */,
+				E42A7D05100F99E53BE8D84F /* Pods-NSE.release.xcconfig */,
+				3A15057FB16D83F9E40D2CC5 /* Pods-ShareExtension.debug.xcconfig */,
+				750833EE0C554A0F7EA7A31C /* Pods-ShareExtension.release.xcconfig */,
+				526A377CC5EBBE825526C05D /* Pods-Zom 2.debug.xcconfig */,
+				C7509A3B377FF17B92593D1F /* Pods-Zom 2.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -337,7 +393,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 401114DC223B0F7900D2CC02 /* Build configuration list for PBXNativeTarget "ShareExtension" */;
 			buildPhases = (
-				9BBEFFA232EA6DCF6EC42E3B /* [CP] Check Pods Manifest.lock */,
+				6BDB109835534D7F4F1F838D /* [CP] Check Pods Manifest.lock */,
 				401114CD223B0F7800D2CC02 /* Sources */,
 				401114CE223B0F7800D2CC02 /* Frameworks */,
 				401114CF223B0F7800D2CC02 /* Resources */,
@@ -369,21 +425,40 @@
 			productReference = 92AF46B622645DE400DF9257 /* Screenshots.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		92C34135285C8A34005CD052 /* NSE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92C34140285C8A35005CD052 /* Build configuration list for PBXNativeTarget "NSE" */;
+			buildPhases = (
+				CA8473597C531B50A3A28E96 /* [CP] Check Pods Manifest.lock */,
+				92C34132285C8A34005CD052 /* Sources */,
+				92C34133285C8A34005CD052 /* Frameworks */,
+				92C34134285C8A34005CD052 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NSE;
+			productName = NSE;
+			productReference = 92C34136285C8A34005CD052 /* NSE.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		92C8BCBF21FF62A5003D4EE3 /* Zom 2 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92C8BCD221FF62A9003D4EE3 /* Build configuration list for PBXNativeTarget "Zom 2" */;
 			buildPhases = (
-				8CD56F7B946C4EE58DBF34DA /* [CP] Check Pods Manifest.lock */,
+				7067ED10FC6DA30CC8D87082 /* [CP] Check Pods Manifest.lock */,
 				92C8BCBC21FF62A5003D4EE3 /* Sources */,
 				92C8BCBD21FF62A5003D4EE3 /* Frameworks */,
 				92C8BCBE21FF62A5003D4EE3 /* Resources */,
 				401114DF223B0F7900D2CC02 /* Embed App Extensions */,
-				EEE7DBD6F9B2BE9A764DC101 /* [CP] Embed Pods Frameworks */,
+				E74E3A9C97CBB67A05CBE84A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				401114DA223B0F7900D2CC02 /* PBXTargetDependency */,
+				92C3413C285C8A35005CD052 /* PBXTargetDependency */,
 			);
 			name = "Zom 2";
 			productName = "Zom 2";
@@ -397,7 +472,10 @@
 			isa = PBXProject;
 			attributes = {
 				DefaultBuildSystemTypeForWorkspace = Original;
-				LastSwiftUpdateCheck = 1020;
+				KnownAssetTags = (
+					KeanuNSENotificationSounds,
+				);
+				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = Zom;
 				TargetAttributes = {
@@ -413,6 +491,9 @@
 					92AF46B522645DE400DF9257 = {
 						CreatedOnToolsVersion = 10.2;
 						TestTargetID = 92C8BCBF21FF62A5003D4EE3;
+					};
+					92C34135285C8A34005CD052 = {
+						CreatedOnToolsVersion = 13.4.1;
 					};
 					92C8BCBF21FF62A5003D4EE3 = {
 						CreatedOnToolsVersion = 10.1;
@@ -450,6 +531,7 @@
 				92C8BCBF21FF62A5003D4EE3 /* Zom 2 */,
 				401114D0223B0F7800D2CC02 /* ShareExtension */,
 				92AF46B522645DE400DF9257 /* Screenshots */,
+				92C34135285C8A34005CD052 /* NSE */,
 			);
 		};
 /* End PBXProject section */
@@ -470,6 +552,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		92C34134285C8A34005CD052 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				925E413E2869F8A10087D8F3 /* notification-tone-swift-gesture.m4r in Resources */,
+				925E41422869F8A10087D8F3 /* message-ringtone-magic.m4r in Resources */,
+				925E41402869F8A10087D8F3 /* achievement-message-tone.m4r in Resources */,
+				92E606FF285C9C2600F29F3E /* Config.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		92C8BCBE21FF62A5003D4EE3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -477,11 +570,14 @@
 				924E71352201F54D00B398DD /* Stickers in Resources */,
 				92C8BCCE21FF62A9003D4EE3 /* LaunchScreen.storyboard in Resources */,
 				924E7117220046BF00B398DD /* Config.xcconfig in Resources */,
+				925E413F2869F8A10087D8F3 /* achievement-message-tone.m4r in Resources */,
+				925E413D2869F8A10087D8F3 /* notification-tone-swift-gesture.m4r in Resources */,
 				9286AC552212DCF100002536 /* Localizable.strings in Resources */,
 				A0C05873241BB76000EC5E53 /* ZomWelcomeViewController.xib in Resources */,
 				92FAA35B230C248C00F472A0 /* RoomToolbar.xib in Resources */,
 				92C8BCCB21FF62A9003D4EE3 /* Assets.xcassets in Resources */,
 				A0C05879241BBFD100EC5E53 /* ZomEnablePushViewController.xib in Resources */,
+				925E41412869F8A10087D8F3 /* message-ringtone-magic.m4r in Resources */,
 				92B0D72022427AE30057154E /* ZomBots.plist in Resources */,
 				92B0D71B224253B60057154E /* ZomBotsViewController.storyboard in Resources */,
 				92B0D71722424C6C0057154E /* ZomPickColorViewController.storyboard in Resources */,
@@ -492,29 +588,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8CD56F7B946C4EE58DBF34DA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Zom 2-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9BBEFFA232EA6DCF6EC42E3B /* [CP] Check Pods Manifest.lock */ = {
+		6BDB109835534D7F4F1F838D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -536,7 +610,51 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EEE7DBD6F9B2BE9A764DC101 /* [CP] Embed Pods Frameworks */ = {
+		7067ED10FC6DA30CC8D87082 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Zom 2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA8473597C531B50A3A28E96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NSE-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E74E3A9C97CBB67A05CBE84A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -576,6 +694,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		92C34132285C8A34005CD052 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92C34139285C8A35005CD052 /* NotificationService.swift in Sources */,
+				92E606FD285C9B7200F29F3E /* Config.swift in Sources */,
+				92E606FE285C9BDB00F29F3E /* Constants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		92C8BCBC21FF62A5003D4EE3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -611,6 +739,11 @@
 			isa = PBXTargetDependency;
 			target = 92C8BCBF21FF62A5003D4EE3 /* Zom 2 */;
 			targetProxy = 92AF46BB22645DE400DF9257 /* PBXContainerItemProxy */;
+		};
+		92C3413C285C8A35005CD052 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92C34135285C8A34005CD052 /* NSE */;
+			targetProxy = 92C3413B285C8A35005CD052 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -661,7 +794,7 @@
 /* Begin XCBuildConfiguration section */
 		401114DD223B0F7900D2CC02 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9AB37D71F3617E703EA91E99 /* Pods-ShareExtension.debug.xcconfig */;
+			baseConfigurationReference = 3A15057FB16D83F9E40D2CC5 /* Pods-ShareExtension.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -689,7 +822,7 @@
 		};
 		401114DE223B0F7900D2CC02 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17CBB368099E7961402846CD /* Pods-ShareExtension.release.xcconfig */;
+			baseConfigurationReference = 750833EE0C554A0F7EA7A31C /* Pods-ShareExtension.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -756,6 +889,70 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Zom 2";
+			};
+			name = Release;
+		};
+		92C3413E285C8A35005CD052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AEF73E382811B383D27CEDC /* Pods-NSE.debug.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_ENTITLEMENTS = NSE/NSE.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9SV9LPRC42;
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NSE/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NSE;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Zom. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = im.zom.messenger.NSE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Zom 2/Zom2-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		92C3413F285C8A35005CD052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E42A7D05100F99E53BE8D84F /* Pods-NSE.release.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_ENTITLEMENTS = NSE/NSE.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9SV9LPRC42;
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NSE/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NSE;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Zom. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = im.zom.messenger.NSE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Zom 2/Zom2-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -881,8 +1078,9 @@
 		};
 		92C8BCD321FF62A9003D4EE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F2A354F7DA529414B6FD0F70 /* Pods-Zom 2.debug.xcconfig */;
+			baseConfigurationReference = 526A377CC5EBBE825526C05D /* Pods-Zom 2.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Zom 2/Zom 2.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -908,8 +1106,9 @@
 		};
 		92C8BCD421FF62A9003D4EE3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE99B7DAEF2FAC302FCE250E /* Pods-Zom 2.release.xcconfig */;
+			baseConfigurationReference = C7509A3B377FF17B92593D1F /* Pods-Zom 2.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Zom 2/Zom 2.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -950,6 +1149,15 @@
 			buildConfigurations = (
 				92AF46BD22645DE400DF9257 /* Debug */,
 				92AF46BE22645DE400DF9257 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92C34140285C8A35005CD052 /* Build configuration list for PBXNativeTarget "NSE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92C3413E285C8A35005CD052 /* Debug */,
+				92C3413F285C8A35005CD052 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

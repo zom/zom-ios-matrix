@@ -9,7 +9,7 @@
 import Keanu
 
 public class ZomRouter: Router {
-    
+        
     /**
      Singleton instance.
      */
@@ -50,6 +50,26 @@ public class ZomRouter: Router {
         return BaseRouter.shared.myProfile()
     }
     
+    public func profileEdit() -> EditProfileViewController {
+        return BaseRouter.shared.profileEdit()
+    }
+
+    public func profileNotifications() -> NotificationsViewController {
+        return BaseRouter.shared.profileNotifications()
+    }
+    
+    public func profilePreferences() -> PreferencesViewController {
+        return BaseRouter.shared.profilePreferences()
+    }
+
+    public func profileAccount() -> AccountViewController {
+        return BaseRouter.shared.profileAccount()
+    }
+    
+    public func profileAbout() -> AboutViewController {
+        return BaseRouter.shared.profileAbout()
+    }
+
     public func room() -> RoomViewController {
         let vc = ZomRoomViewController()
         vc.hidesBottomBarWhenPushed = true
