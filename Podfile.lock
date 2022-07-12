@@ -46,8 +46,7 @@ PODS:
     - ISEmojiView (~> 0.3.2)
     - KeanuCore
     - libPhoneNumber-iOS (~> 0.9)
-    - MaterialComponents/Buttons (~> 124)
-    - MaterialComponents/Snackbar (~> 124)
+    - MBProgressHUD (~> 1.1)
     - MobileVLCKit (~> 3.4)
     - PureLayout (~> 3.1)
     - RichEditorView
@@ -69,73 +68,6 @@ PODS:
   - libbase58 (0.1.4)
   - libPhoneNumber-iOS (0.9.15)
   - Localize (2.3.0)
-  - MaterialComponents/AnimationTiming (124.2.0)
-  - MaterialComponents/Availability (124.2.0)
-  - MaterialComponents/Buttons (124.2.0):
-    - MaterialComponents/Elevation
-    - MaterialComponents/Ink
-    - MaterialComponents/private/Math
-    - MaterialComponents/Ripple
-    - MaterialComponents/Shadow
-    - MaterialComponents/ShadowElevations
-    - MaterialComponents/ShadowLayer
-    - MaterialComponents/ShapeLibrary
-    - MaterialComponents/Shapes
-    - MaterialComponents/Typography
-    - MDFInternationalization
-    - MDFTextAccessibility
-  - MaterialComponents/Elevation (124.2.0):
-    - MaterialComponents/Availability
-    - MaterialComponents/private/Color
-    - MaterialComponents/private/Math
-  - MaterialComponents/Ink (124.2.0):
-    - MaterialComponents/Availability
-    - MaterialComponents/private/Color
-    - MaterialComponents/private/Math
-  - MaterialComponents/OverlayWindow (124.2.0):
-    - MaterialComponents/Availability
-    - MaterialComponents/private/Application
-  - MaterialComponents/private/Application (124.2.0)
-  - MaterialComponents/private/Color (124.2.0):
-    - MaterialComponents/Availability
-  - MaterialComponents/private/KeyboardWatcher (124.2.0):
-    - MaterialComponents/private/Application
-  - MaterialComponents/private/Math (124.2.0)
-  - MaterialComponents/private/Overlay (124.2.0)
-  - MaterialComponents/Ripple (124.2.0):
-    - MaterialComponents/AnimationTiming
-    - MaterialComponents/Availability
-    - MaterialComponents/private/Color
-    - MaterialComponents/private/Math
-  - MaterialComponents/Shadow (124.2.0):
-    - MaterialComponents/Availability
-  - MaterialComponents/ShadowElevations (124.2.0)
-  - MaterialComponents/ShadowLayer (124.2.0):
-    - MaterialComponents/ShadowElevations
-  - MaterialComponents/ShapeLibrary (124.2.0):
-    - MaterialComponents/private/Math
-    - MaterialComponents/Shapes
-  - MaterialComponents/Shapes (124.2.0):
-    - MaterialComponents/private/Color
-    - MaterialComponents/private/Math
-    - MaterialComponents/ShadowLayer
-  - MaterialComponents/Snackbar (124.2.0):
-    - MaterialComponents/AnimationTiming
-    - MaterialComponents/Availability
-    - MaterialComponents/Buttons
-    - MaterialComponents/Elevation
-    - MaterialComponents/OverlayWindow
-    - MaterialComponents/private/Application
-    - MaterialComponents/private/KeyboardWatcher
-    - MaterialComponents/private/Math
-    - MaterialComponents/private/Overlay
-    - MaterialComponents/ShadowElevations
-    - MaterialComponents/ShadowLayer
-    - MaterialComponents/Typography
-  - MaterialComponents/Typography (124.2.0):
-    - MaterialComponents/private/Application
-    - MaterialComponents/private/Math
-    - MDFTextAccessibility
   - MatrixSDK (0.23.10):
     - MatrixSDK/Core (= 0.23.10)
   - MatrixSDK/Core (0.23.10):
@@ -150,8 +82,6 @@ PODS:
     - MatrixSDKCrypto (= 0.1.0)
   - MatrixSDKCrypto (0.1.0)
   - MBProgressHUD (1.2.0)
-  - MDFInternationalization (3.0.0)
-  - MDFTextAccessibility (2.0.1)
   - MobileVLCKit (3.4.0)
   - OLMKit (3.2.5):
     - OLMKit/olmc (= 3.2.5)
@@ -173,10 +103,10 @@ PODS:
 
 DEPENDENCIES:
   - CrossroadRegex (from `https://github.com/crossroadlabs/Regex.git`, tag `1.2.0`)
-  - Keanu (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `97047ceb`, branch `new-profile-screens`)
-  - KeanuCore (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `97047ceb`, branch `new-profile-screens`)
-  - KeanuExtension (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `97047ceb`, branch `new-profile-screens`)
-  - KeanuNSE (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `97047ceb`, branch `new-profile-screens`)
+  - Keanu (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `b8a52fe6`)
+  - KeanuCore (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `b8a52fe6`)
+  - KeanuExtension (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `b8a52fe6`)
+  - KeanuNSE (from `https://gitlab.com/keanuapp/keanuapp-ios.git`, commit `b8a52fe6`)
   - RichEditorView (from `https://gitlab.com/keanuapp/keanuapp-ios-richeditorview.git`, branch `build_fixes`)
 
 SPEC REPOS:
@@ -193,12 +123,9 @@ SPEC REPOS:
     - libbase58
     - libPhoneNumber-iOS
     - Localize
-    - MaterialComponents
     - MatrixSDK
     - MatrixSDKCrypto
     - MBProgressHUD
-    - MDFInternationalization
-    - MDFTextAccessibility
     - MobileVLCKit
     - OLMKit
     - PureLayout
@@ -213,20 +140,16 @@ EXTERNAL SOURCES:
     :git: https://github.com/crossroadlabs/Regex.git
     :tag: 1.2.0
   Keanu:
-    :branch: new-profile-screens
-    :commit: 97047ceb
+    :commit: b8a52fe6
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuCore:
-    :branch: new-profile-screens
-    :commit: 97047ceb
+    :commit: b8a52fe6
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuExtension:
-    :branch: new-profile-screens
-    :commit: 97047ceb
+    :commit: b8a52fe6
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuNSE:
-    :branch: new-profile-screens
-    :commit: 97047ceb
+    :commit: b8a52fe6
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   RichEditorView:
     :branch: build_fixes
@@ -237,16 +160,16 @@ CHECKOUT OPTIONS:
     :git: https://github.com/crossroadlabs/Regex.git
     :tag: 1.2.0
   Keanu:
-    :commit: 97047ceb5ea2deba724c795447220edb882212c9
+    :commit: b8a52fe6
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuCore:
-    :commit: 97047ceb5ea2deba724c795447220edb882212c9
+    :commit: b8a52fe6
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuExtension:
-    :commit: 97047ceb5ea2deba724c795447220edb882212c9
+    :commit: b8a52fe6
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   KeanuNSE:
-    :commit: 97047ceb5ea2deba724c795447220edb882212c9
+    :commit: b8a52fe6
     :git: https://gitlab.com/keanuapp/keanuapp-ios.git
   RichEditorView:
     :commit: 225537e7959319b7a2ec681e1d728d2077e156fd
@@ -263,19 +186,16 @@ SPEC CHECKSUMS:
   GZIP: 416858efbe66b41b206895ac6dfd5493200d95b3
   INSPhotoGallery: ad317cb9a59c7a5f08550e4155b49622c24dcab3
   ISEmojiView: 58675ffd39b268c49cefd4924643552b94ef1d6c
-  Keanu: 7325cb78c3dcc846a01bfceb46112f2479da6941
-  KeanuCore: 7c39acf79a1c6cc293c117b4205df018cd51b94a
-  KeanuExtension: d0ea01b0c08b225926ad3ef40496754193942dad
-  KeanuNSE: 5293764c9d77b22889e49bad6893217edac896cc
+  Keanu: 68810c842cdad4228742b17e1709ebe1407bc74f
+  KeanuCore: 5fe74262640d78511363c699533e2b66eab01d07
+  KeanuExtension: 5c598bc03cf7d82ac4b833f5af66556f24226a8c
+  KeanuNSE: 72deeb36f3e82e10321f5c83675425d94a8e18c0
   libbase58: 7c040313537b8c44b6e2d15586af8e21f7354efd
   libPhoneNumber-iOS: 0a32a9525cf8744fe02c5206eb30d571e38f7d75
   Localize: cb1ae53ed73decaad0dce217806ed983091913f5
-  MaterialComponents: 1a9b2d9d45b1601ae544de85089adc4c464306d4
   MatrixSDK: 58238bb5af7e6d9f6acce0373b86ca31413a09b5
   MatrixSDKCrypto: 4b9146d5ef484550341be056a164c6930038028e
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
-  MDFInternationalization: d697c55307816222a55685c4ccb1044ffb030c12
-  MDFTextAccessibility: f4bb4cc2194286651b59a215fdeaa0e05dc90ba5
   MobileVLCKit: 20ccee43f7788a94ea1f67179e33d9600779dfd9
   OLMKit: 9fb4799c4a044dd2c06bda31ec31a12191ad30b5
   PureLayout: 5fb5e5429519627d60d079ccb1eaa7265ce7cf88
@@ -286,6 +206,6 @@ SPEC CHECKSUMS:
   ViewRow: 8da541e9c019f3be63f4e28f311a62cac2045ecf
   ZXingObjC: fdbb269f25dd2032da343e06f10224d62f537bdb
 
-PODFILE CHECKSUM: 070239375a35120d667c5bd11d5012bf35ceae06
+PODFILE CHECKSUM: 078ab571ac028043d6bae64e68170b927868d641
 
 COCOAPODS: 1.11.2
